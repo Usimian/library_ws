@@ -1,0 +1,411 @@
+[0.000000] (-) TimerEvent: {}
+[0.000724] (-) JobUnselected: {'identifier': 'astra_camera'}
+[0.000935] (-) JobUnselected: {'identifier': 'astra_camera_msgs'}
+[0.001375] (-) JobUnselected: {'identifier': 'costmap_converter'}
+[0.001721] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.001893] (costmap_converter_msgs) JobQueued: {'identifier': 'costmap_converter_msgs', 'dependencies': OrderedDict()}
+[0.001993] (costmap_converter_msgs) JobStarted: {'identifier': 'costmap_converter_msgs'}
+[0.099331] (-) TimerEvent: {}
+[0.196672] (costmap_converter_msgs) JobProgress: {'identifier': 'costmap_converter_msgs', 'progress': 'cmake'}
+[0.197874] (costmap_converter_msgs) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter_msgs', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs'], 'cwd': '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources'), ('USER', 'mw'), ('VSCODE_NLS_CONFIG', '{"locale":"en","osLocale":"en","availableLanguages":{}}'), ('CAMERA_TYPE', 'astraplus'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('HOSTNAME', 'marc-orin'), ('GIT_ASKPASS', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi2/lib64::/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib'), ('BROWSER', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-45e59bf5-32a4-489a-99df-439205a10982.sock'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', '1'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/node'), ('USER_UID', '1000'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('_colcon_cd_root', '/root/yahboomcar_ros2_ws/yahboomcar_ws'), ('ROBOT_TYPE', 'x3'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install:/workspaces/isaac_ros-dev/yahboomcar_ws2/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock'), ('_', '/usr/bin/colcon'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('USERNAME', 'admin'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/nvidia/tao:/usr/local/cuda/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/usr/local/share/middleware_profiles/rtps_udp_profile.xml'), ('VSCODE_AMD_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('VSCODE_AGENT_FOLDER', '/root/.vscode-server'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock","/tmp/.X11-unix/X1","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/libgomp.so.1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', ''), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a859f14de.sock'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock'), ('ROS_DOMAIN_ID', '32'), ('AMENT_PREFIX_PATH', '/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 's2'), ('PWD', '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter_msgs'), ('PYTHONPATH', '/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/robot_pose_publisher:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('USER_GID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/opt/ros/humble')]), 'shell': False}
+[0.202825] (-) TimerEvent: {}
+[0.303591] (-) TimerEvent: {}
+[0.343500] (costmap_converter_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.403752] (-) TimerEvent: {}
+[0.470416] (costmap_converter_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.485152] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.503962] (-) TimerEvent: {}
+[0.604764] (-) TimerEvent: {}
+[0.616908] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.635318] (costmap_converter_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.635933] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.636650] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.644437] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.705016] (-) TimerEvent: {}
+[0.805878] (-) TimerEvent: {}
+[0.807717] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.824584] (costmap_converter_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.825804] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.829729] (costmap_converter_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.839054] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.906050] (-) TimerEvent: {}
+[1.006757] (-) TimerEvent: {}
+[1.107458] (-) TimerEvent: {}
+[1.208147] (-) TimerEvent: {}
+[1.308787] (-) TimerEvent: {}
+[1.409610] (-) TimerEvent: {}
+[1.510298] (-) TimerEvent: {}
+[1.611075] (-) TimerEvent: {}
+[1.712771] (-) TimerEvent: {}
+[1.813573] (-) TimerEvent: {}
+[1.914255] (-) TimerEvent: {}
+[2.015003] (-) TimerEvent: {}
+[2.115698] (-) TimerEvent: {}
+[2.216432] (-) TimerEvent: {}
+[2.317081] (-) TimerEvent: {}
+[2.417750] (-) TimerEvent: {}
+[2.518407] (-) TimerEvent: {}
+[2.619049] (-) TimerEvent: {}
+[2.719734] (-) TimerEvent: {}
+[2.820604] (-) TimerEvent: {}
+[2.923666] (-) TimerEvent: {}
+[3.011963] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.8 (found version "3.8.10") found components: Interpreter \n'}
+[3.023846] (-) TimerEvent: {}
+[3.124514] (-) TimerEvent: {}
+[3.182884] (costmap_converter_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.224723] (-) TimerEvent: {}
+[3.296997] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[3.324907] (-) TimerEvent: {}
+[3.423043] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.425047] (-) TimerEvent: {}
+[3.443365] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.474977] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.519554] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.525176] (-) TimerEvent: {}
+[3.583421] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.625422] (-) TimerEvent: {}
+[3.644536] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[3.725607] (-) TimerEvent: {}
+[3.826340] (-) TimerEvent: {}
+[3.886002] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[3.926528] (-) TimerEvent: {}
+[4.027216] (-) TimerEvent: {}
+[4.127881] (-) TimerEvent: {}
+[4.228560] (-) TimerEvent: {}
+[4.329235] (-) TimerEvent: {}
+[4.429968] (-) TimerEvent: {}
+[4.527247] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[4.530139] (-) TimerEvent: {}
+[4.631122] (-) TimerEvent: {}
+[4.731834] (-) TimerEvent: {}
+[4.832552] (-) TimerEvent: {}
+[4.933258] (-) TimerEvent: {}
+[5.033928] (-) TimerEvent: {}
+[5.134671] (-) TimerEvent: {}
+[5.235471] (-) TimerEvent: {}
+[5.241272] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.335585] (-) TimerEvent: {}
+[5.436286] (-) TimerEvent: {}
+[5.514685] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.536453] (-) TimerEvent: {}
+[5.605798] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.6") \n'}
+[5.612069] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[5.636628] (-) TimerEvent: {}
+[5.697879] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[5.698437] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.698622] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[5.698784] (costmap_converter_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[5.736769] (-) TimerEvent: {}
+[5.770469] (costmap_converter_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[5.836948] (-) TimerEvent: {}
+[5.937684] (-) TimerEvent: {}
+[5.967707] (costmap_converter_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.037955] (-) TimerEvent: {}
+[6.065742] (costmap_converter_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[6.074113] (costmap_converter_msgs) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter_msgs\n'}
+[6.099224] (costmap_converter_msgs) CommandEnded: {'returncode': 0}
+[6.100863] (costmap_converter_msgs) JobProgress: {'identifier': 'costmap_converter_msgs', 'progress': 'build'}
+[6.102442] (costmap_converter_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter_msgs', '--', '-j6', '-l6'], 'cwd': '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources'), ('USER', 'mw'), ('VSCODE_NLS_CONFIG', '{"locale":"en","osLocale":"en","availableLanguages":{}}'), ('CAMERA_TYPE', 'astraplus'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('HOSTNAME', 'marc-orin'), ('GIT_ASKPASS', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi2/lib64::/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib'), ('BROWSER', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-45e59bf5-32a4-489a-99df-439205a10982.sock'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', '1'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/node'), ('USER_UID', '1000'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('_colcon_cd_root', '/root/yahboomcar_ros2_ws/yahboomcar_ws'), ('ROBOT_TYPE', 'x3'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install:/workspaces/isaac_ros-dev/yahboomcar_ws2/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock'), ('_', '/usr/bin/colcon'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('USERNAME', 'admin'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/nvidia/tao:/usr/local/cuda/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/usr/local/share/middleware_profiles/rtps_udp_profile.xml'), ('VSCODE_AMD_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('VSCODE_AGENT_FOLDER', '/root/.vscode-server'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock","/tmp/.X11-unix/X1","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/libgomp.so.1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', ''), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a859f14de.sock'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock'), ('ROS_DOMAIN_ID', '32'), ('AMENT_PREFIX_PATH', '/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 's2'), ('PWD', '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter_msgs'), ('PYTHONPATH', '/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/robot_pose_publisher:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('USER_GID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/opt/ros/humble')]), 'shell': False}
+[6.138217] (-) TimerEvent: {}
+[6.168062] (costmap_converter_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.183857] (costmap_converter_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.192739] (costmap_converter_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_symlink_costmap_converter_msgs\n'}
+[6.238400] (-) TimerEvent: {}
+[6.340020] (-) TimerEvent: {}
+[6.440672] (-) TimerEvent: {}
+[6.541332] (-) TimerEvent: {}
+[6.643652] (-) TimerEvent: {}
+[6.745052] (-) TimerEvent: {}
+[6.847065] (-) TimerEvent: {}
+[6.947709] (-) TimerEvent: {}
+[6.949097] (costmap_converter_msgs) StdoutLine: {'line': b'[  5%] Built target costmap_converter_msgs__cpp\n'}
+[6.980027] (costmap_converter_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.980568] (costmap_converter_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.993843] (costmap_converter_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.019240] (costmap_converter_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_generator_c.dir/rosidl_generator_c/costmap_converter_msgs/msg/detail/obstacle_array_msg__functions.c.o\x1b[0m\n'}
+[7.024414] (costmap_converter_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_generator_c.dir/rosidl_generator_c/costmap_converter_msgs/msg/detail/obstacle_msg__functions.c.o\x1b[0m\n'}
+[7.047903] (-) TimerEvent: {}
+[7.151658] (-) TimerEvent: {}
+[7.238376] (costmap_converter_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[7.242559] (costmap_converter_msgs) StdoutLine: {'line': b'creating costmap_converter_msgs.egg-info\n'}
+[7.251831] (-) TimerEvent: {}
+[7.285909] (costmap_converter_msgs) StdoutLine: {'line': b'writing costmap_converter_msgs.egg-info/PKG-INFO\n'}
+[7.287084] (costmap_converter_msgs) StdoutLine: {'line': b'writing dependency_links to costmap_converter_msgs.egg-info/dependency_links.txt\n'}
+[7.288004] (costmap_converter_msgs) StdoutLine: {'line': b'writing top-level names to costmap_converter_msgs.egg-info/top_level.txt\n'}
+[7.288304] (costmap_converter_msgs) StdoutLine: {'line': b"writing manifest file 'costmap_converter_msgs.egg-info/SOURCES.txt'\n"}
+[7.352271] (-) TimerEvent: {}
+[7.416387] (costmap_converter_msgs) StdoutLine: {'line': b"reading manifest file 'costmap_converter_msgs.egg-info/SOURCES.txt'\n"}
+[7.417926] (costmap_converter_msgs) StdoutLine: {'line': b"writing manifest file 'costmap_converter_msgs.egg-info/SOURCES.txt'\n"}
+[7.452503] (-) TimerEvent: {}
+[7.505856] (costmap_converter_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libcostmap_converter_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[7.552660] (-) TimerEvent: {}
+[7.599836] (costmap_converter_msgs) StdoutLine: {'line': b'[ 20%] Built target ament_cmake_python_build_costmap_converter_msgs_egg\n'}
+[7.641757] (costmap_converter_msgs) StdoutLine: {'line': b'[ 20%] Built target costmap_converter_msgs__rosidl_generator_c\n'}
+[7.652833] (-) TimerEvent: {}
+[7.663494] (costmap_converter_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.680590] (costmap_converter_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.681279] (costmap_converter_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.759562] (-) TimerEvent: {}
+[7.860341] (-) TimerEvent: {}
+[7.898954] (costmap_converter_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/costmap_converter_msgs/msg/obstacle_msg__type_support.cpp.o\x1b[0m\n'}
+[7.961308] (-) TimerEvent: {}
+[8.010056] (costmap_converter_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/costmap_converter_msgs/msg/detail/obstacle_msg__type_support.cpp.o\x1b[0m\n'}
+[8.061564] (-) TimerEvent: {}
+[8.105966] (costmap_converter_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/costmap_converter_msgs/msg/detail/dds_fastrtps/obstacle_msg__type_support.cpp.o\x1b[0m\n'}
+[8.161735] (-) TimerEvent: {}
+[8.263330] (-) TimerEvent: {}
+[8.369558] (-) TimerEvent: {}
+[8.470686] (-) TimerEvent: {}
+[8.573123] (-) TimerEvent: {}
+[8.647526] (costmap_converter_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/costmap_converter_msgs/msg/obstacle_msg__type_support.cpp.o\x1b[0m\n'}
+[8.660192] (costmap_converter_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/costmap_converter_msgs/msg/detail/obstacle_msg__type_support_c.cpp.o\x1b[0m\n'}
+[8.673497] (-) TimerEvent: {}
+[8.775955] (-) TimerEvent: {}
+[8.877523] (-) TimerEvent: {}
+[8.910061] (costmap_converter_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/costmap_converter_msgs/msg/obstacle_array_msg__type_support.cpp.o\x1b[0m\n'}
+[8.977802] (-) TimerEvent: {}
+[8.991300] (costmap_converter_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/costmap_converter_msgs/msg/detail/obstacle_msg__type_support.c.o\x1b[0m\n'}
+[9.078016] (-) TimerEvent: {}
+[9.113048] (costmap_converter_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libcostmap_converter_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[9.136847] (costmap_converter_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/costmap_converter_msgs/msg/obstacle_array_msg__type_support.cpp.o\x1b[0m\n'}
+[9.178215] (-) TimerEvent: {}
+[9.237520] (costmap_converter_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support.c.o\x1b[0m\n'}
+[9.278986] (-) TimerEvent: {}
+[9.280320] (costmap_converter_msgs) StdoutLine: {'line': b'[ 53%] Built target costmap_converter_msgs__rosidl_typesupport_c\n'}
+[9.337505] (costmap_converter_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support_c.cpp.o\x1b[0m\n'}
+[9.379217] (-) TimerEvent: {}
+[9.483876] (-) TimerEvent: {}
+[9.578755] (costmap_converter_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libcostmap_converter_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[9.584005] (-) TimerEvent: {}
+[9.686957] (-) TimerEvent: {}
+[9.735037] (costmap_converter_msgs) StdoutLine: {'line': b'[ 58%] Built target costmap_converter_msgs__rosidl_typesupport_introspection_c\n'}
+[9.774940] (costmap_converter_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/costmap_converter_msgs/msg/detail/dds_fastrtps/obstacle_array_msg__type_support.cpp.o\x1b[0m\n'}
+[9.787162] (-) TimerEvent: {}
+[9.888702] (-) TimerEvent: {}
+[9.989896] (-) TimerEvent: {}
+[10.092320] (-) TimerEvent: {}
+[10.101602] (costmap_converter_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support.cpp.o\x1b[0m\n'}
+[10.192537] (-) TimerEvent: {}
+[10.298047] (-) TimerEvent: {}
+[10.400241] (-) TimerEvent: {}
+[10.438807] (costmap_converter_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libcostmap_converter_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[10.500450] (-) TimerEvent: {}
+[10.566264] (costmap_converter_msgs) StdoutLine: {'line': b'[ 66%] Built target costmap_converter_msgs__rosidl_typesupport_cpp\n'}
+[10.601197] (-) TimerEvent: {}
+[10.702846] (-) TimerEvent: {}
+[10.803913] (-) TimerEvent: {}
+[10.905103] (-) TimerEvent: {}
+[11.008342] (-) TimerEvent: {}
+[11.034738] (costmap_converter_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libcostmap_converter_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[11.108569] (-) TimerEvent: {}
+[11.210527] (-) TimerEvent: {}
+[11.289813] (costmap_converter_msgs) StdoutLine: {'line': b'[ 69%] Built target costmap_converter_msgs__rosidl_typesupport_fastrtps_c\n'}
+[11.313538] (-) TimerEvent: {}
+[11.414292] (-) TimerEvent: {}
+[11.515736] (-) TimerEvent: {}
+[11.616534] (-) TimerEvent: {}
+[11.717275] (-) TimerEvent: {}
+[11.818066] (-) TimerEvent: {}
+[11.842730] (costmap_converter_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libcostmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[11.918383] (-) TimerEvent: {}
+[12.019472] (-) TimerEvent: {}
+[12.022965] (costmap_converter_msgs) StdoutLine: {'line': b'[ 71%] Built target costmap_converter_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[12.078525] (costmap_converter_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libcostmap_converter_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[12.119650] (-) TimerEvent: {}
+[12.220381] (-) TimerEvent: {}
+[12.257571] (costmap_converter_msgs) StdoutLine: {'line': b'[ 74%] Built target costmap_converter_msgs__rosidl_typesupport_introspection_cpp\n'}
+[12.295784] (costmap_converter_msgs) StdoutLine: {'line': b'[ 74%] Built target costmap_converter_msgs\n'}
+[12.321227] (-) TimerEvent: {}
+[12.329239] (costmap_converter_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.421397] (-) TimerEvent: {}
+[12.522054] (-) TimerEvent: {}
+[12.622732] (-) TimerEvent: {}
+[12.723751] (-) TimerEvent: {}
+[12.824461] (-) TimerEvent: {}
+[12.925115] (-) TimerEvent: {}
+[13.025840] (-) TimerEvent: {}
+[13.126519] (-) TimerEvent: {}
+[13.227565] (-) TimerEvent: {}
+[13.328408] (-) TimerEvent: {}
+[13.428867] (costmap_converter_msgs) StdoutLine: {'line': b'[ 76%] Built target costmap_converter_msgs__py\n'}
+[13.429629] (-) TimerEvent: {}
+[13.459898] (costmap_converter_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_generator_py.dir/rosidl_generator_py/costmap_converter_msgs/msg/_obstacle_msg_s.c.o\x1b[0m\n'}
+[13.461013] (costmap_converter_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_generator_py.dir/rosidl_generator_py/costmap_converter_msgs/msg/_obstacle_array_msg_s.c.o\x1b[0m\n'}
+[13.529847] (-) TimerEvent: {}
+[13.631419] (-) TimerEvent: {}
+[13.732843] (-) TimerEvent: {}
+[13.833806] (-) TimerEvent: {}
+[13.846123] (costmap_converter_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/costmap_converter_msgs/libcostmap_converter_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[13.930693] (costmap_converter_msgs) StdoutLine: {'line': b'[ 84%] Built target costmap_converter_msgs__rosidl_generator_py\n'}
+[13.933917] (-) TimerEvent: {}
+[13.965286] (costmap_converter_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[13.972273] (costmap_converter_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[13.984995] (costmap_converter_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/costmap_converter_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.034972] (-) TimerEvent: {}
+[14.135749] (-) TimerEvent: {}
+[14.237010] (-) TimerEvent: {}
+[14.337770] (-) TimerEvent: {}
+[14.394502] (costmap_converter_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[14.410978] (costmap_converter_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[14.424267] (costmap_converter_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[14.437961] (-) TimerEvent: {}
+[14.538716] (-) TimerEvent: {}
+[14.545421] (costmap_converter_msgs) StdoutLine: {'line': b'[100%] Built target costmap_converter_msgs__rosidl_typesupport_c__pyext\n'}
+[14.586473] (costmap_converter_msgs) StdoutLine: {'line': b'[100%] Built target costmap_converter_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[14.589673] (costmap_converter_msgs) StdoutLine: {'line': b'[100%] Built target costmap_converter_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[14.612569] (costmap_converter_msgs) CommandEnded: {'returncode': 0}
+[14.639448] (-) TimerEvent: {}
+[14.741394] (-) TimerEvent: {}
+[14.842122] (-) TimerEvent: {}
+[14.942836] (-) TimerEvent: {}
+[15.042755] (costmap_converter_msgs) JobProgress: {'identifier': 'costmap_converter_msgs', 'progress': 'install'}
+[15.043385] (-) TimerEvent: {}
+[15.099907] (costmap_converter_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter_msgs'], 'cwd': '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources'), ('USER', 'mw'), ('VSCODE_NLS_CONFIG', '{"locale":"en","osLocale":"en","availableLanguages":{}}'), ('CAMERA_TYPE', 'astraplus'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('HOSTNAME', 'marc-orin'), ('GIT_ASKPASS', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi2/lib64::/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib'), ('BROWSER', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-45e59bf5-32a4-489a-99df-439205a10982.sock'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', '1'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/node'), ('USER_UID', '1000'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('_colcon_cd_root', '/root/yahboomcar_ros2_ws/yahboomcar_ws'), ('ROBOT_TYPE', 'x3'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install:/workspaces/isaac_ros-dev/yahboomcar_ws2/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock'), ('_', '/usr/bin/colcon'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('USERNAME', 'admin'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/nvidia/tao:/usr/local/cuda/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/usr/local/share/middleware_profiles/rtps_udp_profile.xml'), ('VSCODE_AMD_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('VSCODE_AGENT_FOLDER', '/root/.vscode-server'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock","/tmp/.X11-unix/X1","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/libgomp.so.1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', ''), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a859f14de.sock'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock'), ('ROS_DOMAIN_ID', '32'), ('AMENT_PREFIX_PATH', '/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 's2'), ('PWD', '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter_msgs'), ('PYTHONPATH', '/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/robot_pose_publisher:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('USER_GID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/opt/ros/humble')]), 'shell': False}
+[15.142672] (costmap_converter_msgs) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[15.143491] (-) TimerEvent: {}
+[15.145891] (costmap_converter_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[15.147820] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/ament_index/resource_index/rosidl_interfaces/costmap_converter_msgs\n'}
+[15.179822] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__functions.h\n'}
+[15.210591] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__struct.h\n'}
+[15.244751] (-) TimerEvent: {}
+[15.250880] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__type_support.h\n'}
+[15.264976] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__functions.h\n'}
+[15.286301] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__struct.h\n'}
+[15.302677] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__type_support.h\n'}
+[15.313201] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_array_msg.h\n'}
+[15.337540] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_msg.h\n'}
+[15.344953] (-) TimerEvent: {}
+[15.354887] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[15.367125] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/library_path.sh\n'}
+[15.377442] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/library_path.dsv\n'}
+[15.391520] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[15.405962] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[15.416987] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[15.432105] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__builder.hpp\n'}
+[15.445159] (-) TimerEvent: {}
+[15.454577] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__struct.hpp\n'}
+[15.468447] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__traits.hpp\n'}
+[15.484488] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__builder.hpp\n'}
+[15.495865] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__struct.hpp\n'}
+[15.506349] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__traits.hpp\n'}
+[15.518151] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_array_msg.hpp\n'}
+[15.531333] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/obstacle_msg.hpp\n'}
+[15.541042] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.545621] (-) TimerEvent: {}
+[15.556418] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.566385] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[15.576955] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_introspection_c.h\n'}
+[15.587238] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_introspection_c.h\n'}
+[15.599197] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[15.609800] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_array_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.618609] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/include/costmap_converter_msgs/costmap_converter_msgs/msg/detail/obstacle_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.628576] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/pythonpath.sh\n'}
+[15.643164] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/pythonpath.dsv\n'}
+[15.645420] (-) TimerEvent: {}
+[15.654117] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs-0.1.2-py3.8.egg-info/PKG-INFO\n'}
+[15.670197] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs-0.1.2-py3.8.egg-info/SOURCES.txt\n'}
+[15.687199] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs-0.1.2-py3.8.egg-info/dependency_links.txt\n'}
+[15.697699] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs-0.1.2-py3.8.egg-info/top_level.txt\n'}
+[15.707657] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/__init__.py\n'}
+[15.730687] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[15.743297] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[15.745543] (-) TimerEvent: {}
+[15.765808] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/_costmap_converter_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[15.777507] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[15.790541] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[15.806066] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[15.818363] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/libcostmap_converter_msgs__rosidl_generator_py.so\n'}
+[15.830035] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/msg/__init__.py\n'}
+[15.844322] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/msg/_obstacle_array_msg.py\n'}
+[15.845639] (-) TimerEvent: {}
+[15.854070] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/msg/_obstacle_array_msg_s.c\n'}
+[15.865244] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/msg/_obstacle_msg.py\n'}
+[15.882717] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/msg/_obstacle_msg_s.c\n'}
+[15.905375] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[15.907672] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[15.909646] (costmap_converter_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/costmap_converter_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[15.911504] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleMsg.idl\n'}
+[15.925119] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleArrayMsg.idl\n'}
+[15.939511] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleMsg.msg\n'}
+[15.945850] (-) TimerEvent: {}
+[15.949764] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/msg/ObstacleArrayMsg.msg\n'}
+[15.965311] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/ament_index/resource_index/package_run_dependencies/costmap_converter_msgs\n'}
+[15.980584] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/ament_index/resource_index/parent_prefix_path/costmap_converter_msgs\n'}
+[15.992939] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/ament_prefix_path.sh\n'}
+[16.010327] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/ament_prefix_path.dsv\n'}
+[16.026880] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/path.sh\n'}
+[16.047048] (-) TimerEvent: {}
+[16.050763] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/environment/path.dsv\n'}
+[16.062353] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.bash\n'}
+[16.079581] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.sh\n'}
+[16.093038] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.zsh\n'}
+[16.104904] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/local_setup.dsv\n'}
+[16.118110] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/package.dsv\n'}
+[16.128645] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/ament_index/resource_index/packages/costmap_converter_msgs\n'}
+[16.139047] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[16.147228] (-) TimerEvent: {}
+[16.148065] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.157887] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.201040] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[16.225272] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[16.236466] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[16.247567] (-) TimerEvent: {}
+[16.254514] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[16.267377] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgsConfig.cmake\n'}
+[16.284080] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgsConfig-version.cmake\n'}
+[16.293668] (costmap_converter_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/package.xml\n'}
+[16.304687] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_generator_c.so\n'}
+[16.305724] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_generator_c.so" to ""\n'}
+[16.305985] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[16.309865] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[16.310474] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[16.310753] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[16.310935] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_introspection_c.so\n'}
+[16.311097] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[16.311251] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_c.so\n'}
+[16.311400] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_c.so" to ""\n'}
+[16.311543] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[16.312181] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[16.312528] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_cpp.so\n'}
+[16.313217] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[16.348581] (-) TimerEvent: {}
+[16.432592] (costmap_converter_msgs) StdoutLine: {'line': b"Listing '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs'...\n"}
+[16.433249] (costmap_converter_msgs) StdoutLine: {'line': b"Compiling '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/__init__.py'...\n"}
+[16.433511] (costmap_converter_msgs) StdoutLine: {'line': b"Listing '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/msg'...\n"}
+[16.433699] (costmap_converter_msgs) StdoutLine: {'line': b"Compiling '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/msg/__init__.py'...\n"}
+[16.433866] (costmap_converter_msgs) StdoutLine: {'line': b"Compiling '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/msg/_obstacle_array_msg.py'...\n"}
+[16.434024] (costmap_converter_msgs) StdoutLine: {'line': b"Compiling '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages/costmap_converter_msgs/msg/_obstacle_msg.py'...\n"}
+[16.440585] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_generator_py.so\n'}
+[16.443114] (costmap_converter_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/libcostmap_converter_msgs__rosidl_generator_py.so" to ""\n'}
+[16.443554] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_cExport.cmake\n'}
+[16.443748] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_cExport-relwithdebinfo.cmake\n'}
+[16.443913] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[16.444173] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cExport-relwithdebinfo.cmake\n'}
+[16.444349] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_cppExport.cmake\n'}
+[16.444501] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[16.444802] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_typesupport_fastrtps_cppExport-relwithdebinfo.cmake\n'}
+[16.445882] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[16.446549] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cExport-relwithdebinfo.cmake\n'}
+[16.446760] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cExport.cmake\n'}
+[16.447016] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cExport-relwithdebinfo.cmake\n'}
+[16.447270] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[16.447554] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_introspection_cppExport-relwithdebinfo.cmake\n'}
+[16.447953] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[16.448357] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/costmap_converter_msgs__rosidl_typesupport_cppExport-relwithdebinfo.cmake\n'}
+[16.448646] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_pyExport.cmake\n'}
+[16.448863] (-) TimerEvent: {}
+[16.449316] (costmap_converter_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake/export_costmap_converter_msgs__rosidl_generator_pyExport-relwithdebinfo.cmake\n'}
+[16.471015] (costmap_converter_msgs) CommandEnded: {'returncode': 0}
+[16.549105] (-) TimerEvent: {}
+[16.649947] (-) TimerEvent: {}
+[16.751233] (-) TimerEvent: {}
+[16.852535] (-) TimerEvent: {}
+[16.954705] (-) TimerEvent: {}
+[17.055412] (-) TimerEvent: {}
+[17.157425] (-) TimerEvent: {}
+[17.259539] (-) TimerEvent: {}
+[17.360246] (-) TimerEvent: {}
+[17.461257] (-) TimerEvent: {}
+[17.562051] (-) TimerEvent: {}
+[17.578843] (costmap_converter_msgs) JobEnded: {'identifier': 'costmap_converter_msgs', 'rc': 0}
+[17.584206] (-) EventReactorShutdown: {}

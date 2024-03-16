@@ -1,0 +1,1770 @@
+[0.000000] (-) TimerEvent: {}
+[0.001271] (-) JobUnselected: {'identifier': 'astra_camera'}
+[0.001428] (-) JobUnselected: {'identifier': 'astra_camera_msgs'}
+[0.001496] (-) JobUnselected: {'identifier': 'costmap_converter_msgs'}
+[0.001543] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.001819] (costmap_converter) JobQueued: {'identifier': 'costmap_converter', 'dependencies': OrderedDict([('costmap_converter_msgs', '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs')])}
+[0.002895] (costmap_converter) JobStarted: {'identifier': 'costmap_converter'}
+[0.100153] (-) TimerEvent: {}
+[0.199476] (costmap_converter) JobProgress: {'identifier': 'costmap_converter', 'progress': 'cmake'}
+[0.200148] (costmap_converter) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter'], 'cwd': '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources'), ('USER', 'mw'), ('VSCODE_NLS_CONFIG', '{"locale":"en","osLocale":"en","availableLanguages":{}}'), ('CAMERA_TYPE', 'astraplus'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('HOSTNAME', 'marc-orin'), ('GIT_ASKPASS', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi2/lib64:/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib'), ('BROWSER', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-81663db4-b591-4acc-a0c4-dadb3121f652.sock'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', '1'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/node'), ('USER_UID', '1000'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('_colcon_cd_root', '/root/yahboomcar_ros2_ws/yahboomcar_ws'), ('ROBOT_TYPE', 'x3'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install:/workspaces/isaac_ros-dev/yahboomcar_ws2/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock'), ('_', '/usr/bin/colcon'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('USERNAME', 'admin'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/nvidia/tao:/usr/local/cuda/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/usr/local/share/middleware_profiles/rtps_udp_profile.xml'), ('VSCODE_AMD_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('VSCODE_AGENT_FOLDER', '/root/.vscode-server'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock","/tmp/.X11-unix/X1","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/libgomp.so.1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', ''), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a859f14de.sock'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock'), ('ROS_DOMAIN_ID', '32'), ('AMENT_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 's2'), ('PWD', '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter'), ('PYTHONPATH', '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/robot_pose_publisher:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('USER_GID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/opt/ros/humble')]), 'shell': False}
+[0.203343] (-) TimerEvent: {}
+[0.304047] (-) TimerEvent: {}
+[0.350896] (costmap_converter) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.404470] (-) TimerEvent: {}
+[0.484876] (costmap_converter) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.502454] (costmap_converter) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.504457] (-) TimerEvent: {}
+[0.605009] (-) TimerEvent: {}
+[0.673906] (costmap_converter) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.705208] (-) TimerEvent: {}
+[0.715885] (costmap_converter) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.716897] (costmap_converter) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.719232] (costmap_converter) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.732435] (costmap_converter) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.805381] (-) TimerEvent: {}
+[0.907914] (-) TimerEvent: {}
+[0.978802] (costmap_converter) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.008108] (-) TimerEvent: {}
+[1.009422] (costmap_converter) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.010022] (costmap_converter) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.011245] (costmap_converter) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.022672] (costmap_converter) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.108294] (-) TimerEvent: {}
+[1.208988] (-) TimerEvent: {}
+[1.310746] (-) TimerEvent: {}
+[1.411418] (-) TimerEvent: {}
+[1.512083] (-) TimerEvent: {}
+[1.612732] (-) TimerEvent: {}
+[1.713352] (-) TimerEvent: {}
+[1.814005] (-) TimerEvent: {}
+[1.914652] (-) TimerEvent: {}
+[2.015296] (-) TimerEvent: {}
+[2.115941] (-) TimerEvent: {}
+[2.216591] (-) TimerEvent: {}
+[2.317346] (-) TimerEvent: {}
+[2.418136] (-) TimerEvent: {}
+[2.518856] (-) TimerEvent: {}
+[2.619514] (-) TimerEvent: {}
+[2.720309] (-) TimerEvent: {}
+[2.820993] (-) TimerEvent: {}
+[2.921696] (-) TimerEvent: {}
+[3.023654] (-) TimerEvent: {}
+[3.119993] (costmap_converter) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.8 (found version "3.8.10") found components: Interpreter \n'}
+[3.123835] (-) TimerEvent: {}
+[3.224515] (-) TimerEvent: {}
+[3.275435] (costmap_converter) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.324719] (-) TimerEvent: {}
+[3.379089] (costmap_converter) StdoutLine: {'line': b'-- Found class_loader: 2.2.0 (/opt/ros/humble/share/class_loader/cmake)\n'}
+[3.424915] (-) TimerEvent: {}
+[3.433533] (costmap_converter) StdoutLine: {'line': b'-- Found costmap_converter_msgs: 0.1.2 (/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/cmake)\n'}
+[3.515620] (costmap_converter) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.525072] (-) TimerEvent: {}
+[3.532549] (costmap_converter) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.559108] (costmap_converter) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.598439] (costmap_converter) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.625358] (-) TimerEvent: {}
+[3.641530] (costmap_converter) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.725465] (-) TimerEvent: {}
+[3.826206] (-) TimerEvent: {}
+[3.926942] (-) TimerEvent: {}
+[4.027695] (-) TimerEvent: {}
+[4.070685] (costmap_converter) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[4.127915] (-) TimerEvent: {}
+[4.228658] (-) TimerEvent: {}
+[4.290005] (costmap_converter) StdoutLine: {'line': b'-- Found nav2_costmap_2d: 1.1.12 (/opt/ros/humble/share/nav2_costmap_2d/cmake)\n'}
+[4.328842] (-) TimerEvent: {}
+[4.429573] (-) TimerEvent: {}
+[4.499654] (costmap_converter) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.510157] (costmap_converter) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.529742] (-) TimerEvent: {}
+[4.630524] (-) TimerEvent: {}
+[4.731290] (-) TimerEvent: {}
+[4.832401] (-) TimerEvent: {}
+[4.844329] (costmap_converter) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[4.932071] (costmap_converter) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.932684] (-) TimerEvent: {}
+[5.033200] (-) TimerEvent: {}
+[5.087454] (costmap_converter) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.119466] (costmap_converter) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.133382] (-) TimerEvent: {}
+[5.234098] (-) TimerEvent: {}
+[5.260313] (costmap_converter) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.261123] (costmap_converter) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.334261] (-) TimerEvent: {}
+[5.417941] (costmap_converter) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[5.418615] (costmap_converter) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[5.434456] (-) TimerEvent: {}
+[5.535432] (-) TimerEvent: {}
+[5.537679] (costmap_converter) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[5.538261] (costmap_converter) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[5.635649] (-) TimerEvent: {}
+[5.679579] (costmap_converter) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[5.682070] (costmap_converter) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.735820] (-) TimerEvent: {}
+[5.836551] (-) TimerEvent: {}
+[5.937328] (-) TimerEvent: {}
+[6.038081] (-) TimerEvent: {}
+[6.138807] (-) TimerEvent: {}
+[6.239567] (-) TimerEvent: {}
+[6.340300] (-) TimerEvent: {}
+[6.441015] (-) TimerEvent: {}
+[6.541786] (-) TimerEvent: {}
+[6.642495] (-) TimerEvent: {}
+[6.743226] (-) TimerEvent: {}
+[6.843987] (-) TimerEvent: {}
+[6.944713] (-) TimerEvent: {}
+[7.045427] (-) TimerEvent: {}
+[7.146163] (-) TimerEvent: {}
+[7.246876] (-) TimerEvent: {}
+[7.347638] (-) TimerEvent: {}
+[7.448366] (-) TimerEvent: {}
+[7.549127] (-) TimerEvent: {}
+[7.649828] (-) TimerEvent: {}
+[7.659897] (costmap_converter) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[7.660501] (costmap_converter) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[7.750006] (-) TimerEvent: {}
+[7.850705] (-) TimerEvent: {}
+[7.951398] (-) TimerEvent: {}
+[8.052137] (-) TimerEvent: {}
+[8.152883] (-) TimerEvent: {}
+[8.253699] (-) TimerEvent: {}
+[8.354499] (-) TimerEvent: {}
+[8.455307] (-) TimerEvent: {}
+[8.556324] (-) TimerEvent: {}
+[8.658369] (-) TimerEvent: {}
+[8.759103] (-) TimerEvent: {}
+[8.860358] (-) TimerEvent: {}
+[8.961121] (-) TimerEvent: {}
+[9.061834] (-) TimerEvent: {}
+[9.162581] (-) TimerEvent: {}
+[9.263378] (-) TimerEvent: {}
+[9.364176] (-) TimerEvent: {}
+[9.391270] (costmap_converter) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.2.0") \n'}
+[9.464345] (-) TimerEvent: {}
+[9.565069] (-) TimerEvent: {}
+[9.665841] (-) TimerEvent: {}
+[9.766585] (-) TimerEvent: {}
+[9.867337] (-) TimerEvent: {}
+[9.968076] (-) TimerEvent: {}
+[10.068812] (-) TimerEvent: {}
+[10.169558] (-) TimerEvent: {}
+[10.270379] (-) TimerEvent: {}
+[10.371131] (-) TimerEvent: {}
+[10.471984] (-) TimerEvent: {}
+[10.572715] (-) TimerEvent: {}
+[10.673729] (-) TimerEvent: {}
+[10.774505] (-) TimerEvent: {}
+[10.875182] (-) TimerEvent: {}
+[10.975909] (-) TimerEvent: {}
+[11.076647] (-) TimerEvent: {}
+[11.177360] (-) TimerEvent: {}
+[11.249951] (costmap_converter) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.6 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[11.260524] (costmap_converter) StdoutLine: {'line': b"-- Found gtest sources under '/usr/src/gtest': C++ tests using 'Google Test' will be built\n"}
+[11.266305] (costmap_converter) StderrLine: {'line': b'\x1b[33mCMake Warning at /usr/src/gtest/CMakeLists.txt:54 (project):\n'}
+[11.266878] (costmap_converter) StderrLine: {'line': b'  VERSION keyword not followed by a value or was followed by a value that\n'}
+[11.267071] (costmap_converter) StderrLine: {'line': b'  expanded to nothing.\n'}
+[11.267250] (costmap_converter) StderrLine: {'line': b'\n'}
+[11.267405] (costmap_converter) StderrLine: {'line': b'\x1b[0m\n'}
+[11.267581] (costmap_converter) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /usr/src/gtest/CMakeLists.txt:56 (cmake_minimum_required):\n'}
+[11.267746] (costmap_converter) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[11.267888] (costmap_converter) StderrLine: {'line': b'  CMake.\n'}
+[11.268022] (costmap_converter) StderrLine: {'line': b'\n'}
+[11.268155] (costmap_converter) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[11.268290] (costmap_converter) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[11.268423] (costmap_converter) StderrLine: {'line': b'\n'}
+[11.268553] (costmap_converter) StderrLine: {'line': b'\x1b[0m\n'}
+[11.277488] (-) TimerEvent: {}
+[11.355322] (costmap_converter) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python (found version "3.8.10") \n'}
+[11.364194] (costmap_converter) StdoutLine: {'line': b'-- Check if compiler accepts -pthread\n'}
+[11.377691] (-) TimerEvent: {}
+[11.478372] (-) TimerEvent: {}
+[11.516318] (costmap_converter) StdoutLine: {'line': b'-- Check if compiler accepts -pthread - yes\n'}
+[11.578559] (-) TimerEvent: {}
+[11.679582] (-) TimerEvent: {}
+[11.780987] (-) TimerEvent: {}
+[11.881840] (-) TimerEvent: {}
+[11.982573] (-) TimerEvent: {}
+[12.083312] (-) TimerEvent: {}
+[12.184148] (-) TimerEvent: {}
+[12.284876] (-) TimerEvent: {}
+[12.385597] (-) TimerEvent: {}
+[12.486306] (-) TimerEvent: {}
+[12.587048] (-) TimerEvent: {}
+[12.616745] (costmap_converter) StdoutLine: {'line': b'-- Configuring done\n'}
+[12.687272] (-) TimerEvent: {}
+[12.788104] (-) TimerEvent: {}
+[12.888840] (-) TimerEvent: {}
+[12.939821] (costmap_converter) StdoutLine: {'line': b'-- Generating done\n'}
+[12.945895] (costmap_converter) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter\n'}
+[12.987904] (costmap_converter) CommandEnded: {'returncode': 0}
+[12.990186] (-) TimerEvent: {}
+[12.990568] (costmap_converter) JobProgress: {'identifier': 'costmap_converter', 'progress': 'build'}
+[12.992194] (costmap_converter) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter', '--', '-j6', '-l6'], 'cwd': '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources'), ('USER', 'mw'), ('VSCODE_NLS_CONFIG', '{"locale":"en","osLocale":"en","availableLanguages":{}}'), ('CAMERA_TYPE', 'astraplus'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('HOSTNAME', 'marc-orin'), ('GIT_ASKPASS', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi2/lib64:/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib'), ('BROWSER', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-81663db4-b591-4acc-a0c4-dadb3121f652.sock'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', '1'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/node'), ('USER_UID', '1000'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('_colcon_cd_root', '/root/yahboomcar_ros2_ws/yahboomcar_ws'), ('ROBOT_TYPE', 'x3'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install:/workspaces/isaac_ros-dev/yahboomcar_ws2/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock'), ('_', '/usr/bin/colcon'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('USERNAME', 'admin'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/nvidia/tao:/usr/local/cuda/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/usr/local/share/middleware_profiles/rtps_udp_profile.xml'), ('VSCODE_AMD_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('VSCODE_AGENT_FOLDER', '/root/.vscode-server'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock","/tmp/.X11-unix/X1","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/libgomp.so.1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', ''), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a859f14de.sock'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock'), ('ROS_DOMAIN_ID', '32'), ('AMENT_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 's2'), ('PWD', '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter'), ('PYTHONPATH', '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/robot_pose_publisher:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('USER_GID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/opt/ros/humble')]), 'shell': False}
+[13.076050] (costmap_converter) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[13.080255] (costmap_converter) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_polygons.cpp.o\x1b[0m\n'}
+[13.083209] (costmap_converter) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_lines_convex_hull.cpp.o\x1b[0m\n'}
+[13.090430] (-) TimerEvent: {}
+[13.091485] (costmap_converter) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_dynamic_obstacles/costmap_to_dynamic_obstacles.cpp.o\x1b[0m\n'}
+[13.097021] (costmap_converter) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_lines_ransac.cpp.o\x1b[0m\n'}
+[13.102190] (costmap_converter) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_polygons_concave.cpp.o\x1b[0m\n'}
+[13.190615] (-) TimerEvent: {}
+[13.294619] (-) TimerEvent: {}
+[13.395720] (-) TimerEvent: {}
+[13.497183] (-) TimerEvent: {}
+[13.597939] (-) TimerEvent: {}
+[13.698691] (-) TimerEvent: {}
+[13.799703] (-) TimerEvent: {}
+[13.900647] (-) TimerEvent: {}
+[14.002641] (-) TimerEvent: {}
+[14.104967] (-) TimerEvent: {}
+[14.205758] (-) TimerEvent: {}
+[14.308242] (-) TimerEvent: {}
+[14.411332] (-) TimerEvent: {}
+[14.512131] (-) TimerEvent: {}
+[14.612922] (-) TimerEvent: {}
+[14.714344] (-) TimerEvent: {}
+[14.815077] (-) TimerEvent: {}
+[14.915825] (-) TimerEvent: {}
+[15.016582] (-) TimerEvent: {}
+[15.118882] (-) TimerEvent: {}
+[15.219755] (-) TimerEvent: {}
+[15.321643] (-) TimerEvent: {}
+[15.424163] (-) TimerEvent: {}
+[15.524922] (-) TimerEvent: {}
+[15.626112] (-) TimerEvent: {}
+[15.726880] (-) TimerEvent: {}
+[15.827941] (-) TimerEvent: {}
+[15.831116] (costmap_converter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/src/costmap_to_dynamic_obstacles/costmap_to_dynamic_obstacles.cpp:6\x1b[m\x1b[K:\n'}
+[15.839577] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K-Wcpp\x1b[m\x1b[K]\n'}
+[15.840087] (costmap_converter) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[15.840300] (costmap_converter) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[15.928141] (-) TimerEvent: {}
+[16.030243] (-) TimerEvent: {}
+[16.132706] (-) TimerEvent: {}
+[16.233466] (-) TimerEvent: {}
+[16.334578] (-) TimerEvent: {}
+[16.435383] (-) TimerEvent: {}
+[16.536348] (-) TimerEvent: {}
+[16.637148] (-) TimerEvent: {}
+[16.738843] (-) TimerEvent: {}
+[16.852233] (-) TimerEvent: {}
+[16.953829] (-) TimerEvent: {}
+[17.055604] (-) TimerEvent: {}
+[17.158675] (-) TimerEvent: {}
+[17.261184] (-) TimerEvent: {}
+[17.363749] (-) TimerEvent: {}
+[17.464496] (-) TimerEvent: {}
+[17.565586] (-) TimerEvent: {}
+[17.668660] (-) TimerEvent: {}
+[17.770246] (-) TimerEvent: {}
+[17.872085] (-) TimerEvent: {}
+[17.973277] (-) TimerEvent: {}
+[18.075170] (-) TimerEvent: {}
+[18.177239] (-) TimerEvent: {}
+[18.278936] (-) TimerEvent: {}
+[18.380668] (-) TimerEvent: {}
+[18.482992] (-) TimerEvent: {}
+[18.584716] (-) TimerEvent: {}
+[18.686426] (-) TimerEvent: {}
+[18.788172] (-) TimerEvent: {}
+[18.892072] (-) TimerEvent: {}
+[18.993681] (-) TimerEvent: {}
+[19.095171] (-) TimerEvent: {}
+[19.196348] (-) TimerEvent: {}
+[19.298256] (-) TimerEvent: {}
+[19.402807] (-) TimerEvent: {}
+[19.509546] (-) TimerEvent: {}
+[19.611145] (-) TimerEvent: {}
+[19.713098] (-) TimerEvent: {}
+[19.814844] (-) TimerEvent: {}
+[19.916691] (-) TimerEvent: {}
+[20.018312] (-) TimerEvent: {}
+[20.120154] (-) TimerEvent: {}
+[20.221858] (-) TimerEvent: {}
+[20.324336] (-) TimerEvent: {}
+[20.426850] (-) TimerEvent: {}
+[20.528796] (-) TimerEvent: {}
+[20.630182] (-) TimerEvent: {}
+[20.732380] (-) TimerEvent: {}
+[20.833519] (-) TimerEvent: {}
+[20.934286] (-) TimerEvent: {}
+[21.036032] (-) TimerEvent: {}
+[21.141237] (-) TimerEvent: {}
+[21.245846] (-) TimerEvent: {}
+[21.346803] (-) TimerEvent: {}
+[21.447595] (-) TimerEvent: {}
+[21.548334] (-) TimerEvent: {}
+[21.649090] (-) TimerEvent: {}
+[21.750758] (-) TimerEvent: {}
+[21.851677] (-) TimerEvent: {}
+[21.957337] (-) TimerEvent: {}
+[22.058317] (-) TimerEvent: {}
+[22.159083] (-) TimerEvent: {}
+[22.260761] (-) TimerEvent: {}
+[22.362434] (-) TimerEvent: {}
+[22.463193] (-) TimerEvent: {}
+[22.565417] (-) TimerEvent: {}
+[22.666391] (-) TimerEvent: {}
+[22.769802] (-) TimerEvent: {}
+[22.871717] (-) TimerEvent: {}
+[22.973624] (-) TimerEvent: {}
+[23.075814] (-) TimerEvent: {}
+[23.176596] (-) TimerEvent: {}
+[23.277513] (-) TimerEvent: {}
+[23.378489] (-) TimerEvent: {}
+[23.482302] (-) TimerEvent: {}
+[23.583066] (-) TimerEvent: {}
+[23.686589] (-) TimerEvent: {}
+[23.791733] (-) TimerEvent: {}
+[23.892954] (-) TimerEvent: {}
+[23.993722] (-) TimerEvent: {}
+[24.094507] (-) TimerEvent: {}
+[24.195286] (-) TimerEvent: {}
+[24.299743] (-) TimerEvent: {}
+[24.402918] (-) TimerEvent: {}
+[24.503894] (-) TimerEvent: {}
+[24.604910] (-) TimerEvent: {}
+[24.707051] (-) TimerEvent: {}
+[24.807825] (-) TimerEvent: {}
+[24.908563] (-) TimerEvent: {}
+[25.013064] (-) TimerEvent: {}
+[25.113837] (-) TimerEvent: {}
+[25.215720] (-) TimerEvent: {}
+[25.316448] (-) TimerEvent: {}
+[25.417274] (-) TimerEvent: {}
+[25.518271] (-) TimerEvent: {}
+[25.621691] (-) TimerEvent: {}
+[25.723178] (-) TimerEvent: {}
+[25.826853] (-) TimerEvent: {}
+[25.929344] (-) TimerEvent: {}
+[26.031026] (-) TimerEvent: {}
+[26.132746] (-) TimerEvent: {}
+[26.239725] (-) TimerEvent: {}
+[26.342403] (-) TimerEvent: {}
+[26.447736] (-) TimerEvent: {}
+[26.549372] (-) TimerEvent: {}
+[26.652516] (-) TimerEvent: {}
+[26.753580] (-) TimerEvent: {}
+[26.857521] (-) TimerEvent: {}
+[26.958593] (-) TimerEvent: {}
+[27.064536] (-) TimerEvent: {}
+[27.165331] (-) TimerEvent: {}
+[27.266983] (-) TimerEvent: {}
+[27.368675] (-) TimerEvent: {}
+[27.470493] (-) TimerEvent: {}
+[27.572330] (-) TimerEvent: {}
+[27.673542] (-) TimerEvent: {}
+[27.775014] (-) TimerEvent: {}
+[27.854341] (costmap_converter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[27.855793] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[27.856065] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[27.856238] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[27.856396] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[27.856543] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[27.856718] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[27.856862] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[27.857000] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[27.857139] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[27.857273] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[27.857407] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:46\x1b[m\x1b[K,\n'}
+[27.857566] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_to_lines_ransac.h:42\x1b[m\x1b[K,\n'}
+[27.857719] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/src/costmap_to_lines_ransac.cpp:39\x1b[m\x1b[K:\n'}
+[27.857860] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::GenericRate<std::chrono::_V2::system_clock>::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[27.858019] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktoo many arguments for format [\x1b[01;35m\x1b[K-Wformat-extra-args\x1b[m\x1b[K]\n'}
+[27.858164] (costmap_converter) StderrLine: {'line': b'  197 |         RCLCPP_DEBUG(nh_->get_logger(), \x1b[01;35m\x1b[K"costmap_converter"\x1b[m\x1b[K, "Spinning up a thread for the CostmapToPolygons plugin");\n'}
+[27.858303] (costmap_converter) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.875263] (-) TimerEvent: {}
+[27.926991] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const string&, rclcpp::Node::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[27.928267] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kconst string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[27.928604] (costmap_converter) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), \x1b[01;35m\x1b[K"CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded."\x1b[m\x1b[K, plugin_name);\n'}
+[27.929941] (costmap_converter) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.930244] (costmap_converter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_to_lines_ransac.h:42\x1b[m\x1b[K,\n'}
+[27.930412] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/src/costmap_to_lines_ransac.cpp:39\x1b[m\x1b[K:\n'}
+[27.930570] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[27.930717] (costmap_converter) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles \x1b[01;36m\x1b[K%s\x1b[m\x1b[K loaded.", plugin_name);\n'}
+[27.930862] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                      \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[27.931000] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[27.931135] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[27.975478] (-) TimerEvent: {}
+[28.062651] (costmap_converter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[28.063190] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[28.063381] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[28.069374] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[28.070267] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[28.070501] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[28.070670] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[28.070827] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[28.070974] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[28.071123] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[28.071261] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[28.071400] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_to_polygons.h:42\x1b[m\x1b[K,\n'}
+[28.071604] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/src/costmap_to_polygons.cpp:39\x1b[m\x1b[K:\n'}
+[28.071760] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::GenericRate<std::chrono::_V2::system_clock>::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[28.071912] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktoo many arguments for format [\x1b[01;35m\x1b[K-Wformat-extra-args\x1b[m\x1b[K]\n'}
+[28.072054] (costmap_converter) StderrLine: {'line': b'  197 |         RCLCPP_DEBUG(nh_->get_logger(), \x1b[01;35m\x1b[K"costmap_converter"\x1b[m\x1b[K, "Spinning up a thread for the CostmapToPolygons plugin");\n'}
+[28.072192] (costmap_converter) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[28.078391] (-) TimerEvent: {}
+[28.146604] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const string&, rclcpp::Node::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[28.147196] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kconst string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[28.147414] (costmap_converter) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), \x1b[01;35m\x1b[K"CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded."\x1b[m\x1b[K, plugin_name);\n'}
+[28.148932] (costmap_converter) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[28.149228] (costmap_converter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_to_polygons.h:43\x1b[m\x1b[K,\n'}
+[28.149403] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/src/costmap_to_polygons.cpp:39\x1b[m\x1b[K:\n'}
+[28.149560] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[28.149712] (costmap_converter) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles \x1b[01;36m\x1b[K%s\x1b[m\x1b[K loaded.", plugin_name);\n'}
+[28.149856] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                      \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[28.150033] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[28.150196] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[28.178595] (-) TimerEvent: {}
+[28.279341] (-) TimerEvent: {}
+[28.380157] (-) TimerEvent: {}
+[28.463640] (costmap_converter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[28.464405] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[28.465393] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[28.465579] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[28.465732] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[28.465883] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[28.466023] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[28.466160] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[28.466299] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[28.466446] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[28.470442] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[28.470838] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:46\x1b[m\x1b[K,\n'}
+[28.471017] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_to_dynamic_obstacles/costmap_to_dynamic_obstacles.h:47\x1b[m\x1b[K,\n'}
+[28.471173] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/src/costmap_to_dynamic_obstacles/costmap_to_dynamic_obstacles.cpp:1\x1b[m\x1b[K:\n'}
+[28.471318] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::GenericRate<std::chrono::_V2::system_clock>::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[28.471519] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktoo many arguments for format [\x1b[01;35m\x1b[K-Wformat-extra-args\x1b[m\x1b[K]\n'}
+[28.471724] (costmap_converter) StderrLine: {'line': b'  197 |         RCLCPP_DEBUG(nh_->get_logger(), \x1b[01;35m\x1b[K"costmap_converter"\x1b[m\x1b[K, "Spinning up a thread for the CostmapToPolygons plugin");\n'}
+[28.471870] (costmap_converter) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[28.480481] (-) TimerEvent: {}
+[28.552960] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const string&, rclcpp::Node::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[28.553563] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kconst string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[28.553775] (costmap_converter) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), \x1b[01;35m\x1b[K"CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded."\x1b[m\x1b[K, plugin_name);\n'}
+[28.553940] (costmap_converter) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[28.554132] (costmap_converter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_to_dynamic_obstacles/costmap_to_dynamic_obstacles.h:47\x1b[m\x1b[K,\n'}
+[28.554292] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/src/costmap_to_dynamic_obstacles/costmap_to_dynamic_obstacles.cpp:1\x1b[m\x1b[K:\n'}
+[28.554441] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[28.554585] (costmap_converter) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles \x1b[01;36m\x1b[K%s\x1b[m\x1b[K loaded.", plugin_name);\n'}
+[28.554723] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                      \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[28.554862] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[28.555000] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[28.580625] (-) TimerEvent: {}
+[28.656118] (costmap_converter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[28.656667] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[28.656880] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[28.657041] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[28.657199] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[28.657347] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[28.657489] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[28.657628] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[28.657770] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[28.657910] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[28.658045] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[28.658177] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:46\x1b[m\x1b[K,\n'}
+[28.658337] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_to_lines_convex_hull.h:42\x1b[m\x1b[K,\n'}
+[28.658475] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/src/costmap_to_lines_convex_hull.cpp:39\x1b[m\x1b[K:\n'}
+[28.658612] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::GenericRate<std::chrono::_V2::system_clock>::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[28.658782] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktoo many arguments for format [\x1b[01;35m\x1b[K-Wformat-extra-args\x1b[m\x1b[K]\n'}
+[28.658931] (costmap_converter) StderrLine: {'line': b'  197 |         RCLCPP_DEBUG(nh_->get_logger(), \x1b[01;35m\x1b[K"costmap_converter"\x1b[m\x1b[K, "Spinning up a thread for the CostmapToPolygons plugin");\n'}
+[28.659068] (costmap_converter) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[28.680924] (-) TimerEvent: {}
+[28.730448] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const string&, rclcpp::Node::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[28.731025] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kconst string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[28.731241] (costmap_converter) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), \x1b[01;35m\x1b[K"CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded."\x1b[m\x1b[K, plugin_name);\n'}
+[28.731414] (costmap_converter) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[28.731610] (costmap_converter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_to_lines_convex_hull.h:42\x1b[m\x1b[K,\n'}
+[28.731776] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/src/costmap_to_lines_convex_hull.cpp:39\x1b[m\x1b[K:\n'}
+[28.731934] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[28.732082] (costmap_converter) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles \x1b[01;36m\x1b[K%s\x1b[m\x1b[K loaded.", plugin_name);\n'}
+[28.732223] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                      \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[28.732364] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[28.732500] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[28.781135] (-) TimerEvent: {}
+[28.875222] (costmap_converter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[28.876559] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[28.879487] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[28.881215] (-) TimerEvent: {}
+[28.882846] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[28.883936] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[28.884782] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[28.885540] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[28.886330] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[28.888022] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[28.888941] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[28.889726] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[28.891009] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_to_polygons.h:42\x1b[m\x1b[K,\n'}
+[28.892271] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_to_polygons_concave.h:42\x1b[m\x1b[K,\n'}
+[28.893191] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/src/costmap_to_polygons_concave.cpp:39\x1b[m\x1b[K:\n'}
+[28.893983] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::GenericRate<std::chrono::_V2::system_clock>::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[28.895138] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktoo many arguments for format [\x1b[01;35m\x1b[K-Wformat-extra-args\x1b[m\x1b[K]\n'}
+[28.896095] (costmap_converter) StderrLine: {'line': b'  197 |         RCLCPP_DEBUG(nh_->get_logger(), \x1b[01;35m\x1b[K"costmap_converter"\x1b[m\x1b[K, "Spinning up a thread for the CostmapToPolygons plugin");\n'}
+[28.896953] (costmap_converter) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[28.966610] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const string&, rclcpp::Node::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[28.971997] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kconst string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[28.973590] (costmap_converter) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), \x1b[01;35m\x1b[K"CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded."\x1b[m\x1b[K, plugin_name);\n'}
+[28.973892] (costmap_converter) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[28.975192] (costmap_converter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_to_polygons.h:43\x1b[m\x1b[K,\n'}
+[28.975460] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_to_polygons_concave.h:42\x1b[m\x1b[K,\n'}
+[28.975660] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/src/costmap_to_polygons_concave.cpp:39\x1b[m\x1b[K:\n'}
+[28.975821] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[28.975970] (costmap_converter) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles \x1b[01;36m\x1b[K%s\x1b[m\x1b[K loaded.", plugin_name);\n'}
+[28.978145] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                      \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[28.978377] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[28.978571] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[28.981334] (-) TimerEvent: {}
+[29.081975] (-) TimerEvent: {}
+[29.182754] (-) TimerEvent: {}
+[29.283479] (-) TimerEvent: {}
+[29.388253] (-) TimerEvent: {}
+[29.495399] (-) TimerEvent: {}
+[29.596185] (-) TimerEvent: {}
+[29.697100] (-) TimerEvent: {}
+[29.797792] (-) TimerEvent: {}
+[29.899014] (-) TimerEvent: {}
+[29.999914] (-) TimerEvent: {}
+[30.101303] (-) TimerEvent: {}
+[30.202010] (-) TimerEvent: {}
+[30.322808] (-) TimerEvent: {}
+[30.423812] (-) TimerEvent: {}
+[30.524562] (-) TimerEvent: {}
+[30.625294] (-) TimerEvent: {}
+[30.726044] (-) TimerEvent: {}
+[30.826796] (-) TimerEvent: {}
+[30.932457] (-) TimerEvent: {}
+[31.036194] (-) TimerEvent: {}
+[31.137136] (-) TimerEvent: {}
+[31.238904] (-) TimerEvent: {}
+[31.339719] (-) TimerEvent: {}
+[31.440456] (-) TimerEvent: {}
+[31.543713] (-) TimerEvent: {}
+[31.645324] (-) TimerEvent: {}
+[31.747595] (-) TimerEvent: {}
+[31.848376] (-) TimerEvent: {}
+[31.949150] (-) TimerEvent: {}
+[32.050395] (-) TimerEvent: {}
+[32.154784] (-) TimerEvent: {}
+[32.262757] (-) TimerEvent: {}
+[32.363602] (-) TimerEvent: {}
+[32.468667] (-) TimerEvent: {}
+[32.569448] (-) TimerEvent: {}
+[32.670179] (-) TimerEvent: {}
+[32.771027] (-) TimerEvent: {}
+[32.872386] (-) TimerEvent: {}
+[32.973185] (-) TimerEvent: {}
+[33.074989] (-) TimerEvent: {}
+[33.175724] (-) TimerEvent: {}
+[33.276487] (-) TimerEvent: {}
+[33.377310] (-) TimerEvent: {}
+[33.478108] (-) TimerEvent: {}
+[33.578829] (-) TimerEvent: {}
+[33.679674] (-) TimerEvent: {}
+[33.780672] (-) TimerEvent: {}
+[33.881920] (-) TimerEvent: {}
+[33.982879] (-) TimerEvent: {}
+[34.085322] (-) TimerEvent: {}
+[34.186094] (-) TimerEvent: {}
+[34.286953] (-) TimerEvent: {}
+[34.388715] (-) TimerEvent: {}
+[34.489622] (-) TimerEvent: {}
+[34.592925] (-) TimerEvent: {}
+[34.694660] (-) TimerEvent: {}
+[34.797661] (-) TimerEvent: {}
+[34.899159] (-) TimerEvent: {}
+[35.000987] (-) TimerEvent: {}
+[35.105372] (-) TimerEvent: {}
+[35.208771] (-) TimerEvent: {}
+[35.312048] (-) TimerEvent: {}
+[35.413145] (-) TimerEvent: {}
+[35.514253] (-) TimerEvent: {}
+[35.615701] (-) TimerEvent: {}
+[35.720154] (-) TimerEvent: {}
+[35.821316] (-) TimerEvent: {}
+[35.922939] (-) TimerEvent: {}
+[36.027443] (-) TimerEvent: {}
+[36.128538] (-) TimerEvent: {}
+[36.231409] (-) TimerEvent: {}
+[36.332457] (-) TimerEvent: {}
+[36.439955] (-) TimerEvent: {}
+[36.541029] (-) TimerEvent: {}
+[36.647284] (-) TimerEvent: {}
+[36.748714] (-) TimerEvent: {}
+[36.850287] (-) TimerEvent: {}
+[36.951950] (-) TimerEvent: {}
+[37.053001] (-) TimerEvent: {}
+[37.153752] (-) TimerEvent: {}
+[37.254534] (-) TimerEvent: {}
+[37.355302] (-) TimerEvent: {}
+[37.456047] (-) TimerEvent: {}
+[37.557732] (-) TimerEvent: {}
+[37.659289] (-) TimerEvent: {}
+[37.760819] (-) TimerEvent: {}
+[37.874064] (-) TimerEvent: {}
+[37.974862] (-) TimerEvent: {}
+[38.075639] (-) TimerEvent: {}
+[38.176397] (-) TimerEvent: {}
+[38.278453] (-) TimerEvent: {}
+[38.383104] (-) TimerEvent: {}
+[38.484712] (-) TimerEvent: {}
+[38.586637] (-) TimerEvent: {}
+[38.688240] (-) TimerEvent: {}
+[38.789803] (-) TimerEvent: {}
+[38.892855] (-) TimerEvent: {}
+[38.994448] (-) TimerEvent: {}
+[39.098341] (-) TimerEvent: {}
+[39.199093] (-) TimerEvent: {}
+[39.302849] (-) TimerEvent: {}
+[39.405280] (-) TimerEvent: {}
+[39.506332] (-) TimerEvent: {}
+[39.607105] (-) TimerEvent: {}
+[39.708085] (-) TimerEvent: {}
+[39.809278] (-) TimerEvent: {}
+[39.910039] (-) TimerEvent: {}
+[40.011107] (-) TimerEvent: {}
+[40.112444] (-) TimerEvent: {}
+[40.213760] (-) TimerEvent: {}
+[40.314746] (-) TimerEvent: {}
+[40.415651] (-) TimerEvent: {}
+[40.516420] (-) TimerEvent: {}
+[40.617592] (-) TimerEvent: {}
+[40.718374] (-) TimerEvent: {}
+[40.819148] (-) TimerEvent: {}
+[40.919936] (-) TimerEvent: {}
+[41.022353] (-) TimerEvent: {}
+[41.123119] (-) TimerEvent: {}
+[41.139756] (costmap_converter) StdoutLine: {'line': b'[ 36%] \x1b[32m\x1b[1mLinking CXX static library ../lib/libgtest.a\x1b[0m\n'}
+[41.217041] (costmap_converter) StdoutLine: {'line': b'[ 36%] Built target gtest\n'}
+[41.223427] (-) TimerEvent: {}
+[41.324428] (-) TimerEvent: {}
+[41.425181] (-) TimerEvent: {}
+[41.526048] (-) TimerEvent: {}
+[41.626793] (-) TimerEvent: {}
+[41.727594] (-) TimerEvent: {}
+[41.828298] (-) TimerEvent: {}
+[41.929061] (-) TimerEvent: {}
+[42.029854] (-) TimerEvent: {}
+[42.130620] (-) TimerEvent: {}
+[42.231643] (-) TimerEvent: {}
+[42.332368] (-) TimerEvent: {}
+[42.433092] (-) TimerEvent: {}
+[42.533867] (-) TimerEvent: {}
+[42.634600] (-) TimerEvent: {}
+[42.735309] (-) TimerEvent: {}
+[42.836078] (-) TimerEvent: {}
+[42.936817] (-) TimerEvent: {}
+[43.037553] (-) TimerEvent: {}
+[43.138697] (-) TimerEvent: {}
+[43.240067] (-) TimerEvent: {}
+[43.340838] (-) TimerEvent: {}
+[43.441671] (-) TimerEvent: {}
+[43.542462] (-) TimerEvent: {}
+[43.643256] (-) TimerEvent: {}
+[43.744092] (-) TimerEvent: {}
+[43.844826] (-) TimerEvent: {}
+[43.945575] (-) TimerEvent: {}
+[44.046385] (-) TimerEvent: {}
+[44.147137] (-) TimerEvent: {}
+[44.247966] (-) TimerEvent: {}
+[44.348700] (-) TimerEvent: {}
+[44.449428] (-) TimerEvent: {}
+[44.550195] (-) TimerEvent: {}
+[44.651065] (-) TimerEvent: {}
+[44.752305] (-) TimerEvent: {}
+[44.853152] (-) TimerEvent: {}
+[44.953867] (-) TimerEvent: {}
+[45.054624] (-) TimerEvent: {}
+[45.155376] (-) TimerEvent: {}
+[45.256186] (-) TimerEvent: {}
+[45.356951] (-) TimerEvent: {}
+[45.457691] (-) TimerEvent: {}
+[45.558424] (-) TimerEvent: {}
+[45.659212] (-) TimerEvent: {}
+[45.760048] (-) TimerEvent: {}
+[45.861127] (-) TimerEvent: {}
+[45.961997] (-) TimerEvent: {}
+[46.062832] (-) TimerEvent: {}
+[46.163565] (-) TimerEvent: {}
+[46.264290] (-) TimerEvent: {}
+[46.365082] (-) TimerEvent: {}
+[46.465825] (-) TimerEvent: {}
+[46.566725] (-) TimerEvent: {}
+[46.667528] (-) TimerEvent: {}
+[46.768280] (-) TimerEvent: {}
+[46.869554] (-) TimerEvent: {}
+[46.970307] (-) TimerEvent: {}
+[47.071189] (-) TimerEvent: {}
+[47.172020] (-) TimerEvent: {}
+[47.272838] (-) TimerEvent: {}
+[47.373588] (-) TimerEvent: {}
+[47.474350] (-) TimerEvent: {}
+[47.575114] (-) TimerEvent: {}
+[47.675922] (-) TimerEvent: {}
+[47.776999] (-) TimerEvent: {}
+[47.877787] (-) TimerEvent: {}
+[47.978564] (-) TimerEvent: {}
+[48.079288] (-) TimerEvent: {}
+[48.180042] (-) TimerEvent: {}
+[48.280811] (-) TimerEvent: {}
+[48.381606] (-) TimerEvent: {}
+[48.482355] (-) TimerEvent: {}
+[48.583097] (-) TimerEvent: {}
+[48.683847] (-) TimerEvent: {}
+[48.784604] (-) TimerEvent: {}
+[48.885374] (-) TimerEvent: {}
+[48.986115] (-) TimerEvent: {}
+[49.086883] (-) TimerEvent: {}
+[49.187720] (-) TimerEvent: {}
+[49.288465] (-) TimerEvent: {}
+[49.389306] (-) TimerEvent: {}
+[49.490041] (-) TimerEvent: {}
+[49.590806] (-) TimerEvent: {}
+[49.691594] (-) TimerEvent: {}
+[49.792364] (-) TimerEvent: {}
+[49.893100] (-) TimerEvent: {}
+[49.993934] (-) TimerEvent: {}
+[50.094671] (-) TimerEvent: {}
+[50.195407] (-) TimerEvent: {}
+[50.296186] (-) TimerEvent: {}
+[50.397399] (-) TimerEvent: {}
+[50.498111] (-) TimerEvent: {}
+[50.598844] (-) TimerEvent: {}
+[50.699569] (-) TimerEvent: {}
+[50.800364] (-) TimerEvent: {}
+[50.901171] (-) TimerEvent: {}
+[51.002018] (-) TimerEvent: {}
+[51.103024] (-) TimerEvent: {}
+[51.203877] (-) TimerEvent: {}
+[51.304672] (-) TimerEvent: {}
+[51.405557] (-) TimerEvent: {}
+[51.506283] (-) TimerEvent: {}
+[51.607119] (-) TimerEvent: {}
+[51.708166] (-) TimerEvent: {}
+[51.808990] (-) TimerEvent: {}
+[51.909736] (-) TimerEvent: {}
+[52.010498] (-) TimerEvent: {}
+[52.111243] (-) TimerEvent: {}
+[52.211998] (-) TimerEvent: {}
+[52.312739] (-) TimerEvent: {}
+[52.413476] (-) TimerEvent: {}
+[52.514244] (-) TimerEvent: {}
+[52.614977] (-) TimerEvent: {}
+[52.715709] (-) TimerEvent: {}
+[52.816435] (-) TimerEvent: {}
+[52.917146] (-) TimerEvent: {}
+[53.017857] (-) TimerEvent: {}
+[53.118621] (-) TimerEvent: {}
+[53.220176] (-) TimerEvent: {}
+[53.321426] (-) TimerEvent: {}
+[53.422216] (-) TimerEvent: {}
+[53.523000] (-) TimerEvent: {}
+[53.623719] (-) TimerEvent: {}
+[53.724448] (-) TimerEvent: {}
+[53.825183] (-) TimerEvent: {}
+[53.925953] (-) TimerEvent: {}
+[54.026714] (-) TimerEvent: {}
+[54.127502] (-) TimerEvent: {}
+[54.229071] (-) TimerEvent: {}
+[54.329797] (-) TimerEvent: {}
+[54.430534] (-) TimerEvent: {}
+[54.531264] (-) TimerEvent: {}
+[54.632155] (-) TimerEvent: {}
+[54.733067] (-) TimerEvent: {}
+[54.834043] (-) TimerEvent: {}
+[54.934795] (-) TimerEvent: {}
+[55.035714] (-) TimerEvent: {}
+[55.136494] (-) TimerEvent: {}
+[55.237375] (-) TimerEvent: {}
+[55.338577] (-) TimerEvent: {}
+[55.439740] (-) TimerEvent: {}
+[55.540896] (-) TimerEvent: {}
+[55.641841] (-) TimerEvent: {}
+[55.742611] (-) TimerEvent: {}
+[55.843403] (-) TimerEvent: {}
+[55.944144] (-) TimerEvent: {}
+[56.044874] (-) TimerEvent: {}
+[56.145584] (-) TimerEvent: {}
+[56.246381] (-) TimerEvent: {}
+[56.347092] (-) TimerEvent: {}
+[56.447900] (-) TimerEvent: {}
+[56.548739] (-) TimerEvent: {}
+[56.649634] (-) TimerEvent: {}
+[56.750688] (-) TimerEvent: {}
+[56.851512] (-) TimerEvent: {}
+[56.952307] (-) TimerEvent: {}
+[57.053040] (-) TimerEvent: {}
+[57.153839] (-) TimerEvent: {}
+[57.254745] (-) TimerEvent: {}
+[57.355522] (-) TimerEvent: {}
+[57.456295] (-) TimerEvent: {}
+[57.557025] (-) TimerEvent: {}
+[57.657775] (-) TimerEvent: {}
+[57.758512] (-) TimerEvent: {}
+[57.859264] (-) TimerEvent: {}
+[57.960008] (-) TimerEvent: {}
+[58.060777] (-) TimerEvent: {}
+[58.161568] (-) TimerEvent: {}
+[58.262301] (-) TimerEvent: {}
+[58.363072] (-) TimerEvent: {}
+[58.463922] (-) TimerEvent: {}
+[58.564647] (-) TimerEvent: {}
+[58.665402] (-) TimerEvent: {}
+[58.766204] (-) TimerEvent: {}
+[58.866964] (-) TimerEvent: {}
+[58.967684] (-) TimerEvent: {}
+[59.068400] (-) TimerEvent: {}
+[59.169142] (-) TimerEvent: {}
+[59.269887] (-) TimerEvent: {}
+[59.370710] (-) TimerEvent: {}
+[59.471446] (-) TimerEvent: {}
+[59.572222] (-) TimerEvent: {}
+[59.673191] (-) TimerEvent: {}
+[59.773967] (-) TimerEvent: {}
+[59.874700] (-) TimerEvent: {}
+[59.975434] (-) TimerEvent: {}
+[60.076190] (-) TimerEvent: {}
+[60.177011] (-) TimerEvent: {}
+[60.277743] (-) TimerEvent: {}
+[60.378472] (-) TimerEvent: {}
+[60.479190] (-) TimerEvent: {}
+[60.579929] (-) TimerEvent: {}
+[60.680631] (-) TimerEvent: {}
+[60.781424] (-) TimerEvent: {}
+[60.882135] (-) TimerEvent: {}
+[60.982880] (-) TimerEvent: {}
+[61.083954] (-) TimerEvent: {}
+[61.184680] (-) TimerEvent: {}
+[61.285764] (-) TimerEvent: {}
+[61.386499] (-) TimerEvent: {}
+[61.487266] (-) TimerEvent: {}
+[61.588074] (-) TimerEvent: {}
+[61.688998] (-) TimerEvent: {}
+[61.789772] (-) TimerEvent: {}
+[61.890600] (-) TimerEvent: {}
+[61.991345] (-) TimerEvent: {}
+[62.092122] (-) TimerEvent: {}
+[62.192874] (-) TimerEvent: {}
+[62.293741] (-) TimerEvent: {}
+[62.394541] (-) TimerEvent: {}
+[62.495376] (-) TimerEvent: {}
+[62.596149] (-) TimerEvent: {}
+[62.697097] (-) TimerEvent: {}
+[62.797846] (-) TimerEvent: {}
+[62.898621] (-) TimerEvent: {}
+[62.999399] (-) TimerEvent: {}
+[63.100251] (-) TimerEvent: {}
+[63.201034] (-) TimerEvent: {}
+[63.301894] (-) TimerEvent: {}
+[63.402667] (-) TimerEvent: {}
+[63.503401] (-) TimerEvent: {}
+[63.604192] (-) TimerEvent: {}
+[63.705097] (-) TimerEvent: {}
+[63.805979] (-) TimerEvent: {}
+[63.906755] (-) TimerEvent: {}
+[64.007644] (-) TimerEvent: {}
+[64.108395] (-) TimerEvent: {}
+[64.209123] (-) TimerEvent: {}
+[64.309912] (-) TimerEvent: {}
+[64.410688] (-) TimerEvent: {}
+[64.511447] (-) TimerEvent: {}
+[64.612200] (-) TimerEvent: {}
+[64.712984] (-) TimerEvent: {}
+[64.813810] (-) TimerEvent: {}
+[64.915057] (-) TimerEvent: {}
+[65.016378] (-) TimerEvent: {}
+[65.117120] (-) TimerEvent: {}
+[65.217986] (-) TimerEvent: {}
+[65.318754] (-) TimerEvent: {}
+[65.419691] (-) TimerEvent: {}
+[65.520434] (-) TimerEvent: {}
+[65.621255] (-) TimerEvent: {}
+[65.722030] (-) TimerEvent: {}
+[65.822854] (-) TimerEvent: {}
+[65.923632] (-) TimerEvent: {}
+[66.024424] (-) TimerEvent: {}
+[66.125315] (-) TimerEvent: {}
+[66.226040] (-) TimerEvent: {}
+[66.326770] (-) TimerEvent: {}
+[66.427596] (-) TimerEvent: {}
+[66.528344] (-) TimerEvent: {}
+[66.629107] (-) TimerEvent: {}
+[66.729844] (-) TimerEvent: {}
+[66.830605] (-) TimerEvent: {}
+[66.931317] (-) TimerEvent: {}
+[67.032061] (-) TimerEvent: {}
+[67.132780] (-) TimerEvent: {}
+[67.233499] (-) TimerEvent: {}
+[67.334265] (-) TimerEvent: {}
+[67.435067] (-) TimerEvent: {}
+[67.535910] (-) TimerEvent: {}
+[67.636653] (-) TimerEvent: {}
+[67.737386] (-) TimerEvent: {}
+[67.838092] (-) TimerEvent: {}
+[67.938821] (-) TimerEvent: {}
+[68.039896] (-) TimerEvent: {}
+[68.140621] (-) TimerEvent: {}
+[68.241370] (-) TimerEvent: {}
+[68.342117] (-) TimerEvent: {}
+[68.442864] (-) TimerEvent: {}
+[68.543648] (-) TimerEvent: {}
+[68.644385] (-) TimerEvent: {}
+[68.745121] (-) TimerEvent: {}
+[68.845876] (-) TimerEvent: {}
+[68.946700] (-) TimerEvent: {}
+[69.047469] (-) TimerEvent: {}
+[69.148385] (-) TimerEvent: {}
+[69.249236] (-) TimerEvent: {}
+[69.350031] (-) TimerEvent: {}
+[69.450872] (-) TimerEvent: {}
+[69.551670] (-) TimerEvent: {}
+[69.653836] (-) TimerEvent: {}
+[69.754692] (-) TimerEvent: {}
+[69.855414] (-) TimerEvent: {}
+[69.956193] (-) TimerEvent: {}
+[70.056944] (-) TimerEvent: {}
+[70.157689] (-) TimerEvent: {}
+[70.258394] (-) TimerEvent: {}
+[70.359139] (-) TimerEvent: {}
+[70.459871] (-) TimerEvent: {}
+[70.560591] (-) TimerEvent: {}
+[70.661328] (-) TimerEvent: {}
+[70.762094] (-) TimerEvent: {}
+[70.862806] (-) TimerEvent: {}
+[70.963574] (-) TimerEvent: {}
+[71.064337] (-) TimerEvent: {}
+[71.165043] (-) TimerEvent: {}
+[71.265765] (-) TimerEvent: {}
+[71.366475] (-) TimerEvent: {}
+[71.467175] (-) TimerEvent: {}
+[71.567926] (-) TimerEvent: {}
+[71.668696] (-) TimerEvent: {}
+[71.769657] (-) TimerEvent: {}
+[71.870430] (-) TimerEvent: {}
+[71.971158] (-) TimerEvent: {}
+[72.071972] (-) TimerEvent: {}
+[72.172695] (-) TimerEvent: {}
+[72.273435] (-) TimerEvent: {}
+[72.374162] (-) TimerEvent: {}
+[72.474889] (-) TimerEvent: {}
+[72.575958] (-) TimerEvent: {}
+[72.676815] (-) TimerEvent: {}
+[72.777609] (-) TimerEvent: {}
+[72.878359] (-) TimerEvent: {}
+[72.979124] (-) TimerEvent: {}
+[73.079946] (-) TimerEvent: {}
+[73.180691] (-) TimerEvent: {}
+[73.281612] (-) TimerEvent: {}
+[73.382453] (-) TimerEvent: {}
+[73.483339] (-) TimerEvent: {}
+[73.584054] (-) TimerEvent: {}
+[73.684867] (-) TimerEvent: {}
+[73.785666] (-) TimerEvent: {}
+[73.886465] (-) TimerEvent: {}
+[73.987291] (-) TimerEvent: {}
+[74.088065] (-) TimerEvent: {}
+[74.188808] (-) TimerEvent: {}
+[74.289546] (-) TimerEvent: {}
+[74.390295] (-) TimerEvent: {}
+[74.491033] (-) TimerEvent: {}
+[74.591839] (-) TimerEvent: {}
+[74.692588] (-) TimerEvent: {}
+[74.793362] (-) TimerEvent: {}
+[74.894128] (-) TimerEvent: {}
+[74.994876] (-) TimerEvent: {}
+[75.095645] (-) TimerEvent: {}
+[75.196376] (-) TimerEvent: {}
+[75.297117] (-) TimerEvent: {}
+[75.397868] (-) TimerEvent: {}
+[75.498594] (-) TimerEvent: {}
+[75.599884] (-) TimerEvent: {}
+[75.700941] (-) TimerEvent: {}
+[75.801877] (-) TimerEvent: {}
+[75.902605] (-) TimerEvent: {}
+[76.003352] (-) TimerEvent: {}
+[76.105802] (-) TimerEvent: {}
+[76.206555] (-) TimerEvent: {}
+[76.307312] (-) TimerEvent: {}
+[76.408160] (-) TimerEvent: {}
+[76.509378] (-) TimerEvent: {}
+[76.610201] (-) TimerEvent: {}
+[76.710965] (-) TimerEvent: {}
+[76.811732] (-) TimerEvent: {}
+[76.912474] (-) TimerEvent: {}
+[77.013187] (-) TimerEvent: {}
+[77.113896] (-) TimerEvent: {}
+[77.214583] (-) TimerEvent: {}
+[77.315293] (-) TimerEvent: {}
+[77.416073] (-) TimerEvent: {}
+[77.452259] (costmap_converter) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_dynamic_obstacles/multitarget_tracker/HungarianAlg.cpp.o\x1b[0m\n'}
+[77.516250] (-) TimerEvent: {}
+[77.616991] (-) TimerEvent: {}
+[77.717739] (-) TimerEvent: {}
+[77.818478] (-) TimerEvent: {}
+[77.919229] (-) TimerEvent: {}
+[78.019990] (-) TimerEvent: {}
+[78.120872] (-) TimerEvent: {}
+[78.221588] (-) TimerEvent: {}
+[78.322344] (-) TimerEvent: {}
+[78.423085] (-) TimerEvent: {}
+[78.523891] (-) TimerEvent: {}
+[78.624616] (-) TimerEvent: {}
+[78.725350] (-) TimerEvent: {}
+[78.826151] (-) TimerEvent: {}
+[78.926935] (-) TimerEvent: {}
+[79.027697] (-) TimerEvent: {}
+[79.128476] (-) TimerEvent: {}
+[79.229269] (-) TimerEvent: {}
+[79.330004] (-) TimerEvent: {}
+[79.430757] (-) TimerEvent: {}
+[79.531514] (-) TimerEvent: {}
+[79.632447] (-) TimerEvent: {}
+[79.733215] (-) TimerEvent: {}
+[79.834102] (-) TimerEvent: {}
+[79.934868] (-) TimerEvent: {}
+[80.035721] (-) TimerEvent: {}
+[80.136744] (-) TimerEvent: {}
+[80.237623] (-) TimerEvent: {}
+[80.338433] (-) TimerEvent: {}
+[80.439346] (-) TimerEvent: {}
+[80.541506] (-) TimerEvent: {}
+[80.642349] (-) TimerEvent: {}
+[80.743089] (-) TimerEvent: {}
+[80.843815] (-) TimerEvent: {}
+[80.944539] (-) TimerEvent: {}
+[81.045258] (-) TimerEvent: {}
+[81.145982] (-) TimerEvent: {}
+[81.246693] (-) TimerEvent: {}
+[81.347422] (-) TimerEvent: {}
+[81.448169] (-) TimerEvent: {}
+[81.548900] (-) TimerEvent: {}
+[81.649626] (-) TimerEvent: {}
+[81.750320] (-) TimerEvent: {}
+[81.851068] (-) TimerEvent: {}
+[81.951826] (-) TimerEvent: {}
+[82.052621] (-) TimerEvent: {}
+[82.153504] (-) TimerEvent: {}
+[82.254218] (-) TimerEvent: {}
+[82.355024] (-) TimerEvent: {}
+[82.456341] (-) TimerEvent: {}
+[82.557098] (-) TimerEvent: {}
+[82.657940] (-) TimerEvent: {}
+[82.758659] (-) TimerEvent: {}
+[82.859501] (-) TimerEvent: {}
+[82.960435] (-) TimerEvent: {}
+[83.061181] (-) TimerEvent: {}
+[83.162198] (-) TimerEvent: {}
+[83.262952] (-) TimerEvent: {}
+[83.363855] (-) TimerEvent: {}
+[83.464630] (-) TimerEvent: {}
+[83.565428] (-) TimerEvent: {}
+[83.666142] (-) TimerEvent: {}
+[83.766988] (-) TimerEvent: {}
+[83.867814] (-) TimerEvent: {}
+[83.968645] (-) TimerEvent: {}
+[84.069953] (-) TimerEvent: {}
+[84.170676] (-) TimerEvent: {}
+[84.271394] (-) TimerEvent: {}
+[84.372142] (-) TimerEvent: {}
+[84.472882] (-) TimerEvent: {}
+[84.573597] (-) TimerEvent: {}
+[84.674365] (-) TimerEvent: {}
+[84.775197] (-) TimerEvent: {}
+[84.876088] (-) TimerEvent: {}
+[84.976947] (-) TimerEvent: {}
+[85.077768] (-) TimerEvent: {}
+[85.179041] (-) TimerEvent: {}
+[85.184377] (costmap_converter) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_dynamic_obstacles/multitarget_tracker/Kalman.cpp.o\x1b[0m\n'}
+[85.279206] (-) TimerEvent: {}
+[85.379992] (-) TimerEvent: {}
+[85.480783] (-) TimerEvent: {}
+[85.581509] (-) TimerEvent: {}
+[85.682242] (-) TimerEvent: {}
+[85.782962] (-) TimerEvent: {}
+[85.883793] (-) TimerEvent: {}
+[85.984597] (-) TimerEvent: {}
+[86.087496] (-) TimerEvent: {}
+[86.191025] (-) TimerEvent: {}
+[86.291710] (-) TimerEvent: {}
+[86.392438] (-) TimerEvent: {}
+[86.493146] (-) TimerEvent: {}
+[86.593866] (-) TimerEvent: {}
+[86.694582] (-) TimerEvent: {}
+[86.795287] (-) TimerEvent: {}
+[86.896024] (-) TimerEvent: {}
+[86.996760] (-) TimerEvent: {}
+[87.097507] (-) TimerEvent: {}
+[87.198226] (-) TimerEvent: {}
+[87.298985] (-) TimerEvent: {}
+[87.399719] (-) TimerEvent: {}
+[87.500457] (-) TimerEvent: {}
+[87.601185] (-) TimerEvent: {}
+[87.702022] (-) TimerEvent: {}
+[87.802796] (-) TimerEvent: {}
+[87.903747] (-) TimerEvent: {}
+[88.004484] (-) TimerEvent: {}
+[88.105284] (-) TimerEvent: {}
+[88.206024] (-) TimerEvent: {}
+[88.306729] (-) TimerEvent: {}
+[88.407438] (-) TimerEvent: {}
+[88.508273] (-) TimerEvent: {}
+[88.609016] (-) TimerEvent: {}
+[88.709762] (-) TimerEvent: {}
+[88.810490] (-) TimerEvent: {}
+[88.911230] (-) TimerEvent: {}
+[89.011992] (-) TimerEvent: {}
+[89.112729] (-) TimerEvent: {}
+[89.213461] (-) TimerEvent: {}
+[89.314187] (-) TimerEvent: {}
+[89.414919] (-) TimerEvent: {}
+[89.515673] (-) TimerEvent: {}
+[89.616410] (-) TimerEvent: {}
+[89.717274] (-) TimerEvent: {}
+[89.818005] (-) TimerEvent: {}
+[89.918736] (-) TimerEvent: {}
+[90.019495] (-) TimerEvent: {}
+[90.120232] (-) TimerEvent: {}
+[90.220949] (-) TimerEvent: {}
+[90.321725] (-) TimerEvent: {}
+[90.422527] (-) TimerEvent: {}
+[90.523275] (-) TimerEvent: {}
+[90.624057] (-) TimerEvent: {}
+[90.724815] (-) TimerEvent: {}
+[90.825545] (-) TimerEvent: {}
+[90.926264] (-) TimerEvent: {}
+[91.027131] (-) TimerEvent: {}
+[91.127865] (-) TimerEvent: {}
+[91.228703] (-) TimerEvent: {}
+[91.329443] (-) TimerEvent: {}
+[91.430441] (-) TimerEvent: {}
+[91.531174] (-) TimerEvent: {}
+[91.631977] (-) TimerEvent: {}
+[91.732690] (-) TimerEvent: {}
+[91.833400] (-) TimerEvent: {}
+[91.934158] (-) TimerEvent: {}
+[92.035152] (-) TimerEvent: {}
+[92.135920] (-) TimerEvent: {}
+[92.236708] (-) TimerEvent: {}
+[92.337751] (-) TimerEvent: {}
+[92.438533] (-) TimerEvent: {}
+[92.539280] (-) TimerEvent: {}
+[92.640122] (-) TimerEvent: {}
+[92.740843] (-) TimerEvent: {}
+[92.841612] (-) TimerEvent: {}
+[92.942401] (-) TimerEvent: {}
+[93.043133] (-) TimerEvent: {}
+[93.121550] (costmap_converter) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_dynamic_obstacles/background_subtractor.cpp.o\x1b[0m\n'}
+[93.122344] (costmap_converter) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_dynamic_obstacles/multitarget_tracker/Ctracker.cpp.o\x1b[0m\n'}
+[93.124718] (costmap_converter) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/costmap_converter.dir/src/costmap_to_dynamic_obstacles/blob_detector.cpp.o\x1b[0m\n'}
+[93.143326] (-) TimerEvent: {}
+[93.244357] (-) TimerEvent: {}
+[93.345144] (-) TimerEvent: {}
+[93.445852] (-) TimerEvent: {}
+[93.546639] (-) TimerEvent: {}
+[93.647356] (-) TimerEvent: {}
+[93.748085] (-) TimerEvent: {}
+[93.848796] (-) TimerEvent: {}
+[93.949508] (-) TimerEvent: {}
+[94.050331] (-) TimerEvent: {}
+[94.154603] (-) TimerEvent: {}
+[94.256069] (-) TimerEvent: {}
+[94.356835] (-) TimerEvent: {}
+[94.457573] (-) TimerEvent: {}
+[94.558336] (-) TimerEvent: {}
+[94.659135] (-) TimerEvent: {}
+[94.759910] (-) TimerEvent: {}
+[94.860677] (-) TimerEvent: {}
+[94.961469] (-) TimerEvent: {}
+[95.062541] (-) TimerEvent: {}
+[95.163327] (-) TimerEvent: {}
+[95.266986] (-) TimerEvent: {}
+[95.367733] (-) TimerEvent: {}
+[95.469115] (-) TimerEvent: {}
+[95.569927] (-) TimerEvent: {}
+[95.670692] (-) TimerEvent: {}
+[95.771457] (-) TimerEvent: {}
+[95.872221] (-) TimerEvent: {}
+[95.974186] (-) TimerEvent: {}
+[96.075372] (-) TimerEvent: {}
+[96.176214] (-) TimerEvent: {}
+[96.277629] (-) TimerEvent: {}
+[96.378366] (-) TimerEvent: {}
+[96.479136] (-) TimerEvent: {}
+[96.579940] (-) TimerEvent: {}
+[96.681384] (-) TimerEvent: {}
+[96.782211] (-) TimerEvent: {}
+[96.884250] (-) TimerEvent: {}
+[96.986194] (-) TimerEvent: {}
+[97.087340] (-) TimerEvent: {}
+[97.189109] (-) TimerEvent: {}
+[97.290661] (-) TimerEvent: {}
+[97.391731] (-) TimerEvent: {}
+[97.492466] (-) TimerEvent: {}
+[97.593397] (-) TimerEvent: {}
+[97.694976] (-) TimerEvent: {}
+[97.795706] (-) TimerEvent: {}
+[97.896433] (-) TimerEvent: {}
+[97.997156] (-) TimerEvent: {}
+[98.097882] (-) TimerEvent: {}
+[98.198624] (-) TimerEvent: {}
+[98.299385] (-) TimerEvent: {}
+[98.400160] (-) TimerEvent: {}
+[98.500916] (-) TimerEvent: {}
+[98.601667] (-) TimerEvent: {}
+[98.702449] (-) TimerEvent: {}
+[98.803194] (-) TimerEvent: {}
+[98.904143] (-) TimerEvent: {}
+[99.004902] (-) TimerEvent: {}
+[99.105614] (-) TimerEvent: {}
+[99.206397] (-) TimerEvent: {}
+[99.307124] (-) TimerEvent: {}
+[99.407876] (-) TimerEvent: {}
+[99.508623] (-) TimerEvent: {}
+[99.609490] (-) TimerEvent: {}
+[99.711106] (-) TimerEvent: {}
+[99.815748] (-) TimerEvent: {}
+[99.916484] (-) TimerEvent: {}
+[100.018119] (-) TimerEvent: {}
+[100.119619] (-) TimerEvent: {}
+[100.220371] (-) TimerEvent: {}
+[100.321143] (-) TimerEvent: {}
+[100.421875] (-) TimerEvent: {}
+[100.522632] (-) TimerEvent: {}
+[100.623621] (-) TimerEvent: {}
+[100.724382] (-) TimerEvent: {}
+[100.825118] (-) TimerEvent: {}
+[100.925852] (-) TimerEvent: {}
+[101.026594] (-) TimerEvent: {}
+[101.127325] (-) TimerEvent: {}
+[101.228176] (-) TimerEvent: {}
+[101.328883] (-) TimerEvent: {}
+[101.429632] (-) TimerEvent: {}
+[101.530432] (-) TimerEvent: {}
+[101.631177] (-) TimerEvent: {}
+[101.731992] (-) TimerEvent: {}
+[101.832735] (-) TimerEvent: {}
+[101.933469] (-) TimerEvent: {}
+[102.034170] (-) TimerEvent: {}
+[102.070982] (costmap_converter) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libcostmap_converter.so\x1b[0m\n'}
+[102.134357] (-) TimerEvent: {}
+[102.235083] (-) TimerEvent: {}
+[102.335918] (-) TimerEvent: {}
+[102.436636] (-) TimerEvent: {}
+[102.537419] (-) TimerEvent: {}
+[102.638490] (-) TimerEvent: {}
+[102.739343] (-) TimerEvent: {}
+[102.840618] (-) TimerEvent: {}
+[102.941641] (-) TimerEvent: {}
+[103.042499] (-) TimerEvent: {}
+[103.143302] (-) TimerEvent: {}
+[103.244089] (-) TimerEvent: {}
+[103.308055] (costmap_converter) StdoutLine: {'line': b'[ 68%] Built target costmap_converter\n'}
+[103.340231] (costmap_converter) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[103.342212] (costmap_converter) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/standalone_converter.dir/src/costmap_converter_node.cpp.o\x1b[0m\n'}
+[103.344144] (-) TimerEvent: {}
+[103.444703] (-) TimerEvent: {}
+[103.545487] (-) TimerEvent: {}
+[103.647248] (-) TimerEvent: {}
+[103.748069] (-) TimerEvent: {}
+[103.848793] (-) TimerEvent: {}
+[103.949569] (-) TimerEvent: {}
+[104.050300] (-) TimerEvent: {}
+[104.151050] (-) TimerEvent: {}
+[104.252842] (-) TimerEvent: {}
+[104.353614] (-) TimerEvent: {}
+[104.454895] (-) TimerEvent: {}
+[104.556215] (-) TimerEvent: {}
+[104.657264] (-) TimerEvent: {}
+[104.758576] (-) TimerEvent: {}
+[104.859338] (-) TimerEvent: {}
+[104.960087] (-) TimerEvent: {}
+[105.062101] (-) TimerEvent: {}
+[105.157674] (costmap_converter) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX static library ../lib/libgtest_main.a\x1b[0m\n'}
+[105.162204] (-) TimerEvent: {}
+[105.209658] (costmap_converter) StdoutLine: {'line': b'[ 84%] Built target gtest_main\n'}
+[105.252581] (costmap_converter) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding CXX object CMakeFiles/test_costmap_polygons.dir/test/costmap_polygons.cpp.o\x1b[0m\n'}
+[105.262378] (-) TimerEvent: {}
+[105.363033] (-) TimerEvent: {}
+[105.463703] (-) TimerEvent: {}
+[105.564403] (-) TimerEvent: {}
+[105.665142] (-) TimerEvent: {}
+[105.766864] (-) TimerEvent: {}
+[105.867794] (-) TimerEvent: {}
+[105.968530] (-) TimerEvent: {}
+[106.069273] (-) TimerEvent: {}
+[106.171853] (-) TimerEvent: {}
+[106.272707] (-) TimerEvent: {}
+[106.373624] (-) TimerEvent: {}
+[106.474506] (-) TimerEvent: {}
+[106.575267] (-) TimerEvent: {}
+[106.676065] (-) TimerEvent: {}
+[106.776813] (-) TimerEvent: {}
+[106.877612] (-) TimerEvent: {}
+[106.978334] (-) TimerEvent: {}
+[107.079709] (-) TimerEvent: {}
+[107.181238] (-) TimerEvent: {}
+[107.281990] (-) TimerEvent: {}
+[107.382773] (-) TimerEvent: {}
+[107.483557] (-) TimerEvent: {}
+[107.584315] (-) TimerEvent: {}
+[107.685059] (-) TimerEvent: {}
+[107.785790] (-) TimerEvent: {}
+[107.886531] (-) TimerEvent: {}
+[107.987291] (-) TimerEvent: {}
+[108.088048] (-) TimerEvent: {}
+[108.188821] (-) TimerEvent: {}
+[108.289881] (-) TimerEvent: {}
+[108.391487] (-) TimerEvent: {}
+[108.492775] (-) TimerEvent: {}
+[108.593574] (-) TimerEvent: {}
+[108.694348] (-) TimerEvent: {}
+[108.795257] (-) TimerEvent: {}
+[108.896251] (-) TimerEvent: {}
+[108.996996] (-) TimerEvent: {}
+[109.097774] (-) TimerEvent: {}
+[109.198528] (-) TimerEvent: {}
+[109.299309] (-) TimerEvent: {}
+[109.400135] (-) TimerEvent: {}
+[109.500931] (-) TimerEvent: {}
+[109.601675] (-) TimerEvent: {}
+[109.702418] (-) TimerEvent: {}
+[109.803204] (-) TimerEvent: {}
+[109.903996] (-) TimerEvent: {}
+[110.004741] (-) TimerEvent: {}
+[110.105512] (-) TimerEvent: {}
+[110.206241] (-) TimerEvent: {}
+[110.306954] (-) TimerEvent: {}
+[110.407895] (-) TimerEvent: {}
+[110.508867] (-) TimerEvent: {}
+[110.609592] (-) TimerEvent: {}
+[110.710330] (-) TimerEvent: {}
+[110.811068] (-) TimerEvent: {}
+[110.911843] (-) TimerEvent: {}
+[111.013021] (-) TimerEvent: {}
+[111.113771] (-) TimerEvent: {}
+[111.214567] (-) TimerEvent: {}
+[111.315318] (-) TimerEvent: {}
+[111.416161] (-) TimerEvent: {}
+[111.516960] (-) TimerEvent: {}
+[111.617732] (-) TimerEvent: {}
+[111.718458] (-) TimerEvent: {}
+[111.819185] (-) TimerEvent: {}
+[111.920757] (-) TimerEvent: {}
+[112.021696] (-) TimerEvent: {}
+[112.124679] (-) TimerEvent: {}
+[112.229779] (-) TimerEvent: {}
+[112.330519] (-) TimerEvent: {}
+[112.431278] (-) TimerEvent: {}
+[112.532115] (-) TimerEvent: {}
+[112.632865] (-) TimerEvent: {}
+[112.733619] (-) TimerEvent: {}
+[112.834397] (-) TimerEvent: {}
+[112.935291] (-) TimerEvent: {}
+[113.036416] (-) TimerEvent: {}
+[113.137286] (-) TimerEvent: {}
+[113.238214] (-) TimerEvent: {}
+[113.338847] (costmap_converter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[113.339956] (-) TimerEvent: {}
+[113.340402] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[113.340640] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[113.340861] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[113.341023] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[113.341174] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[113.341318] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[113.341457] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[113.341597] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[113.341734] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[113.341865] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[113.341996] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/src/costmap_converter_node.cpp:40\x1b[m\x1b[K:\n'}
+[113.342131] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::GenericRate<std::chrono::_V2::system_clock>::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[113.342347] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktoo many arguments for format [\x1b[01;35m\x1b[K-Wformat-extra-args\x1b[m\x1b[K]\n'}
+[113.342524] (costmap_converter) StderrLine: {'line': b'  197 |         RCLCPP_DEBUG(nh_->get_logger(), \x1b[01;35m\x1b[K"costmap_converter"\x1b[m\x1b[K, "Spinning up a thread for the CostmapToPolygons plugin");\n'}
+[113.342666] (costmap_converter) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[113.394065] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const string&, rclcpp::Node::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[113.394880] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kconst string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[113.395090] (costmap_converter) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), \x1b[01;35m\x1b[K"CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded."\x1b[m\x1b[K, plugin_name);\n'}
+[113.395254] (costmap_converter) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[113.395443] (costmap_converter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/src/costmap_converter_node.cpp:47\x1b[m\x1b[K:\n'}
+[113.395636] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[113.395799] (costmap_converter) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles \x1b[01;36m\x1b[K%s\x1b[m\x1b[K loaded.", plugin_name);\n'}
+[113.395943] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                      \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[113.396093] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[113.396253] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[113.440177] (-) TimerEvent: {}
+[113.540944] (-) TimerEvent: {}
+[113.641713] (-) TimerEvent: {}
+[113.742511] (-) TimerEvent: {}
+[113.843264] (-) TimerEvent: {}
+[113.944083] (-) TimerEvent: {}
+[114.044892] (-) TimerEvent: {}
+[114.145815] (-) TimerEvent: {}
+[114.246604] (-) TimerEvent: {}
+[114.347428] (-) TimerEvent: {}
+[114.450620] (-) TimerEvent: {}
+[114.554144] (-) TimerEvent: {}
+[114.655486] (-) TimerEvent: {}
+[114.756998] (-) TimerEvent: {}
+[114.857963] (-) TimerEvent: {}
+[114.959223] (-) TimerEvent: {}
+[115.060996] (-) TimerEvent: {}
+[115.161750] (-) TimerEvent: {}
+[115.262556] (-) TimerEvent: {}
+[115.363335] (-) TimerEvent: {}
+[115.465896] (-) TimerEvent: {}
+[115.566653] (-) TimerEvent: {}
+[115.667871] (-) TimerEvent: {}
+[115.768940] (-) TimerEvent: {}
+[115.869892] (-) TimerEvent: {}
+[115.971510] (-) TimerEvent: {}
+[116.073822] (-) TimerEvent: {}
+[116.175720] (-) TimerEvent: {}
+[116.276456] (-) TimerEvent: {}
+[116.377177] (-) TimerEvent: {}
+[116.477974] (-) TimerEvent: {}
+[116.578942] (-) TimerEvent: {}
+[116.679701] (-) TimerEvent: {}
+[116.780411] (-) TimerEvent: {}
+[116.881218] (-) TimerEvent: {}
+[116.983669] (-) TimerEvent: {}
+[117.085267] (-) TimerEvent: {}
+[117.186032] (-) TimerEvent: {}
+[117.287089] (-) TimerEvent: {}
+[117.388204] (-) TimerEvent: {}
+[117.488936] (-) TimerEvent: {}
+[117.589680] (-) TimerEvent: {}
+[117.691045] (-) TimerEvent: {}
+[117.791779] (-) TimerEvent: {}
+[117.892520] (-) TimerEvent: {}
+[117.929890] (costmap_converter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[117.930462] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[117.930661] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[117.930833] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[117.930999] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[117.931156] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[117.931305] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[117.931451] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[117.931660] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[117.932484] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[117.932650] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[117.932809] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_to_polygons.h:42\x1b[m\x1b[K,\n'}
+[117.932963] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/test/costmap_polygons.cpp:5\x1b[m\x1b[K:\n'}
+[117.933132] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid costmap_converter::BaseCostmapToPolygons::startWorker(rclcpp::GenericRate<std::chrono::_V2::system_clock>::SharedPtr, nav2_costmap_2d::Costmap2D*, bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[117.933306] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:197:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktoo many arguments for format [\x1b[01;35m\x1b[K-Wformat-extra-args\x1b[m\x1b[K]\n'}
+[117.933462] (costmap_converter) StderrLine: {'line': b'  197 |         RCLCPP_DEBUG(nh_->get_logger(), \x1b[01;35m\x1b[K"costmap_converter"\x1b[m\x1b[K, "Spinning up a thread for the CostmapToPolygons plugin");\n'}
+[117.933634] (costmap_converter) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[117.984344] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid costmap_converter::BaseCostmapToDynamicObstacles::loadStaticCostmapConverterPlugin(const string&, rclcpp::Node::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[117.984988] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kconst string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[117.985291] (costmap_converter) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), \x1b[01;35m\x1b[K"CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles %s loaded."\x1b[m\x1b[K, plugin_name);\n'}
+[117.985530] (costmap_converter) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[117.985730] (costmap_converter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_to_polygons.h:43\x1b[m\x1b[K,\n'}
+[117.985919] (costmap_converter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/test/costmap_polygons.cpp:5\x1b[m\x1b[K:\n'}
+[117.986100] (costmap_converter) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter/include/costmap_converter/costmap_converter_interface.h:313:119:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[117.986301] (costmap_converter) StderrLine: {'line': b'  313 |       RCLCPP_INFO(getLogger(), "CostmapToDynamicObstacles: underlying costmap conversion plugin for static obstacles \x1b[01;36m\x1b[K%s\x1b[m\x1b[K loaded.", plugin_name);\n'}
+[117.986501] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                      \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[117.986679] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[117.986827] (costmap_converter) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[117.992649] (-) TimerEvent: {}
+[118.093526] (-) TimerEvent: {}
+[118.194292] (-) TimerEvent: {}
+[118.295120] (-) TimerEvent: {}
+[118.395891] (-) TimerEvent: {}
+[118.496684] (-) TimerEvent: {}
+[118.597439] (-) TimerEvent: {}
+[118.698196] (-) TimerEvent: {}
+[118.798972] (-) TimerEvent: {}
+[118.899766] (-) TimerEvent: {}
+[119.000502] (-) TimerEvent: {}
+[119.101294] (-) TimerEvent: {}
+[119.202911] (-) TimerEvent: {}
+[119.303749] (-) TimerEvent: {}
+[119.404465] (-) TimerEvent: {}
+[119.505339] (-) TimerEvent: {}
+[119.606465] (-) TimerEvent: {}
+[119.707331] (-) TimerEvent: {}
+[119.809118] (-) TimerEvent: {}
+[119.910050] (-) TimerEvent: {}
+[120.010835] (-) TimerEvent: {}
+[120.111530] (-) TimerEvent: {}
+[120.212258] (-) TimerEvent: {}
+[120.313403] (-) TimerEvent: {}
+[120.415203] (-) TimerEvent: {}
+[120.515991] (-) TimerEvent: {}
+[120.616748] (-) TimerEvent: {}
+[120.718152] (-) TimerEvent: {}
+[120.818866] (-) TimerEvent: {}
+[120.919644] (-) TimerEvent: {}
+[121.020419] (-) TimerEvent: {}
+[121.121186] (-) TimerEvent: {}
+[121.221972] (-) TimerEvent: {}
+[121.322797] (-) TimerEvent: {}
+[121.423654] (-) TimerEvent: {}
+[121.524381] (-) TimerEvent: {}
+[121.625147] (-) TimerEvent: {}
+[121.725895] (-) TimerEvent: {}
+[121.826643] (-) TimerEvent: {}
+[121.927374] (-) TimerEvent: {}
+[122.028221] (-) TimerEvent: {}
+[122.130844] (-) TimerEvent: {}
+[122.231614] (-) TimerEvent: {}
+[122.332316] (-) TimerEvent: {}
+[122.433066] (-) TimerEvent: {}
+[122.533839] (-) TimerEvent: {}
+[122.634583] (-) TimerEvent: {}
+[122.735679] (-) TimerEvent: {}
+[122.836435] (-) TimerEvent: {}
+[122.937636] (-) TimerEvent: {}
+[123.038442] (-) TimerEvent: {}
+[123.141137] (-) TimerEvent: {}
+[123.241900] (-) TimerEvent: {}
+[123.342628] (-) TimerEvent: {}
+[123.443372] (-) TimerEvent: {}
+[123.544124] (-) TimerEvent: {}
+[123.644848] (-) TimerEvent: {}
+[123.745573] (-) TimerEvent: {}
+[123.846293] (-) TimerEvent: {}
+[123.947026] (-) TimerEvent: {}
+[124.047787] (-) TimerEvent: {}
+[124.148523] (-) TimerEvent: {}
+[124.249249] (-) TimerEvent: {}
+[124.350022] (-) TimerEvent: {}
+[124.450739] (-) TimerEvent: {}
+[124.551463] (-) TimerEvent: {}
+[124.652317] (-) TimerEvent: {}
+[124.753059] (-) TimerEvent: {}
+[124.853786] (-) TimerEvent: {}
+[124.954515] (-) TimerEvent: {}
+[125.055241] (-) TimerEvent: {}
+[125.155965] (-) TimerEvent: {}
+[125.256681] (-) TimerEvent: {}
+[125.357477] (-) TimerEvent: {}
+[125.459007] (-) TimerEvent: {}
+[125.559773] (-) TimerEvent: {}
+[125.660506] (-) TimerEvent: {}
+[125.761216] (-) TimerEvent: {}
+[125.862369] (-) TimerEvent: {}
+[125.963130] (-) TimerEvent: {}
+[126.063877] (-) TimerEvent: {}
+[126.167729] (-) TimerEvent: {}
+[126.268450] (-) TimerEvent: {}
+[126.369194] (-) TimerEvent: {}
+[126.469929] (-) TimerEvent: {}
+[126.515253] (costmap_converter) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable test_costmap_polygons\x1b[0m\n'}
+[126.570146] (-) TimerEvent: {}
+[126.670897] (-) TimerEvent: {}
+[126.771699] (-) TimerEvent: {}
+[126.872988] (-) TimerEvent: {}
+[126.973824] (-) TimerEvent: {}
+[127.074570] (-) TimerEvent: {}
+[127.175351] (-) TimerEvent: {}
+[127.276060] (-) TimerEvent: {}
+[127.376769] (-) TimerEvent: {}
+[127.477485] (-) TimerEvent: {}
+[127.578209] (-) TimerEvent: {}
+[127.678895] (-) TimerEvent: {}
+[127.779642] (-) TimerEvent: {}
+[127.880342] (-) TimerEvent: {}
+[127.981018] (-) TimerEvent: {}
+[128.081725] (-) TimerEvent: {}
+[128.182759] (-) TimerEvent: {}
+[128.283510] (-) TimerEvent: {}
+[128.384278] (-) TimerEvent: {}
+[128.472647] (costmap_converter) StdoutLine: {'line': b'[ 94%] Built target test_costmap_polygons\n'}
+[128.484474] (-) TimerEvent: {}
+[128.585225] (-) TimerEvent: {}
+[128.685946] (-) TimerEvent: {}
+[128.786782] (-) TimerEvent: {}
+[128.887499] (-) TimerEvent: {}
+[128.988268] (-) TimerEvent: {}
+[129.089074] (-) TimerEvent: {}
+[129.189830] (-) TimerEvent: {}
+[129.290720] (-) TimerEvent: {}
+[129.391522] (-) TimerEvent: {}
+[129.492495] (-) TimerEvent: {}
+[129.593248] (-) TimerEvent: {}
+[129.694009] (-) TimerEvent: {}
+[129.794754] (-) TimerEvent: {}
+[129.895556] (-) TimerEvent: {}
+[129.996286] (-) TimerEvent: {}
+[130.097016] (-) TimerEvent: {}
+[130.197745] (-) TimerEvent: {}
+[130.298503] (-) TimerEvent: {}
+[130.399265] (-) TimerEvent: {}
+[130.500051] (-) TimerEvent: {}
+[130.600795] (-) TimerEvent: {}
+[130.701681] (-) TimerEvent: {}
+[130.802513] (-) TimerEvent: {}
+[130.903367] (-) TimerEvent: {}
+[131.004443] (-) TimerEvent: {}
+[131.105226] (-) TimerEvent: {}
+[131.205936] (-) TimerEvent: {}
+[131.306685] (-) TimerEvent: {}
+[131.407445] (-) TimerEvent: {}
+[131.508204] (-) TimerEvent: {}
+[131.608937] (-) TimerEvent: {}
+[131.709648] (-) TimerEvent: {}
+[131.810397] (-) TimerEvent: {}
+[131.911147] (-) TimerEvent: {}
+[132.011894] (-) TimerEvent: {}
+[132.112685] (-) TimerEvent: {}
+[132.213456] (-) TimerEvent: {}
+[132.314186] (-) TimerEvent: {}
+[132.415033] (-) TimerEvent: {}
+[132.515797] (-) TimerEvent: {}
+[132.616531] (-) TimerEvent: {}
+[132.717256] (-) TimerEvent: {}
+[132.818060] (-) TimerEvent: {}
+[132.918905] (-) TimerEvent: {}
+[133.019680] (-) TimerEvent: {}
+[133.120480] (-) TimerEvent: {}
+[133.221294] (-) TimerEvent: {}
+[133.322161] (-) TimerEvent: {}
+[133.422918] (-) TimerEvent: {}
+[133.523700] (-) TimerEvent: {}
+[133.625283] (-) TimerEvent: {}
+[133.726003] (-) TimerEvent: {}
+[133.829458] (-) TimerEvent: {}
+[133.930206] (-) TimerEvent: {}
+[134.030933] (-) TimerEvent: {}
+[134.131682] (-) TimerEvent: {}
+[134.232456] (-) TimerEvent: {}
+[134.333221] (-) TimerEvent: {}
+[134.433979] (-) TimerEvent: {}
+[134.534771] (-) TimerEvent: {}
+[134.635575] (-) TimerEvent: {}
+[134.736305] (-) TimerEvent: {}
+[134.837188] (-) TimerEvent: {}
+[134.938010] (-) TimerEvent: {}
+[135.038743] (-) TimerEvent: {}
+[135.139490] (-) TimerEvent: {}
+[135.240256] (-) TimerEvent: {}
+[135.340974] (-) TimerEvent: {}
+[135.441707] (-) TimerEvent: {}
+[135.542555] (-) TimerEvent: {}
+[135.643320] (-) TimerEvent: {}
+[135.744124] (-) TimerEvent: {}
+[135.844873] (-) TimerEvent: {}
+[135.945717] (-) TimerEvent: {}
+[136.046461] (-) TimerEvent: {}
+[136.147276] (-) TimerEvent: {}
+[136.248017] (-) TimerEvent: {}
+[136.348777] (-) TimerEvent: {}
+[136.449822] (-) TimerEvent: {}
+[136.550602] (-) TimerEvent: {}
+[136.651584] (-) TimerEvent: {}
+[136.752373] (-) TimerEvent: {}
+[136.853135] (-) TimerEvent: {}
+[136.953869] (-) TimerEvent: {}
+[137.054594] (-) TimerEvent: {}
+[137.155417] (-) TimerEvent: {}
+[137.256327] (-) TimerEvent: {}
+[137.357186] (-) TimerEvent: {}
+[137.458001] (-) TimerEvent: {}
+[137.558783] (-) TimerEvent: {}
+[137.659615] (-) TimerEvent: {}
+[137.760439] (-) TimerEvent: {}
+[137.861165] (-) TimerEvent: {}
+[137.961860] (-) TimerEvent: {}
+[138.062604] (-) TimerEvent: {}
+[138.163402] (-) TimerEvent: {}
+[138.264157] (-) TimerEvent: {}
+[138.364849] (-) TimerEvent: {}
+[138.465611] (-) TimerEvent: {}
+[138.566357] (-) TimerEvent: {}
+[138.667181] (-) TimerEvent: {}
+[138.768088] (-) TimerEvent: {}
+[138.869020] (-) TimerEvent: {}
+[138.969787] (-) TimerEvent: {}
+[139.070708] (-) TimerEvent: {}
+[139.171493] (-) TimerEvent: {}
+[139.272295] (-) TimerEvent: {}
+[139.373734] (-) TimerEvent: {}
+[139.475238] (-) TimerEvent: {}
+[139.575985] (-) TimerEvent: {}
+[139.676715] (-) TimerEvent: {}
+[139.777470] (-) TimerEvent: {}
+[139.878245] (-) TimerEvent: {}
+[139.979130] (-) TimerEvent: {}
+[140.079940] (-) TimerEvent: {}
+[140.180707] (-) TimerEvent: {}
+[140.281532] (-) TimerEvent: {}
+[140.382305] (-) TimerEvent: {}
+[140.483063] (-) TimerEvent: {}
+[140.583841] (-) TimerEvent: {}
+[140.684600] (-) TimerEvent: {}
+[140.785381] (-) TimerEvent: {}
+[140.886173] (-) TimerEvent: {}
+[140.986940] (-) TimerEvent: {}
+[141.087742] (-) TimerEvent: {}
+[141.188580] (-) TimerEvent: {}
+[141.289553] (-) TimerEvent: {}
+[141.390423] (-) TimerEvent: {}
+[141.429489] (costmap_converter) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable standalone_converter\x1b[0m\n'}
+[141.490579] (-) TimerEvent: {}
+[141.591458] (-) TimerEvent: {}
+[141.692238] (-) TimerEvent: {}
+[141.793014] (-) TimerEvent: {}
+[141.893837] (-) TimerEvent: {}
+[141.994586] (-) TimerEvent: {}
+[142.095362] (-) TimerEvent: {}
+[142.196153] (-) TimerEvent: {}
+[142.296893] (-) TimerEvent: {}
+[142.397729] (-) TimerEvent: {}
+[142.420634] (costmap_converter) StdoutLine: {'line': b'[100%] Built target standalone_converter\n'}
+[142.439952] (costmap_converter) CommandEnded: {'returncode': 0}
+[142.498027] (-) TimerEvent: {}
+[142.598594] (costmap_converter) JobProgress: {'identifier': 'costmap_converter', 'progress': 'install'}
+[142.598823] (-) TimerEvent: {}
+[142.616810] (costmap_converter) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter'], 'cwd': '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources'), ('USER', 'mw'), ('VSCODE_NLS_CONFIG', '{"locale":"en","osLocale":"en","availableLanguages":{}}'), ('CAMERA_TYPE', 'astraplus'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('HOSTNAME', 'marc-orin'), ('GIT_ASKPASS', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi2/lib64:/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib'), ('BROWSER', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-81663db4-b591-4acc-a0c4-dadb3121f652.sock'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', '1'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/node'), ('USER_UID', '1000'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('_colcon_cd_root', '/root/yahboomcar_ros2_ws/yahboomcar_ws'), ('ROBOT_TYPE', 'x3'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install:/workspaces/isaac_ros-dev/yahboomcar_ws2/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock'), ('_', '/usr/bin/colcon'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('USERNAME', 'admin'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/nvidia/tao:/usr/local/cuda/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/usr/local/share/middleware_profiles/rtps_udp_profile.xml'), ('VSCODE_AMD_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('VSCODE_AGENT_FOLDER', '/root/.vscode-server'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock","/tmp/.X11-unix/X1","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/libgomp.so.1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', ''), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a859f14de.sock'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0dac57fe-98d2-4667-914b-ed6c4ebcb1f2.sock'), ('ROS_DOMAIN_ID', '32'), ('AMENT_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 's2'), ('PWD', '/workspaces/isaac_ros-dev/software/library_ws/build/costmap_converter'), ('PYTHONPATH', '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/robot_pose_publisher:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('USER_GID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/opt/ros/humble')]), 'shell': False}
+[142.637159] (costmap_converter) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[142.638300] (costmap_converter) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[142.640128] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/lib/libcostmap_converter.so\n'}
+[142.649669] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/bin/standalone_converter\n'}
+[142.659407] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/include//costmap_converter/costmap_converter_interface.h\n'}
+[142.670547] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/background_subtractor.h\n'}
+[142.680115] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/blob_detector.h\n'}
+[142.688363] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/costmap_to_dynamic_obstacles.h\n'}
+[142.696130] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/Ctracker.h\n'}
+[142.698946] (-) TimerEvent: {}
+[142.704248] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/HungarianAlg.h\n'}
+[142.713823] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/Kalman.h\n'}
+[142.722859] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/README.md\n'}
+[142.731070] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/defines.h\n'}
+[142.740044] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/include//costmap_converter/costmap_to_lines_convex_hull.h\n'}
+[142.750706] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/include//costmap_converter/costmap_to_lines_ransac.h\n'}
+[142.762872] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/include//costmap_converter/costmap_to_polygons.h\n'}
+[142.771682] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/include//costmap_converter/costmap_to_polygons_concave.h\n'}
+[142.778972] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/include//costmap_converter/misc.h\n'}
+[142.790681] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/environment/library_path.sh\n'}
+[142.799129] (-) TimerEvent: {}
+[142.799754] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/environment/library_path.dsv\n'}
+[142.809599] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter//costmap_converter_plugins.xml\n'}
+[142.818578] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/ament_index/resource_index/package_run_dependencies/costmap_converter\n'}
+[142.829811] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/ament_index/resource_index/parent_prefix_path/costmap_converter\n'}
+[142.843020] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/environment/ament_prefix_path.sh\n'}
+[142.852327] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/environment/ament_prefix_path.dsv\n'}
+[142.863249] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/environment/path.sh\n'}
+[142.872878] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/environment/path.dsv\n'}
+[142.885263] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/local_setup.bash\n'}
+[142.893987] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/local_setup.sh\n'}
+[142.899272] (-) TimerEvent: {}
+[142.902869] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/local_setup.zsh\n'}
+[142.913121] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/local_setup.dsv\n'}
+[142.922662] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/package.dsv\n'}
+[142.931807] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/ament_index/resource_index/packages/costmap_converter\n'}
+[142.941992] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/ament_index/resource_index/costmap_converter__pluginlib__plugin/costmap_converter\n'}
+[142.957555] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[142.963714] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[142.973823] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[142.982843] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/cmake/costmap_converterConfig.cmake\n'}
+[142.991513] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/cmake/costmap_converterConfig-version.cmake\n'}
+[142.999480] (-) TimerEvent: {}
+[143.000510] (costmap_converter) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/share/costmap_converter/package.xml\n'}
+[143.012805] (costmap_converter) CommandEnded: {'returncode': 0}
+[143.099636] (-) TimerEvent: {}
+[143.200351] (-) TimerEvent: {}
+[143.301032] (-) TimerEvent: {}
+[143.406970] (-) TimerEvent: {}
+[143.507790] (-) TimerEvent: {}
+[143.609493] (-) TimerEvent: {}
+[143.710588] (-) TimerEvent: {}
+[143.811473] (-) TimerEvent: {}
+[143.861448] (costmap_converter) JobEnded: {'identifier': 'costmap_converter', 'rc': 0}
+[143.868359] (-) EventReactorShutdown: {}

@@ -1,0 +1,147 @@
+[6.537s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'costmap_converter_msgs', '--symlink-install', '--event-handlers', 'console_cohesion+', '--base-paths', '/workspaces/isaac_ros-dev/software/library_ws', '--cmake-args', '-DCMAKE_BUILD_TYPE=RelWithDebInfo']
+[6.538s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['/workspaces/isaac_ros-dev/software/library_ws'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=['console_cohesion+'], executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffac8c1370>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['costmap_converter_msgs'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=6, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffac8c1370>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffac8c1e20>)
+[6.857s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[6.858s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[6.858s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[6.858s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[6.858s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[6.858s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspaces/isaac_ros-dev/software/library_ws'
+[6.858s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws) by extensions ['ignore', 'ignore_ament_install']
+[6.859s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws) by extension 'ignore'
+[6.859s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws) by extension 'ignore_ament_install'
+[6.859s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws) by extensions ['colcon_pkg']
+[6.859s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws) by extension 'colcon_pkg'
+[6.859s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws) by extensions ['colcon_meta']
+[6.859s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws) by extension 'colcon_meta'
+[6.859s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws) by extensions ['ros']
+[6.860s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws) by extension 'ros'
+[6.889s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws) by extensions ['cmake', 'python']
+[6.890s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws) by extension 'cmake'
+[6.890s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws) by extension 'python'
+[6.890s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws) by extensions ['python_setup_py']
+[6.890s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws) by extension 'python_setup_py'
+[6.891s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[6.891s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/build) by extension 'ignore'
+[6.891s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/build) ignored
+[6.892s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[6.892s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/install) by extension 'ignore'
+[6.892s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/install) ignored
+[6.892s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[6.893s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/log) by extension 'ignore'
+[6.893s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/log) ignored
+[6.893s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[6.893s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src) by extension 'ignore'
+[6.893s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src) by extension 'ignore_ament_install'
+[6.893s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src) by extensions ['colcon_pkg']
+[6.894s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src) by extension 'colcon_pkg'
+[6.894s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src) by extensions ['colcon_meta']
+[6.894s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src) by extension 'colcon_meta'
+[6.894s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src) by extensions ['ros']
+[6.894s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src) by extension 'ros'
+[6.894s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src) by extensions ['cmake', 'python']
+[6.894s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src) by extension 'cmake'
+[6.894s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src) by extension 'python'
+[6.895s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src) by extensions ['python_setup_py']
+[6.895s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src) by extension 'python_setup_py'
+[6.895s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2) by extensions ['ignore', 'ignore_ament_install']
+[6.895s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2) by extension 'ignore'
+[6.895s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2) ignored
+[6.896s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/octomap_mapping-ros2) by extensions ['ignore', 'ignore_ament_install']
+[6.896s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/octomap_mapping-ros2) by extension 'ignore'
+[6.896s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/octomap_mapping-ros2) ignored
+[6.896s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/old_robot_localization) by extensions ['ignore', 'ignore_ament_install']
+[6.896s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/old_robot_localization) by extension 'ignore'
+[6.897s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/old_robot_localization) ignored
+[6.897s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2-ORB_SLAM2) by extensions ['ignore', 'ignore_ament_install']
+[6.897s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2-ORB_SLAM2) by extension 'ignore'
+[6.897s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2-ORB_SLAM2) ignored
+[6.897s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera) by extensions ['ignore', 'ignore_ament_install']
+[6.898s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera) by extension 'ignore'
+[6.898s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera) by extension 'ignore_ament_install'
+[6.898s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera) by extensions ['colcon_pkg']
+[6.898s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera) by extension 'colcon_pkg'
+[6.898s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera) by extensions ['colcon_meta']
+[6.898s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera) by extension 'colcon_meta'
+[6.898s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera) by extensions ['ros']
+[6.898s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera) by extension 'ros'
+[6.899s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera) by extensions ['cmake', 'python']
+[6.899s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera) by extension 'cmake'
+[6.899s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera) by extension 'python'
+[6.899s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera) by extensions ['python_setup_py']
+[6.899s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera) by extension 'python_setup_py'
+[6.899s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera) by extensions ['ignore', 'ignore_ament_install']
+[6.899s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera) by extension 'ignore'
+[6.900s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera) by extension 'ignore_ament_install'
+[6.900s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera) by extensions ['colcon_pkg']
+[6.900s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera) by extension 'colcon_pkg'
+[6.900s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera) by extensions ['colcon_meta']
+[6.900s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera) by extension 'colcon_meta'
+[6.900s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera) by extensions ['ros']
+[6.900s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera) by extension 'ros'
+[6.909s] DEBUG:colcon.colcon_core.package_identification:Package '/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera' with type 'ros.ament_cmake' and name 'astra_camera'
+[6.910s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[6.910s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera_msgs) by extension 'ignore'
+[6.910s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera_msgs) by extension 'ignore_ament_install'
+[6.910s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera_msgs) by extensions ['colcon_pkg']
+[6.910s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera_msgs) by extension 'colcon_pkg'
+[6.910s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera_msgs) by extensions ['colcon_meta']
+[6.910s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera_msgs) by extension 'colcon_meta'
+[6.911s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera_msgs) by extensions ['ros']
+[6.911s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera_msgs) by extension 'ros'
+[6.912s] DEBUG:colcon.colcon_core.package_identification:Package '/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera_msgs' with type 'ros.ament_cmake' and name 'astra_camera_msgs'
+[6.912s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[6.912s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping) by extension 'ignore'
+[6.913s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping) ignored
+[6.913s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[6.913s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/sllidar_ros2) by extension 'ignore'
+[6.913s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/sllidar_ros2) by extension 'ignore_ament_install'
+[6.913s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/sllidar_ros2) by extensions ['colcon_pkg']
+[6.913s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/sllidar_ros2) by extension 'colcon_pkg'
+[6.914s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/sllidar_ros2) by extensions ['colcon_meta']
+[6.914s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/sllidar_ros2) by extension 'colcon_meta'
+[6.914s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/sllidar_ros2) by extensions ['ros']
+[6.914s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/sllidar_ros2) by extension 'ros'
+[6.915s] DEBUG:colcon.colcon_core.package_identification:Package '/workspaces/isaac_ros-dev/software/library_ws/src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[6.915s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/teb_local_planner-foxy-devel) by extensions ['ignore', 'ignore_ament_install']
+[6.915s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/teb_local_planner-foxy-devel) by extension 'ignore'
+[6.916s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/teb_local_planner-foxy-devel) ignored
+[6.916s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/web_video_server-ros2) by extensions ['ignore', 'ignore_ament_install']
+[6.916s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/web_video_server-ros2) by extension 'ignore'
+[6.916s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/web_video_server-ros2) ignored
+[6.916s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ydlidar_ros2_driver-master) by extensions ['ignore', 'ignore_ament_install']
+[6.917s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ydlidar_ros2_driver-master) by extension 'ignore'
+[6.917s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/isaac_ros-dev/software/library_ws/src/ydlidar_ros2_driver-master) ignored
+[6.917s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[6.951s] WARNING:colcon.colcon_core.package_selection:ignoring unknown package 'costmap_converter_msgs' in --packages-select
+[7.059s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'astra_camera_msgs' in '/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera_msgs'
+[7.059s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'sllidar_ros2' in '/workspaces/isaac_ros-dev/software/library_ws/src/sllidar_ros2'
+[7.059s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'astra_camera' in '/workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera'
+[7.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[7.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[7.190s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /workspaces/isaac_ros-dev/software/library_ws/install
+[7.222s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /workspaces/isaac_ros-dev/yahboomcar_ws2/install
+[7.257s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 326 installed packages in /opt/ros/humble
+[7.261s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[7.547s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[7.581s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[7.583s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.583s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.583s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.583s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.635s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[7.635s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.635s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.636s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.674s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[7.674s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.713s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[7.714s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/isaac_ros-dev/software/library_ws/install/local_setup.ps1'
+[7.716s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/isaac_ros-dev/software/library_ws/install/_local_setup_util_ps1.py'
+[7.719s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/isaac_ros-dev/software/library_ws/install/setup.ps1'
+[7.755s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/isaac_ros-dev/software/library_ws/install/local_setup.sh'
+[7.756s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/isaac_ros-dev/software/library_ws/install/_local_setup_util_sh.py'
+[7.757s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/isaac_ros-dev/software/library_ws/install/setup.sh'
+[7.791s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/isaac_ros-dev/software/library_ws/install/local_setup.bash'
+[7.792s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/isaac_ros-dev/software/library_ws/install/setup.bash'
+[7.828s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/isaac_ros-dev/software/library_ws/install/local_setup.zsh'
+[7.829s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/isaac_ros-dev/software/library_ws/install/setup.zsh'

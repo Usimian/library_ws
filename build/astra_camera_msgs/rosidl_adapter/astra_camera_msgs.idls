@@ -1,0 +1,9 @@
+/workspaces/isaac_ros-dev/software/library_ws/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:msg/DeviceInfo.idl
+/workspaces/isaac_ros-dev/software/library_ws/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:msg/Extrinsics.idl
+/workspaces/isaac_ros-dev/software/library_ws/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:msg/Metadata.idl
+/workspaces/isaac_ros-dev/software/library_ws/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:srv/GetDeviceInfo.idl
+/workspaces/isaac_ros-dev/software/library_ws/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:srv/GetCameraInfo.idl
+/workspaces/isaac_ros-dev/software/library_ws/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:srv/GetCameraParams.idl
+/workspaces/isaac_ros-dev/software/library_ws/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:srv/GetInt32.idl
+/workspaces/isaac_ros-dev/software/library_ws/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:srv/GetString.idl
+/workspaces/isaac_ros-dev/software/library_ws/build/astra_camera_msgs/rosidl_adapter/astra_camera_msgs:srv/SetInt32.idl

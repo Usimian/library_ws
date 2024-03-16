@@ -1,0 +1,64 @@
+[0.199s] Invoking command in '/workspaces/isaac_ros-dev/software/library_ws/build/astra_camera': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi2/lib64:/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib PYTHONPATH=/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/robot_pose_publisher:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake /workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera
+[0.336s] -- The C compiler identification is GNU 9.4.0
+[0.457s] -- The CXX compiler identification is GNU 9.4.0
+[0.473s] -- Detecting C compiler ABI info
+[0.610s] -- Detecting C compiler ABI info - done
+[0.628s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.628s] -- Detecting C compile features
+[0.629s] -- Detecting C compile features - done
+[0.636s] -- Detecting CXX compiler ABI info
+[0.788s] -- Detecting CXX compiler ABI info - done
+[0.805s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.806s] -- Detecting CXX compile features
+[0.807s] -- Detecting CXX compile features - done
+[0.818s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.901s] -- Found Python3: /usr/bin/python3.8 (found version "3.8.10") found components: Interpreter 
+[3.067s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.170s] -- Found ament_index_cpp: 1.4.0 (/opt/ros/humble/share/ament_index_cpp/cmake)
+[3.172s] -- Found astra_camera_msgs: 1.0.1 (/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/share/astra_camera_msgs/cmake)
+[3.288s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.304s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.330s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.368s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.420s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.065s] -- Found camera_info_manager: 3.1.7 (/opt/ros/humble/share/camera_info_manager/cmake)
+[4.269s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.282s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.652s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[4.748s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.904s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.937s] -- Looking for pthread.h
+[5.087s] -- Looking for pthread.h - found
+[5.087s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.238s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[5.238s] -- Looking for pthread_create in pthreads
+[5.380s] -- Looking for pthread_create in pthreads - not found
+[5.380s] -- Looking for pthread_create in pthread
+[5.547s] -- Looking for pthread_create in pthread - found
+[5.549s] -- Found Threads: TRUE  
+[5.978s] -- Found class_loader: 2.2.0 (/opt/ros/humble/share/class_loader/cmake)
+[5.993s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[6.040s] -- Found message_filters: 4.3.3 (/opt/ros/humble/share/message_filters/cmake)
+[6.069s] -- Found image_geometry: 3.2.1 (/opt/ros/humble/share/image_geometry/cmake)
+[6.091s] -- Found image_publisher: 3.0.0 (/opt/ros/humble/share/image_publisher/cmake)
+[6.347s] -- Found OpenCV: /usr (found version "4.2.0") 
+[6.355s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[6.399s] -- Found tf2: 0.25.5 (/opt/ros/humble/share/tf2/cmake)
+[6.421s] -- Found tf2_eigen: 0.25.5 (/opt/ros/humble/share/tf2_eigen/cmake)
+[6.977s] -- Found tf2_sensor_msgs: 0.25.5 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+[7.031s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[7.032s] -- Checking for one of the modules 'libuvc'
+[7.044s] [31mCMake Error at /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:890 (message):
+[7.044s]   None of the required 'libuvc' found
+[7.044s] Call Stack (most recent call first):
+[7.045s]   CMakeLists.txt:44 (pkg_search_module)
+[7.045s] 
+[7.045s] [0m
+[7.045s] [31mCMake Error at CMakeLists.txt:46 (message):
+[7.045s]   libuvc is not found
+[7.045s] 
+[7.045s] [0m
+[7.046s] -- Configuring incomplete, errors occurred!
+[7.046s] See also "/workspaces/isaac_ros-dev/software/library_ws/build/astra_camera/CMakeFiles/CMakeOutput.log".
+[7.046s] See also "/workspaces/isaac_ros-dev/software/library_ws/build/astra_camera/CMakeFiles/CMakeError.log".
+[7.083s] Invoked command in '/workspaces/isaac_ros-dev/software/library_ws/build/astra_camera' returned '1': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi2/lib64:/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib PYTHONPATH=/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/robot_pose_publisher:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake /workspaces/isaac_ros-dev/software/library_ws/src/ros2_astra_camera/astra_camera -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera

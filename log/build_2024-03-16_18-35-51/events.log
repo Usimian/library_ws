@@ -1,0 +1,13 @@
+[0.000000] (-) TimerEvent: {}
+[0.000815] (-) JobUnselected: {'identifier': 'astra_camera'}
+[0.001433] (-) JobUnselected: {'identifier': 'astra_camera_msgs'}
+[0.001798] (-) JobUnselected: {'identifier': 'costmap_converter'}
+[0.002021] (-) JobUnselected: {'identifier': 'costmap_converter_msgs'}
+[0.002210] (-) JobUnselected: {'identifier': 'openslam_gmapping'}
+[0.002420] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.002591] (slam_gmapping) JobQueued: {'identifier': 'slam_gmapping', 'dependencies': OrderedDict([('openslam_gmapping', '/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping')])}
+[0.002680] (slam_gmapping) JobStarted: {'identifier': 'slam_gmapping'}
+[0.099264] (-) TimerEvent: {}
+[0.200856] (-) TimerEvent: {}
+[0.275692] (slam_gmapping) JobEnded: {'identifier': 'slam_gmapping', 'rc': 1}
+[0.286996] (-) EventReactorShutdown: {}

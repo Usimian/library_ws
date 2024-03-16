@@ -1,0 +1,1105 @@
+[0.000000] (-) TimerEvent: {}
+[0.001525] (-) JobUnselected: {'identifier': 'astra_camera'}
+[0.001715] (-) JobUnselected: {'identifier': 'astra_camera_msgs'}
+[0.002194] (-) JobUnselected: {'identifier': 'costmap_converter'}
+[0.002278] (-) JobUnselected: {'identifier': 'costmap_converter_msgs'}
+[0.002334] (-) JobUnselected: {'identifier': 'openslam_gmapping'}
+[0.002385] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.002441] (slam_gmapping) JobQueued: {'identifier': 'slam_gmapping', 'dependencies': OrderedDict([('openslam_gmapping', '/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping')])}
+[0.002514] (slam_gmapping) JobStarted: {'identifier': 'slam_gmapping'}
+[0.098988] (-) TimerEvent: {}
+[0.200337] (-) TimerEvent: {}
+[0.212529] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'cmake'}
+[0.213148] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping'], 'cwd': '/workspaces/isaac_ros-dev/software/library_ws/build/slam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources'), ('USER', 'mw'), ('VSCODE_NLS_CONFIG', '{"locale":"en","osLocale":"en","availableLanguages":{}}'), ('CAMERA_TYPE', 'astraplus'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('HOSTNAME', 'marc-orin'), ('GIT_ASKPASS', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/lib:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/lib:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi2/lib64::/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib'), ('BROWSER', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2b7dbe8d-24f4-45b0-ab7f-b3e389f2c0ff.sock'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', '1'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/node'), ('USER_UID', '1000'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('_colcon_cd_root', '/root/yahboomcar_ros2_ws/yahboomcar_ws'), ('ROBOT_TYPE', 'x3'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install:/workspaces/isaac_ros-dev/yahboomcar_ws2/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-59c17165-cc6f-4122-8338-0c5ef344f6ae.sock'), ('_', '/usr/bin/colcon'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('USERNAME', 'admin'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/nvidia/tao:/usr/local/cuda/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/usr/local/share/middleware_profiles/rtps_udp_profile.xml'), ('VSCODE_AMD_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('VSCODE_AGENT_FOLDER', '/root/.vscode-server'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-59c17165-cc6f-4122-8338-0c5ef344f6ae.sock","/tmp/.X11-unix/X1","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/libgomp.so.1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', ''), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a859f14de.sock'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-59c17165-cc6f-4122-8338-0c5ef344f6ae.sock'), ('ROS_DOMAIN_ID', '32'), ('AMENT_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 's2'), ('PWD', '/workspaces/isaac_ros-dev/software/library_ws/build/slam_gmapping'), ('PYTHONPATH', '/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/robot_pose_publisher:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('USER_GID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/opt/ros/humble')]), 'shell': False}
+[0.300542] (-) TimerEvent: {}
+[0.365361] (slam_gmapping) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.400698] (-) TimerEvent: {}
+[0.499304] (slam_gmapping) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.500771] (-) TimerEvent: {}
+[0.515569] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.600995] (-) TimerEvent: {}
+[0.657337] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.677941] (slam_gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.678596] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.679165] (slam_gmapping) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.689051] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.701183] (-) TimerEvent: {}
+[0.802826] (-) TimerEvent: {}
+[0.858616] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.868994] (slam_gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.869636] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.873181] (slam_gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.876188] (slam_gmapping) StderrLine: {'line': b'\x1b[0m -fuse-ld=lld -Wl,--disable-new-dtags\x1b[0m\n'}
+[0.884353] (slam_gmapping) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.903009] (-) TimerEvent: {}
+[1.004331] (-) TimerEvent: {}
+[1.105014] (-) TimerEvent: {}
+[1.205780] (-) TimerEvent: {}
+[1.306458] (-) TimerEvent: {}
+[1.407081] (-) TimerEvent: {}
+[1.507736] (-) TimerEvent: {}
+[1.608379] (-) TimerEvent: {}
+[1.709064] (-) TimerEvent: {}
+[1.809899] (-) TimerEvent: {}
+[1.910566] (-) TimerEvent: {}
+[2.011254] (-) TimerEvent: {}
+[2.111952] (-) TimerEvent: {}
+[2.212777] (-) TimerEvent: {}
+[2.313496] (-) TimerEvent: {}
+[2.414185] (-) TimerEvent: {}
+[2.514848] (-) TimerEvent: {}
+[2.615542] (-) TimerEvent: {}
+[2.716321] (-) TimerEvent: {}
+[2.817090] (-) TimerEvent: {}
+[2.917788] (-) TimerEvent: {}
+[3.018525] (-) TimerEvent: {}
+[3.079919] (slam_gmapping) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.8 (found version "3.8.10") found components: Interpreter \n'}
+[3.118853] (-) TimerEvent: {}
+[3.219847] (-) TimerEvent: {}
+[3.235130] (slam_gmapping) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.323241] (-) TimerEvent: {}
+[3.359072] (slam_gmapping) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[3.423877] (-) TimerEvent: {}
+[3.499579] (slam_gmapping) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.520858] (slam_gmapping) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.524024] (-) TimerEvent: {}
+[3.554460] (slam_gmapping) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.605293] (slam_gmapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.624224] (-) TimerEvent: {}
+[3.671231] (slam_gmapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.724419] (-) TimerEvent: {}
+[3.819764] (slam_gmapping) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[3.824529] (-) TimerEvent: {}
+[3.925168] (-) TimerEvent: {}
+[4.026220] (-) TimerEvent: {}
+[4.108796] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2: 0.25.5 (/opt/ros/humble/share/tf2/cmake)\n'}
+[4.126406] (-) TimerEvent: {}
+[4.142498] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.5 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[4.226589] (-) TimerEvent: {}
+[4.327855] (-) TimerEvent: {}
+[4.428656] (-) TimerEvent: {}
+[4.507361] (slam_gmapping) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.523645] (slam_gmapping) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.528823] (-) TimerEvent: {}
+[4.629649] (-) TimerEvent: {}
+[4.730345] (-) TimerEvent: {}
+[4.831032] (-) TimerEvent: {}
+[4.931752] (-) TimerEvent: {}
+[4.938905] (slam_gmapping) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[5.031929] (-) TimerEvent: {}
+[5.054499] (slam_gmapping) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.132099] (-) TimerEvent: {}
+[5.232833] (-) TimerEvent: {}
+[5.235973] (slam_gmapping) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.281343] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.333030] (-) TimerEvent: {}
+[5.428140] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.428842] (slam_gmapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.433145] (-) TimerEvent: {}
+[5.533851] (-) TimerEvent: {}
+[5.588516] (slam_gmapping) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[5.589115] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[5.634042] (-) TimerEvent: {}
+[5.720439] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[5.723861] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[5.734212] (-) TimerEvent: {}
+[5.835089] (-) TimerEvent: {}
+[5.869960] (slam_gmapping) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[5.872368] (slam_gmapping) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.935267] (-) TimerEvent: {}
+[6.036006] (-) TimerEvent: {}
+[6.136741] (-) TimerEvent: {}
+[6.237461] (-) TimerEvent: {}
+[6.338233] (-) TimerEvent: {}
+[6.438953] (-) TimerEvent: {}
+[6.540552] (-) TimerEvent: {}
+[6.641332] (-) TimerEvent: {}
+[6.742153] (-) TimerEvent: {}
+[6.842887] (-) TimerEvent: {}
+[6.844838] (slam_gmapping) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.5 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[6.895286] (slam_gmapping) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[6.899893] (slam_gmapping) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[6.900596] (slam_gmapping) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[6.934837] (slam_gmapping) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[6.943076] (-) TimerEvent: {}
+[7.044383] (-) TimerEvent: {}
+[7.145191] (-) TimerEvent: {}
+[7.154759] (slam_gmapping) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[7.245727] (-) TimerEvent: {}
+[7.346460] (-) TimerEvent: {}
+[7.410613] (slam_gmapping) StdoutLine: {'line': b'-- Found openslam_gmapping: 0.1.2 (/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/share/openslam_gmapping/cmake)\n'}
+[7.421522] (slam_gmapping) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.446713] (-) TimerEvent: {}
+[7.547429] (-) TimerEvent: {}
+[7.649660] (-) TimerEvent: {}
+[7.700537] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.704381] (slam_gmapping) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include\n'}
+[7.704735] (slam_gmapping) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.704909] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[7.706933] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.713707] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[7.718430] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.719002] (slam_gmapping) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.723214] (slam_gmapping) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.733297] (slam_gmapping) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.749841] (-) TimerEvent: {}
+[7.785892] (slam_gmapping) StdoutLine: {'line': b'-- Generating done\n'}
+[7.790436] (slam_gmapping) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/isaac_ros-dev/software/library_ws/build/slam_gmapping\n'}
+[7.832045] (slam_gmapping) CommandEnded: {'returncode': 0}
+[7.834510] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'build'}
+[7.834646] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/isaac_ros-dev/software/library_ws/build/slam_gmapping', '--', '-j6', '-l6'], 'cwd': '/workspaces/isaac_ros-dev/software/library_ws/build/slam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources'), ('USER', 'mw'), ('VSCODE_NLS_CONFIG', '{"locale":"en","osLocale":"en","availableLanguages":{}}'), ('CAMERA_TYPE', 'astraplus'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('HOSTNAME', 'marc-orin'), ('GIT_ASKPASS', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/lib:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/lib:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi2/lib64::/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib'), ('BROWSER', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2b7dbe8d-24f4-45b0-ab7f-b3e389f2c0ff.sock'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', '1'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/node'), ('USER_UID', '1000'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('_colcon_cd_root', '/root/yahboomcar_ros2_ws/yahboomcar_ws'), ('ROBOT_TYPE', 'x3'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install:/workspaces/isaac_ros-dev/yahboomcar_ws2/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-59c17165-cc6f-4122-8338-0c5ef344f6ae.sock'), ('_', '/usr/bin/colcon'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('USERNAME', 'admin'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/nvidia/tao:/usr/local/cuda/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/usr/local/share/middleware_profiles/rtps_udp_profile.xml'), ('VSCODE_AMD_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('VSCODE_AGENT_FOLDER', '/root/.vscode-server'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-59c17165-cc6f-4122-8338-0c5ef344f6ae.sock","/tmp/.X11-unix/X1","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/libgomp.so.1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', ''), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a859f14de.sock'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-59c17165-cc6f-4122-8338-0c5ef344f6ae.sock'), ('ROS_DOMAIN_ID', '32'), ('AMENT_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 's2'), ('PWD', '/workspaces/isaac_ros-dev/software/library_ws/build/slam_gmapping'), ('PYTHONPATH', '/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/robot_pose_publisher:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('USER_GID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/opt/ros/humble')]), 'shell': False}
+[7.850112] (-) TimerEvent: {}
+[7.911989] (slam_gmapping) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/slam_gmapping.dir/src/slam_gmapping.cpp.o\x1b[0m\n'}
+[7.950288] (-) TimerEvent: {}
+[8.051012] (-) TimerEvent: {}
+[8.151765] (-) TimerEvent: {}
+[8.252493] (-) TimerEvent: {}
+[8.353239] (-) TimerEvent: {}
+[8.454006] (-) TimerEvent: {}
+[8.554796] (-) TimerEvent: {}
+[8.621729] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:38\x1b[m\x1b[K,\n'}
+[8.622336] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[8.622526] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K-Wcpp\x1b[m\x1b[K]\n'}
+[8.622739] (slam_gmapping) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[8.622909] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.654975] (-) TimerEvent: {}
+[8.755765] (-) TimerEvent: {}
+[8.856925] (-) TimerEvent: {}
+[8.957712] (-) TimerEvent: {}
+[9.058458] (-) TimerEvent: {}
+[9.160051] (-) TimerEvent: {}
+[9.260759] (-) TimerEvent: {}
+[9.364296] (-) TimerEvent: {}
+[9.466208] (-) TimerEvent: {}
+[9.567320] (-) TimerEvent: {}
+[9.668726] (-) TimerEvent: {}
+[9.769977] (-) TimerEvent: {}
+[9.870714] (-) TimerEvent: {}
+[9.971541] (-) TimerEvent: {}
+[10.072963] (-) TimerEvent: {}
+[10.173775] (-) TimerEvent: {}
+[10.275142] (-) TimerEvent: {}
+[10.375930] (-) TimerEvent: {}
+[10.476690] (-) TimerEvent: {}
+[10.577486] (-) TimerEvent: {}
+[10.679503] (-) TimerEvent: {}
+[10.780297] (-) TimerEvent: {}
+[10.881059] (-) TimerEvent: {}
+[10.981892] (-) TimerEvent: {}
+[11.082636] (-) TimerEvent: {}
+[11.183390] (-) TimerEvent: {}
+[11.284162] (-) TimerEvent: {}
+[11.385073] (-) TimerEvent: {}
+[11.485844] (-) TimerEvent: {}
+[11.586815] (-) TimerEvent: {}
+[11.687561] (-) TimerEvent: {}
+[11.788454] (-) TimerEvent: {}
+[11.889205] (-) TimerEvent: {}
+[11.990016] (-) TimerEvent: {}
+[12.091085] (-) TimerEvent: {}
+[12.191837] (-) TimerEvent: {}
+[12.292654] (-) TimerEvent: {}
+[12.393589] (-) TimerEvent: {}
+[12.494353] (-) TimerEvent: {}
+[12.595201] (-) TimerEvent: {}
+[12.695971] (-) TimerEvent: {}
+[12.796777] (-) TimerEvent: {}
+[12.897642] (-) TimerEvent: {}
+[12.998520] (-) TimerEvent: {}
+[13.099667] (-) TimerEvent: {}
+[13.200464] (-) TimerEvent: {}
+[13.301299] (-) TimerEvent: {}
+[13.402091] (-) TimerEvent: {}
+[13.502877] (-) TimerEvent: {}
+[13.603659] (-) TimerEvent: {}
+[13.704457] (-) TimerEvent: {}
+[13.805287] (-) TimerEvent: {}
+[13.906853] (-) TimerEvent: {}
+[14.007630] (-) TimerEvent: {}
+[14.109961] (-) TimerEvent: {}
+[14.210763] (-) TimerEvent: {}
+[14.311550] (-) TimerEvent: {}
+[14.412301] (-) TimerEvent: {}
+[14.513055] (-) TimerEvent: {}
+[14.617016] (-) TimerEvent: {}
+[14.718067] (-) TimerEvent: {}
+[14.819647] (-) TimerEvent: {}
+[14.920922] (-) TimerEvent: {}
+[15.022896] (-) TimerEvent: {}
+[15.124226] (-) TimerEvent: {}
+[15.224966] (-) TimerEvent: {}
+[15.325868] (-) TimerEvent: {}
+[15.429775] (-) TimerEvent: {}
+[15.530959] (-) TimerEvent: {}
+[15.634760] (-) TimerEvent: {}
+[15.737035] (-) TimerEvent: {}
+[15.840722] (-) TimerEvent: {}
+[15.941835] (-) TimerEvent: {}
+[16.042907] (-) TimerEvent: {}
+[16.144322] (-) TimerEvent: {}
+[16.245761] (-) TimerEvent: {}
+[16.347305] (-) TimerEvent: {}
+[16.448225] (-) TimerEvent: {}
+[16.549418] (-) TimerEvent: {}
+[16.650980] (-) TimerEvent: {}
+[16.752146] (-) TimerEvent: {}
+[16.853721] (-) TimerEvent: {}
+[16.954742] (-) TimerEvent: {}
+[17.055486] (-) TimerEvent: {}
+[17.156255] (-) TimerEvent: {}
+[17.259544] (-) TimerEvent: {}
+[17.360738] (-) TimerEvent: {}
+[17.461711] (-) TimerEvent: {}
+[17.565045] (-) TimerEvent: {}
+[17.669731] (-) TimerEvent: {}
+[17.734006] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:9\x1b[m\x1b[K,\n'}
+[17.734685] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.734904] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.735079] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid rle(OutputIterator&, const Iterator&, const Iterator&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.735253] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:140:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kthis \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 clause does not guard... [\x1b[01;35m\x1b[K-Wmisleading-indentation\x1b[m\x1b[K]\n'}
+[17.737364] (slam_gmapping) StderrLine: {'line': b'  140 |  \x1b[01;35m\x1b[Kif\x1b[m\x1b[K (count>0)\n'}
+[17.738541] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[17.738722] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/particlefilter/particlefilter.h:142:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K...this statement, but the latter is misleadingly indented as if it were guarded by the \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.738891] (slam_gmapping) StderrLine: {'line': b'  142 |   \x1b[01;36m\x1b[Kout\x1b[m\x1b[K++;\n'}
+[17.739042] (slam_gmapping) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[17.761411] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:10\x1b[m\x1b[K,\n'}
+[17.762037] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.762263] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.762441] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/utils/point.h:\x1b[m\x1b[K At global scope:\n'}
+[17.762604] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/utils/point.h:205:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.762760] (slam_gmapping) StderrLine: {'line': b'  205 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[17.762903] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.763042] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_base/sensorreading.h:4\x1b[m\x1b[K,\n'}
+[17.763186] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:6\x1b[m\x1b[K,\n'}
+[17.763366] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[17.763511] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.763668] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.763811] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_base/sensor.h:21:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.763954] (slam_gmapping) StderrLine: {'line': b'   21 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[17.764094] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.764229] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:6\x1b[m\x1b[K,\n'}
+[17.764670] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[17.764867] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.765066] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.765217] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_base/sensorreading.h:23:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.765365] (slam_gmapping) StderrLine: {'line': b'   23 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[17.765505] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.765680] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:7\x1b[m\x1b[K,\n'}
+[17.765829] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[17.765974] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.766113] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.766250] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometrysensor.h:17:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.766655] (slam_gmapping) StderrLine: {'line': b'   17 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[17.766819] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.767109] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:8\x1b[m\x1b[K,\n'}
+[17.767281] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[17.767423] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.767569] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.767705] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_range/rangesensor.h:33:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.767852] (slam_gmapping) StderrLine: {'line': b'   33 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[17.768473] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.777074] (-) TimerEvent: {}
+[17.777438] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:9\x1b[m\x1b[K,\n'}
+[17.778195] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[17.778391] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.778549] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.778705] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_odometry/odometryreading.h:27:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.778889] (slam_gmapping) StderrLine: {'line': b'   27 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[17.779036] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.779178] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:10\x1b[m\x1b[K,\n'}
+[17.779319] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[17.779455] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.779590] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.779745] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/sensor/sensor_range/rangereading.h:24:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.782268] (slam_gmapping) StderrLine: {'line': b'   24 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[17.782550] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.782735] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:11\x1b[m\x1b[K,\n'}
+[17.786825] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[17.787955] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.788763] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.790846] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/log/configuration.h:15:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.791070] (slam_gmapping) StderrLine: {'line': b'   15 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[17.791234] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.791390] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:12\x1b[m\x1b[K,\n'}
+[17.791547] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.791691] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.791837] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/log/sensorlog.h:27:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.791989] (slam_gmapping) StderrLine: {'line': b'   27 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[17.792126] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.792316] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/grid/map.h:5\x1b[m\x1b[K,\n'}
+[17.793528] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:3\x1b[m\x1b[K,\n'}
+[17.793803] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[17.793964] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[17.794115] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.794258] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.794448] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/grid/accessstate.h:6:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.794610] (slam_gmapping) StderrLine: {'line': b'    6 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[17.794749] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.800487] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/grid/map.h:6\x1b[m\x1b[K,\n'}
+[17.801010] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:3\x1b[m\x1b[K,\n'}
+[17.801222] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[17.801385] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[17.801598] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.801784] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.801936] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/grid/array2d.h:185:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.802116] (slam_gmapping) StderrLine: {'line': b'  185 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[17.802258] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.804478] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:3\x1b[m\x1b[K,\n'}
+[17.804867] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[17.805272] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[17.805467] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.805668] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.805824] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/grid/map.h:262:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.806057] (slam_gmapping) StderrLine: {'line': b'  262 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[17.806204] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.806466] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/grid/harray2d.h:5\x1b[m\x1b[K,\n'}
+[17.806669] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:4\x1b[m\x1b[K,\n'}
+[17.809065] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[17.809305] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[17.809483] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.809676] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.809835] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/utils/autoptr.h:96:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.810052] (slam_gmapping) StderrLine: {'line': b'   96 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[17.810194] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.843871] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:4\x1b[m\x1b[K,\n'}
+[17.844546] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[17.844801] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[17.845267] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.845462] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.845690] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/grid/harray2d.h:197:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.845869] (slam_gmapping) StderrLine: {'line': b'  197 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[17.846022] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.846255] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:5\x1b[m\x1b[K,\n'}
+[17.846424] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[17.846574] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.846715] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.846889] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KGMapping::PointAccumulator::PointAccumulator(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.847261] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:17:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[17.847463] (slam_gmapping) StderrLine: {'line': b'   17 |  PointAccumulator(\x1b[01;35m\x1b[Kint i\x1b[m\x1b[K): acc(0,0), n(0), visits(0){assert(i==-1);}\n'}
+[17.847654] (slam_gmapping) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K~~~~^\x1b[m\x1b[K\n'}
+[17.847812] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:\x1b[m\x1b[K At global scope:\n'}
+[17.847964] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/smmap.h:52:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.848116] (slam_gmapping) StderrLine: {'line': b'   52 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[17.848258] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.850644] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:7\x1b[m\x1b[K,\n'}
+[17.850987] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[17.851165] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.851336] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.851488] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/utils/stat.h:145:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.851638] (slam_gmapping) StderrLine: {'line': b'  145 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K //end namespace\n'}
+[17.851779] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.877310] (-) TimerEvent: {}
+[17.889122] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:15\x1b[m\x1b[K,\n'}
+[17.889788] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.890048] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.890234] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/scanmatcher/scanmatcher.h:250:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.891133] (slam_gmapping) StderrLine: {'line': b'  250 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[17.891367] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.891541] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:16\x1b[m\x1b[K,\n'}
+[17.891704] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.892905] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.893151] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/motionmodel.h:17:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.893348] (slam_gmapping) StderrLine: {'line': b'   17 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[17.893523] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.944882] (slam_gmapping) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/include/slam_gmapping/slam_gmapping.h:45\x1b[m\x1b[K,\n'}
+[17.945508] (slam_gmapping) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/src/slam_gmapping.cpp:24\x1b[m\x1b[K:\n'}
+[17.946007] (slam_gmapping) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/include/gmapping/gridfastslam/gridslamprocessor.h:335:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[17.946214] (slam_gmapping) StderrLine: {'line': b'  335 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[17.946507] (slam_gmapping) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.977471] (-) TimerEvent: {}
+[18.078298] (-) TimerEvent: {}
+[18.179219] (-) TimerEvent: {}
+[18.280042] (-) TimerEvent: {}
+[18.380856] (-) TimerEvent: {}
+[18.483958] (-) TimerEvent: {}
+[18.584741] (-) TimerEvent: {}
+[18.685477] (-) TimerEvent: {}
+[18.786232] (-) TimerEvent: {}
+[18.886985] (-) TimerEvent: {}
+[18.987788] (-) TimerEvent: {}
+[19.089721] (-) TimerEvent: {}
+[19.191129] (-) TimerEvent: {}
+[19.291880] (-) TimerEvent: {}
+[19.392629] (-) TimerEvent: {}
+[19.493753] (-) TimerEvent: {}
+[19.594873] (-) TimerEvent: {}
+[19.697138] (-) TimerEvent: {}
+[19.799974] (-) TimerEvent: {}
+[19.900820] (-) TimerEvent: {}
+[20.001655] (-) TimerEvent: {}
+[20.102453] (-) TimerEvent: {}
+[20.203229] (-) TimerEvent: {}
+[20.303959] (-) TimerEvent: {}
+[20.404696] (-) TimerEvent: {}
+[20.506136] (-) TimerEvent: {}
+[20.606875] (-) TimerEvent: {}
+[20.707631] (-) TimerEvent: {}
+[20.808363] (-) TimerEvent: {}
+[20.909139] (-) TimerEvent: {}
+[21.013718] (-) TimerEvent: {}
+[21.114888] (-) TimerEvent: {}
+[21.216530] (-) TimerEvent: {}
+[21.317636] (-) TimerEvent: {}
+[21.419280] (-) TimerEvent: {}
+[21.522702] (-) TimerEvent: {}
+[21.623512] (-) TimerEvent: {}
+[21.724292] (-) TimerEvent: {}
+[21.825317] (-) TimerEvent: {}
+[21.926429] (-) TimerEvent: {}
+[22.027591] (-) TimerEvent: {}
+[22.128577] (-) TimerEvent: {}
+[22.229771] (-) TimerEvent: {}
+[22.331189] (-) TimerEvent: {}
+[22.431968] (-) TimerEvent: {}
+[22.533769] (-) TimerEvent: {}
+[22.634555] (-) TimerEvent: {}
+[22.736409] (-) TimerEvent: {}
+[22.837162] (-) TimerEvent: {}
+[22.938042] (-) TimerEvent: {}
+[23.038830] (-) TimerEvent: {}
+[23.139712] (-) TimerEvent: {}
+[23.240536] (-) TimerEvent: {}
+[23.341333] (-) TimerEvent: {}
+[23.443183] (-) TimerEvent: {}
+[23.543933] (-) TimerEvent: {}
+[23.644664] (-) TimerEvent: {}
+[23.745411] (-) TimerEvent: {}
+[23.846164] (-) TimerEvent: {}
+[23.946911] (-) TimerEvent: {}
+[24.047643] (-) TimerEvent: {}
+[24.148471] (-) TimerEvent: {}
+[24.249339] (-) TimerEvent: {}
+[24.351501] (-) TimerEvent: {}
+[24.452254] (-) TimerEvent: {}
+[24.553117] (-) TimerEvent: {}
+[24.653859] (-) TimerEvent: {}
+[24.754610] (-) TimerEvent: {}
+[24.855401] (-) TimerEvent: {}
+[24.956162] (-) TimerEvent: {}
+[25.056952] (-) TimerEvent: {}
+[25.157725] (-) TimerEvent: {}
+[25.258471] (-) TimerEvent: {}
+[25.359246] (-) TimerEvent: {}
+[25.460113] (-) TimerEvent: {}
+[25.560854] (-) TimerEvent: {}
+[25.661637] (-) TimerEvent: {}
+[25.762373] (-) TimerEvent: {}
+[25.863088] (-) TimerEvent: {}
+[25.963838] (-) TimerEvent: {}
+[26.064575] (-) TimerEvent: {}
+[26.165518] (-) TimerEvent: {}
+[26.266391] (-) TimerEvent: {}
+[26.367143] (-) TimerEvent: {}
+[26.467882] (-) TimerEvent: {}
+[26.568714] (-) TimerEvent: {}
+[26.669460] (-) TimerEvent: {}
+[26.770258] (-) TimerEvent: {}
+[26.871022] (-) TimerEvent: {}
+[26.971802] (-) TimerEvent: {}
+[27.072596] (-) TimerEvent: {}
+[27.174058] (-) TimerEvent: {}
+[27.275281] (-) TimerEvent: {}
+[27.377342] (-) TimerEvent: {}
+[27.478763] (-) TimerEvent: {}
+[27.582036] (-) TimerEvent: {}
+[27.684239] (-) TimerEvent: {}
+[27.785649] (-) TimerEvent: {}
+[27.887114] (-) TimerEvent: {}
+[27.992673] (-) TimerEvent: {}
+[28.093511] (-) TimerEvent: {}
+[28.194336] (-) TimerEvent: {}
+[28.295568] (-) TimerEvent: {}
+[28.396312] (-) TimerEvent: {}
+[28.497146] (-) TimerEvent: {}
+[28.599590] (-) TimerEvent: {}
+[28.700354] (-) TimerEvent: {}
+[28.801138] (-) TimerEvent: {}
+[28.901943] (-) TimerEvent: {}
+[29.003754] (-) TimerEvent: {}
+[29.104594] (-) TimerEvent: {}
+[29.206093] (-) TimerEvent: {}
+[29.308428] (-) TimerEvent: {}
+[29.409300] (-) TimerEvent: {}
+[29.510799] (-) TimerEvent: {}
+[29.611530] (-) TimerEvent: {}
+[29.712289] (-) TimerEvent: {}
+[29.813020] (-) TimerEvent: {}
+[29.913781] (-) TimerEvent: {}
+[30.014534] (-) TimerEvent: {}
+[30.115316] (-) TimerEvent: {}
+[30.216327] (-) TimerEvent: {}
+[30.317630] (-) TimerEvent: {}
+[30.418426] (-) TimerEvent: {}
+[30.519510] (-) TimerEvent: {}
+[30.620259] (-) TimerEvent: {}
+[30.721088] (-) TimerEvent: {}
+[30.824403] (-) TimerEvent: {}
+[30.925666] (-) TimerEvent: {}
+[31.026822] (-) TimerEvent: {}
+[31.127854] (-) TimerEvent: {}
+[31.228599] (-) TimerEvent: {}
+[31.329347] (-) TimerEvent: {}
+[31.430091] (-) TimerEvent: {}
+[31.530821] (-) TimerEvent: {}
+[31.631547] (-) TimerEvent: {}
+[31.732335] (-) TimerEvent: {}
+[31.833107] (-) TimerEvent: {}
+[31.933955] (-) TimerEvent: {}
+[32.034700] (-) TimerEvent: {}
+[32.135673] (-) TimerEvent: {}
+[32.236802] (-) TimerEvent: {}
+[32.338357] (-) TimerEvent: {}
+[32.439655] (-) TimerEvent: {}
+[32.540802] (-) TimerEvent: {}
+[32.642129] (-) TimerEvent: {}
+[32.743341] (-) TimerEvent: {}
+[32.844722] (-) TimerEvent: {}
+[32.945843] (-) TimerEvent: {}
+[33.046712] (-) TimerEvent: {}
+[33.147774] (-) TimerEvent: {}
+[33.248542] (-) TimerEvent: {}
+[33.349273] (-) TimerEvent: {}
+[33.450138] (-) TimerEvent: {}
+[33.550876] (-) TimerEvent: {}
+[33.651628] (-) TimerEvent: {}
+[33.752381] (-) TimerEvent: {}
+[33.853130] (-) TimerEvent: {}
+[33.953905] (-) TimerEvent: {}
+[34.054634] (-) TimerEvent: {}
+[34.155447] (-) TimerEvent: {}
+[34.256352] (-) TimerEvent: {}
+[34.357421] (-) TimerEvent: {}
+[34.458351] (-) TimerEvent: {}
+[34.559273] (-) TimerEvent: {}
+[34.661290] (-) TimerEvent: {}
+[34.762235] (-) TimerEvent: {}
+[34.863476] (-) TimerEvent: {}
+[34.964660] (-) TimerEvent: {}
+[35.065476] (-) TimerEvent: {}
+[35.166285] (-) TimerEvent: {}
+[35.268070] (-) TimerEvent: {}
+[35.369107] (-) TimerEvent: {}
+[35.469919] (-) TimerEvent: {}
+[35.570690] (-) TimerEvent: {}
+[35.671436] (-) TimerEvent: {}
+[35.772611] (-) TimerEvent: {}
+[35.873360] (-) TimerEvent: {}
+[35.974132] (-) TimerEvent: {}
+[36.074883] (-) TimerEvent: {}
+[36.175855] (-) TimerEvent: {}
+[36.276598] (-) TimerEvent: {}
+[36.377486] (-) TimerEvent: {}
+[36.478360] (-) TimerEvent: {}
+[36.579300] (-) TimerEvent: {}
+[36.680035] (-) TimerEvent: {}
+[36.781147] (-) TimerEvent: {}
+[36.881986] (-) TimerEvent: {}
+[36.983149] (-) TimerEvent: {}
+[37.083871] (-) TimerEvent: {}
+[37.184626] (-) TimerEvent: {}
+[37.285378] (-) TimerEvent: {}
+[37.386596] (-) TimerEvent: {}
+[37.487605] (-) TimerEvent: {}
+[37.588400] (-) TimerEvent: {}
+[37.689748] (-) TimerEvent: {}
+[37.790529] (-) TimerEvent: {}
+[37.891279] (-) TimerEvent: {}
+[37.992060] (-) TimerEvent: {}
+[38.092927] (-) TimerEvent: {}
+[38.193686] (-) TimerEvent: {}
+[38.294508] (-) TimerEvent: {}
+[38.395252] (-) TimerEvent: {}
+[38.496833] (-) TimerEvent: {}
+[38.597603] (-) TimerEvent: {}
+[38.701733] (-) TimerEvent: {}
+[38.802508] (-) TimerEvent: {}
+[38.903245] (-) TimerEvent: {}
+[39.004119] (-) TimerEvent: {}
+[39.104967] (-) TimerEvent: {}
+[39.206090] (-) TimerEvent: {}
+[39.306848] (-) TimerEvent: {}
+[39.409742] (-) TimerEvent: {}
+[39.510574] (-) TimerEvent: {}
+[39.612099] (-) TimerEvent: {}
+[39.712832] (-) TimerEvent: {}
+[39.814593] (-) TimerEvent: {}
+[39.915384] (-) TimerEvent: {}
+[40.016107] (-) TimerEvent: {}
+[40.116850] (-) TimerEvent: {}
+[40.217628] (-) TimerEvent: {}
+[40.318349] (-) TimerEvent: {}
+[40.419102] (-) TimerEvent: {}
+[40.519861] (-) TimerEvent: {}
+[40.620583] (-) TimerEvent: {}
+[40.723379] (-) TimerEvent: {}
+[40.824241] (-) TimerEvent: {}
+[40.924969] (-) TimerEvent: {}
+[41.026317] (-) TimerEvent: {}
+[41.127585] (-) TimerEvent: {}
+[41.228433] (-) TimerEvent: {}
+[41.329144] (-) TimerEvent: {}
+[41.429930] (-) TimerEvent: {}
+[41.530672] (-) TimerEvent: {}
+[41.631436] (-) TimerEvent: {}
+[41.732183] (-) TimerEvent: {}
+[41.832941] (-) TimerEvent: {}
+[41.937716] (-) TimerEvent: {}
+[42.039266] (-) TimerEvent: {}
+[42.140724] (-) TimerEvent: {}
+[42.241812] (-) TimerEvent: {}
+[42.344302] (-) TimerEvent: {}
+[42.445097] (-) TimerEvent: {}
+[42.546520] (-) TimerEvent: {}
+[42.647370] (-) TimerEvent: {}
+[42.748188] (-) TimerEvent: {}
+[42.848936] (-) TimerEvent: {}
+[42.949702] (-) TimerEvent: {}
+[43.050501] (-) TimerEvent: {}
+[43.151346] (-) TimerEvent: {}
+[43.252070] (-) TimerEvent: {}
+[43.353635] (-) TimerEvent: {}
+[43.455239] (-) TimerEvent: {}
+[43.556355] (-) TimerEvent: {}
+[43.657090] (-) TimerEvent: {}
+[43.758794] (-) TimerEvent: {}
+[43.859673] (-) TimerEvent: {}
+[43.960472] (-) TimerEvent: {}
+[44.061235] (-) TimerEvent: {}
+[44.161978] (-) TimerEvent: {}
+[44.262704] (-) TimerEvent: {}
+[44.363413] (-) TimerEvent: {}
+[44.464122] (-) TimerEvent: {}
+[44.564837] (-) TimerEvent: {}
+[44.665617] (-) TimerEvent: {}
+[44.766476] (-) TimerEvent: {}
+[44.867573] (-) TimerEvent: {}
+[44.968633] (-) TimerEvent: {}
+[45.070022] (-) TimerEvent: {}
+[45.171617] (-) TimerEvent: {}
+[45.272562] (-) TimerEvent: {}
+[45.373736] (-) TimerEvent: {}
+[45.475008] (-) TimerEvent: {}
+[45.576889] (-) TimerEvent: {}
+[45.677733] (-) TimerEvent: {}
+[45.779908] (-) TimerEvent: {}
+[45.882438] (-) TimerEvent: {}
+[45.983729] (-) TimerEvent: {}
+[46.085313] (-) TimerEvent: {}
+[46.186539] (-) TimerEvent: {}
+[46.288128] (-) TimerEvent: {}
+[46.390133] (-) TimerEvent: {}
+[46.491610] (-) TimerEvent: {}
+[46.593049] (-) TimerEvent: {}
+[46.693796] (-) TimerEvent: {}
+[46.794542] (-) TimerEvent: {}
+[46.895314] (-) TimerEvent: {}
+[46.996170] (-) TimerEvent: {}
+[47.096933] (-) TimerEvent: {}
+[47.197776] (-) TimerEvent: {}
+[47.298751] (-) TimerEvent: {}
+[47.399878] (-) TimerEvent: {}
+[47.500642] (-) TimerEvent: {}
+[47.601423] (-) TimerEvent: {}
+[47.703597] (-) TimerEvent: {}
+[47.804371] (-) TimerEvent: {}
+[47.905554] (-) TimerEvent: {}
+[48.006634] (-) TimerEvent: {}
+[48.107442] (-) TimerEvent: {}
+[48.208254] (-) TimerEvent: {}
+[48.309204] (-) TimerEvent: {}
+[48.410626] (-) TimerEvent: {}
+[48.511460] (-) TimerEvent: {}
+[48.612432] (-) TimerEvent: {}
+[48.713216] (-) TimerEvent: {}
+[48.814026] (-) TimerEvent: {}
+[48.914763] (-) TimerEvent: {}
+[49.015496] (-) TimerEvent: {}
+[49.116213] (-) TimerEvent: {}
+[49.217700] (-) TimerEvent: {}
+[49.318440] (-) TimerEvent: {}
+[49.419206] (-) TimerEvent: {}
+[49.520009] (-) TimerEvent: {}
+[49.620975] (-) TimerEvent: {}
+[49.724116] (-) TimerEvent: {}
+[49.825000] (-) TimerEvent: {}
+[49.927324] (-) TimerEvent: {}
+[50.028050] (-) TimerEvent: {}
+[50.128814] (-) TimerEvent: {}
+[50.229615] (-) TimerEvent: {}
+[50.330379] (-) TimerEvent: {}
+[50.431139] (-) TimerEvent: {}
+[50.531926] (-) TimerEvent: {}
+[50.632647] (-) TimerEvent: {}
+[50.733353] (-) TimerEvent: {}
+[50.834118] (-) TimerEvent: {}
+[50.934944] (-) TimerEvent: {}
+[51.035752] (-) TimerEvent: {}
+[51.140860] (-) TimerEvent: {}
+[51.241640] (-) TimerEvent: {}
+[51.342951] (-) TimerEvent: {}
+[51.444552] (-) TimerEvent: {}
+[51.545306] (-) TimerEvent: {}
+[51.646179] (-) TimerEvent: {}
+[51.747077] (-) TimerEvent: {}
+[51.847892] (-) TimerEvent: {}
+[51.948648] (-) TimerEvent: {}
+[52.049411] (-) TimerEvent: {}
+[52.150304] (-) TimerEvent: {}
+[52.251922] (-) TimerEvent: {}
+[52.353576] (-) TimerEvent: {}
+[52.455158] (-) TimerEvent: {}
+[52.555868] (-) TimerEvent: {}
+[52.656625] (-) TimerEvent: {}
+[52.757592] (-) TimerEvent: {}
+[52.858307] (-) TimerEvent: {}
+[52.959313] (-) TimerEvent: {}
+[53.060361] (-) TimerEvent: {}
+[53.161123] (-) TimerEvent: {}
+[53.262222] (-) TimerEvent: {}
+[53.363831] (-) TimerEvent: {}
+[53.464575] (-) TimerEvent: {}
+[53.565376] (-) TimerEvent: {}
+[53.666188] (-) TimerEvent: {}
+[53.767281] (-) TimerEvent: {}
+[53.868216] (-) TimerEvent: {}
+[53.968998] (-) TimerEvent: {}
+[54.069882] (-) TimerEvent: {}
+[54.173099] (-) TimerEvent: {}
+[54.275060] (-) TimerEvent: {}
+[54.377365] (-) TimerEvent: {}
+[54.478344] (-) TimerEvent: {}
+[54.579554] (-) TimerEvent: {}
+[54.684023] (-) TimerEvent: {}
+[54.784754] (-) TimerEvent: {}
+[54.885571] (-) TimerEvent: {}
+[54.986696] (-) TimerEvent: {}
+[55.087650] (-) TimerEvent: {}
+[55.191627] (-) TimerEvent: {}
+[55.292359] (-) TimerEvent: {}
+[55.394008] (-) TimerEvent: {}
+[55.494891] (-) TimerEvent: {}
+[55.596171] (-) TimerEvent: {}
+[55.697747] (-) TimerEvent: {}
+[55.798492] (-) TimerEvent: {}
+[55.899299] (-) TimerEvent: {}
+[56.000072] (-) TimerEvent: {}
+[56.100835] (-) TimerEvent: {}
+[56.201582] (-) TimerEvent: {}
+[56.302295] (-) TimerEvent: {}
+[56.403026] (-) TimerEvent: {}
+[56.503762] (-) TimerEvent: {}
+[56.605447] (-) TimerEvent: {}
+[56.706204] (-) TimerEvent: {}
+[56.806943] (-) TimerEvent: {}
+[56.907718] (-) TimerEvent: {}
+[57.008452] (-) TimerEvent: {}
+[57.109210] (-) TimerEvent: {}
+[57.209992] (-) TimerEvent: {}
+[57.310764] (-) TimerEvent: {}
+[57.411528] (-) TimerEvent: {}
+[57.512467] (-) TimerEvent: {}
+[57.613828] (-) TimerEvent: {}
+[57.714568] (-) TimerEvent: {}
+[57.815503] (-) TimerEvent: {}
+[57.916265] (-) TimerEvent: {}
+[58.017333] (-) TimerEvent: {}
+[58.118103] (-) TimerEvent: {}
+[58.218904] (-) TimerEvent: {}
+[58.319649] (-) TimerEvent: {}
+[58.420421] (-) TimerEvent: {}
+[58.521831] (-) TimerEvent: {}
+[58.622589] (-) TimerEvent: {}
+[58.723664] (-) TimerEvent: {}
+[58.825206] (-) TimerEvent: {}
+[58.926320] (-) TimerEvent: {}
+[59.027079] (-) TimerEvent: {}
+[59.127800] (-) TimerEvent: {}
+[59.228536] (-) TimerEvent: {}
+[59.329297] (-) TimerEvent: {}
+[59.430024] (-) TimerEvent: {}
+[59.530720] (-) TimerEvent: {}
+[59.631456] (-) TimerEvent: {}
+[59.732177] (-) TimerEvent: {}
+[59.832917] (-) TimerEvent: {}
+[59.933747] (-) TimerEvent: {}
+[60.034457] (-) TimerEvent: {}
+[60.135367] (-) TimerEvent: {}
+[60.236090] (-) TimerEvent: {}
+[60.336822] (-) TimerEvent: {}
+[60.437610] (-) TimerEvent: {}
+[60.538390] (-) TimerEvent: {}
+[60.639988] (-) TimerEvent: {}
+[60.741735] (-) TimerEvent: {}
+[60.843046] (-) TimerEvent: {}
+[60.944534] (-) TimerEvent: {}
+[61.046197] (-) TimerEvent: {}
+[61.147186] (-) TimerEvent: {}
+[61.247914] (-) TimerEvent: {}
+[61.348681] (-) TimerEvent: {}
+[61.449439] (-) TimerEvent: {}
+[61.550549] (-) TimerEvent: {}
+[61.651388] (-) TimerEvent: {}
+[61.752134] (-) TimerEvent: {}
+[61.853008] (-) TimerEvent: {}
+[61.953775] (-) TimerEvent: {}
+[62.054588] (-) TimerEvent: {}
+[62.155341] (-) TimerEvent: {}
+[62.256065] (-) TimerEvent: {}
+[62.357070] (-) TimerEvent: {}
+[62.457886] (-) TimerEvent: {}
+[62.558848] (-) TimerEvent: {}
+[62.659615] (-) TimerEvent: {}
+[62.760690] (-) TimerEvent: {}
+[62.861458] (-) TimerEvent: {}
+[62.962917] (-) TimerEvent: {}
+[63.063643] (-) TimerEvent: {}
+[63.165153] (-) TimerEvent: {}
+[63.266062] (-) TimerEvent: {}
+[63.366822] (-) TimerEvent: {}
+[63.467570] (-) TimerEvent: {}
+[63.568557] (-) TimerEvent: {}
+[63.669810] (-) TimerEvent: {}
+[63.776744] (-) TimerEvent: {}
+[63.880344] (-) TimerEvent: {}
+[63.981156] (-) TimerEvent: {}
+[64.081939] (-) TimerEvent: {}
+[64.182761] (-) TimerEvent: {}
+[64.283494] (-) TimerEvent: {}
+[64.384468] (-) TimerEvent: {}
+[64.485209] (-) TimerEvent: {}
+[64.586075] (-) TimerEvent: {}
+[64.687028] (-) TimerEvent: {}
+[64.788062] (-) TimerEvent: {}
+[64.888987] (-) TimerEvent: {}
+[64.989882] (-) TimerEvent: {}
+[65.090998] (-) TimerEvent: {}
+[65.191847] (-) TimerEvent: {}
+[65.292634] (-) TimerEvent: {}
+[65.393406] (-) TimerEvent: {}
+[65.495819] (-) TimerEvent: {}
+[65.596665] (-) TimerEvent: {}
+[65.697453] (-) TimerEvent: {}
+[65.798192] (-) TimerEvent: {}
+[65.899013] (-) TimerEvent: {}
+[65.999780] (-) TimerEvent: {}
+[66.100586] (-) TimerEvent: {}
+[66.201304] (-) TimerEvent: {}
+[66.302091] (-) TimerEvent: {}
+[66.402827] (-) TimerEvent: {}
+[66.503541] (-) TimerEvent: {}
+[66.605818] (-) TimerEvent: {}
+[66.706581] (-) TimerEvent: {}
+[66.807340] (-) TimerEvent: {}
+[66.908146] (-) TimerEvent: {}
+[67.009755] (-) TimerEvent: {}
+[67.110580] (-) TimerEvent: {}
+[67.211339] (-) TimerEvent: {}
+[67.312164] (-) TimerEvent: {}
+[67.413376] (-) TimerEvent: {}
+[67.514575] (-) TimerEvent: {}
+[67.615301] (-) TimerEvent: {}
+[67.716075] (-) TimerEvent: {}
+[67.816920] (-) TimerEvent: {}
+[67.917719] (-) TimerEvent: {}
+[68.020986] (-) TimerEvent: {}
+[68.121877] (-) TimerEvent: {}
+[68.223876] (-) TimerEvent: {}
+[68.324652] (-) TimerEvent: {}
+[68.425394] (-) TimerEvent: {}
+[68.526168] (-) TimerEvent: {}
+[68.626951] (-) TimerEvent: {}
+[68.727714] (-) TimerEvent: {}
+[68.828721] (-) TimerEvent: {}
+[68.929441] (-) TimerEvent: {}
+[69.030200] (-) TimerEvent: {}
+[69.130919] (-) TimerEvent: {}
+[69.231663] (-) TimerEvent: {}
+[69.332424] (-) TimerEvent: {}
+[69.433172] (-) TimerEvent: {}
+[69.533921] (-) TimerEvent: {}
+[69.634892] (-) TimerEvent: {}
+[69.735637] (-) TimerEvent: {}
+[69.837915] (-) TimerEvent: {}
+[69.939233] (-) TimerEvent: {}
+[70.040211] (-) TimerEvent: {}
+[70.141043] (-) TimerEvent: {}
+[70.241864] (-) TimerEvent: {}
+[70.342663] (-) TimerEvent: {}
+[70.443482] (-) TimerEvent: {}
+[70.544279] (-) TimerEvent: {}
+[70.645037] (-) TimerEvent: {}
+[70.745800] (-) TimerEvent: {}
+[70.846556] (-) TimerEvent: {}
+[70.947332] (-) TimerEvent: {}
+[71.048151] (-) TimerEvent: {}
+[71.148882] (-) TimerEvent: {}
+[71.249629] (-) TimerEvent: {}
+[71.350364] (-) TimerEvent: {}
+[71.451119] (-) TimerEvent: {}
+[71.551850] (-) TimerEvent: {}
+[71.652774] (-) TimerEvent: {}
+[71.754199] (-) TimerEvent: {}
+[71.855886] (-) TimerEvent: {}
+[71.957293] (-) TimerEvent: {}
+[72.058154] (-) TimerEvent: {}
+[72.158943] (-) TimerEvent: {}
+[72.262123] (-) TimerEvent: {}
+[72.363039] (-) TimerEvent: {}
+[72.463870] (-) TimerEvent: {}
+[72.564640] (-) TimerEvent: {}
+[72.665366] (-) TimerEvent: {}
+[72.766191] (-) TimerEvent: {}
+[72.866925] (-) TimerEvent: {}
+[72.967701] (-) TimerEvent: {}
+[73.068430] (-) TimerEvent: {}
+[73.169171] (-) TimerEvent: {}
+[73.269942] (-) TimerEvent: {}
+[73.371432] (-) TimerEvent: {}
+[73.472810] (-) TimerEvent: {}
+[73.573565] (-) TimerEvent: {}
+[73.674276] (-) TimerEvent: {}
+[73.775012] (-) TimerEvent: {}
+[73.875775] (-) TimerEvent: {}
+[73.976522] (-) TimerEvent: {}
+[74.077289] (-) TimerEvent: {}
+[74.178109] (-) TimerEvent: {}
+[74.278835] (-) TimerEvent: {}
+[74.379567] (-) TimerEvent: {}
+[74.480302] (-) TimerEvent: {}
+[74.581019] (-) TimerEvent: {}
+[74.681777] (-) TimerEvent: {}
+[74.782488] (-) TimerEvent: {}
+[74.883220] (-) TimerEvent: {}
+[74.983966] (-) TimerEvent: {}
+[75.084703] (-) TimerEvent: {}
+[75.185728] (-) TimerEvent: {}
+[75.286444] (-) TimerEvent: {}
+[75.387173] (-) TimerEvent: {}
+[75.487921] (-) TimerEvent: {}
+[75.588741] (-) TimerEvent: {}
+[75.691792] (-) TimerEvent: {}
+[75.793608] (-) TimerEvent: {}
+[75.894433] (-) TimerEvent: {}
+[75.995165] (-) TimerEvent: {}
+[76.097720] (-) TimerEvent: {}
+[76.198679] (-) TimerEvent: {}
+[76.299394] (-) TimerEvent: {}
+[76.400120] (-) TimerEvent: {}
+[76.500858] (-) TimerEvent: {}
+[76.601638] (-) TimerEvent: {}
+[76.702384] (-) TimerEvent: {}
+[76.803311] (-) TimerEvent: {}
+[76.904118] (-) TimerEvent: {}
+[77.005475] (-) TimerEvent: {}
+[77.107034] (-) TimerEvent: {}
+[77.208330] (-) TimerEvent: {}
+[77.309687] (-) TimerEvent: {}
+[77.410478] (-) TimerEvent: {}
+[77.511814] (-) TimerEvent: {}
+[77.612554] (-) TimerEvent: {}
+[77.713383] (-) TimerEvent: {}
+[77.814153] (-) TimerEvent: {}
+[77.914877] (-) TimerEvent: {}
+[78.015647] (-) TimerEvent: {}
+[78.116393] (-) TimerEvent: {}
+[78.217145] (-) TimerEvent: {}
+[78.317917] (-) TimerEvent: {}
+[78.418656] (-) TimerEvent: {}
+[78.519545] (-) TimerEvent: {}
+[78.620418] (-) TimerEvent: {}
+[78.721197] (-) TimerEvent: {}
+[78.822686] (-) TimerEvent: {}
+[78.924070] (-) TimerEvent: {}
+[79.024813] (-) TimerEvent: {}
+[79.125654] (-) TimerEvent: {}
+[79.226397] (-) TimerEvent: {}
+[79.327166] (-) TimerEvent: {}
+[79.427885] (-) TimerEvent: {}
+[79.528661] (-) TimerEvent: {}
+[79.629414] (-) TimerEvent: {}
+[79.730202] (-) TimerEvent: {}
+[79.830938] (-) TimerEvent: {}
+[79.931829] (-) TimerEvent: {}
+[80.032590] (-) TimerEvent: {}
+[80.133651] (-) TimerEvent: {}
+[80.234422] (-) TimerEvent: {}
+[80.335131] (-) TimerEvent: {}
+[80.435866] (-) TimerEvent: {}
+[80.536620] (-) TimerEvent: {}
+[80.638113] (-) TimerEvent: {}
+[80.739645] (-) TimerEvent: {}
+[80.840408] (-) TimerEvent: {}
+[80.943714] (-) TimerEvent: {}
+[81.044462] (-) TimerEvent: {}
+[81.145762] (-) TimerEvent: {}
+[81.246492] (-) TimerEvent: {}
+[81.347275] (-) TimerEvent: {}
+[81.447992] (-) TimerEvent: {}
+[81.548724] (-) TimerEvent: {}
+[81.649458] (-) TimerEvent: {}
+[81.750249] (-) TimerEvent: {}
+[81.850996] (-) TimerEvent: {}
+[81.951744] (-) TimerEvent: {}
+[82.052461] (-) TimerEvent: {}
+[82.153149] (-) TimerEvent: {}
+[82.254268] (-) TimerEvent: {}
+[82.356581] (-) TimerEvent: {}
+[82.458042] (-) TimerEvent: {}
+[82.559704] (-) TimerEvent: {}
+[82.661033] (-) TimerEvent: {}
+[82.761974] (-) TimerEvent: {}
+[82.862725] (-) TimerEvent: {}
+[82.963607] (-) TimerEvent: {}
+[83.064339] (-) TimerEvent: {}
+[83.165841] (-) TimerEvent: {}
+[83.266586] (-) TimerEvent: {}
+[83.367340] (-) TimerEvent: {}
+[83.470760] (-) TimerEvent: {}
+[83.571478] (-) TimerEvent: {}
+[83.658718] (slam_gmapping) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable slam_gmapping\x1b[0m\n'}
+[83.671728] (-) TimerEvent: {}
+[83.773257] (-) TimerEvent: {}
+[83.874059] (-) TimerEvent: {}
+[83.974946] (-) TimerEvent: {}
+[84.075712] (-) TimerEvent: {}
+[84.176598] (-) TimerEvent: {}
+[84.277399] (-) TimerEvent: {}
+[84.378233] (-) TimerEvent: {}
+[84.478983] (-) TimerEvent: {}
+[84.579892] (-) TimerEvent: {}
+[84.680640] (-) TimerEvent: {}
+[84.781509] (-) TimerEvent: {}
+[84.782741] (slam_gmapping) StdoutLine: {'line': b'[100%] Built target slam_gmapping\n'}
+[84.798534] (slam_gmapping) CommandEnded: {'returncode': 0}
+[84.877043] (slam_gmapping) JobProgress: {'identifier': 'slam_gmapping', 'progress': 'install'}
+[84.881664] (-) TimerEvent: {}
+[84.890103] (slam_gmapping) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/isaac_ros-dev/software/library_ws/build/slam_gmapping'], 'cwd': '/workspaces/isaac_ros-dev/software/library_ws/build/slam_gmapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources'), ('USER', 'mw'), ('VSCODE_NLS_CONFIG', '{"locale":"en","osLocale":"en","availableLanguages":{}}'), ('CAMERA_TYPE', 'astraplus'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('HOSTNAME', 'marc-orin'), ('GIT_ASKPASS', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping/lib:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/lib:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi2/lib64::/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib'), ('BROWSER', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2b7dbe8d-24f4-45b0-ab7f-b3e389f2c0ff.sock'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', '1'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/node'), ('USER_UID', '1000'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('_colcon_cd_root', '/root/yahboomcar_ros2_ws/yahboomcar_ws'), ('ROBOT_TYPE', 'x3'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install:/workspaces/isaac_ros-dev/yahboomcar_ws2/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-59c17165-cc6f-4122-8338-0c5ef344f6ae.sock'), ('_', '/usr/bin/colcon'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('USERNAME', 'admin'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/nvidia/tao:/usr/local/cuda/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/usr/local/share/middleware_profiles/rtps_udp_profile.xml'), ('VSCODE_AMD_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('VSCODE_AGENT_FOLDER', '/root/.vscode-server'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-59c17165-cc6f-4122-8338-0c5ef344f6ae.sock","/tmp/.X11-unix/X1","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LD_PRELOAD', '/usr/lib/aarch64-linux-gnu/libgomp.so.1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', ''), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3a859f14de.sock'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-59c17165-cc6f-4122-8338-0c5ef344f6ae.sock'), ('ROS_DOMAIN_ID', '32'), ('AMENT_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X1'), ('SHELL', '/bin/bash'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RPLIDAR_TYPE', 's2'), ('PWD', '/workspaces/isaac_ros-dev/software/library_ws/build/slam_gmapping'), ('PYTHONPATH', '/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/yahboomcar_ws2/build/robot_pose_publisher:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('USER_GID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/isaac_ros-dev/software/library_ws/install/openslam_gmapping:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_base_node:/workspaces/isaac_ros-dev/software/library_ws/install/sllidar_ros2:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter:/workspaces/isaac_ros-dev/software/library_ws/install/costmap_converter_msgs:/workspaces/isaac_ros-dev/software/library_ws/install/astra_camera_msgs:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_laser:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_description:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_ctrl:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/yahboomcar_bringup:/workspaces/isaac_ros-dev/yahboomcar_ws2/install/robot_pose_publisher:/opt/ros/humble')]), 'shell': False}
+[84.906519] (slam_gmapping) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[84.907507] (slam_gmapping) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[84.908262] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/lib/slam_gmapping/slam_gmapping\n'}
+[84.921367] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/slam_gmapping/launch/slam_gmapping.launch.py\n'}
+[84.930641] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/slam_gmapping/params/slam_gmapping.yaml\n'}
+[84.941492] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/ament_index/resource_index/package_run_dependencies/slam_gmapping\n'}
+[84.950672] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/ament_index/resource_index/parent_prefix_path/slam_gmapping\n'}
+[84.961120] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.sh\n'}
+[84.969762] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.dsv\n'}
+[84.978883] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/slam_gmapping/environment/path.sh\n'}
+[84.981749] (-) TimerEvent: {}
+[84.990807] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/slam_gmapping/environment/path.dsv\n'}
+[85.000153] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/slam_gmapping/local_setup.bash\n'}
+[85.012151] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/slam_gmapping/local_setup.sh\n'}
+[85.020225] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/slam_gmapping/local_setup.zsh\n'}
+[85.033023] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/slam_gmapping/local_setup.dsv\n'}
+[85.045856] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/slam_gmapping/package.dsv\n'}
+[85.055347] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/ament_index/resource_index/packages/slam_gmapping\n'}
+[85.064895] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig.cmake\n'}
+[85.077637] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig-version.cmake\n'}
+[85.081867] (-) TimerEvent: {}
+[85.086730] (slam_gmapping) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/software/library_ws/install/slam_gmapping/share/slam_gmapping/package.xml\n'}
+[85.098930] (slam_gmapping) CommandEnded: {'returncode': 0}
+[85.182014] (-) TimerEvent: {}
+[85.284013] (-) TimerEvent: {}
+[85.386885] (-) TimerEvent: {}
+[85.487298] (slam_gmapping) JobEnded: {'identifier': 'slam_gmapping', 'rc': 0}
+[85.490952] (-) TimerEvent: {}
+[85.491773] (-) EventReactorShutdown: {}
