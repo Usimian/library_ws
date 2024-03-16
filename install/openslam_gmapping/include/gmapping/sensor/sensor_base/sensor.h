@@ -1,1 +1,0 @@
-/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/openslam_gmapping/include/gmapping/sensor/sensor_base/sensor.h
