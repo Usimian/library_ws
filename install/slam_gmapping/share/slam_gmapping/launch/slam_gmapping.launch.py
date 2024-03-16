@@ -1,1 +1,0 @@
-/workspaces/isaac_ros-dev/software/library_ws/src/ros2_gmapping/slam_gmapping/launch/slam_gmapping.launch.py

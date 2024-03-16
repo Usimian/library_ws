@@ -1,1 +1,0 @@
-/workspaces/isaac_ros-dev/software/library_ws/src/costmap_converter-ros2/costmap_converter_msgs/msg/ObstacleMsg.msg
