@@ -38,16 +38,14 @@
 #include <sensor_msgs/point_cloud2_iterator.hpp>
 #include <memory>
 #include "depth_traits.h"
-#include "astra_camera/utils.h"
-#include "astra_camera/dynamic_params.h"
 
 namespace astra_camera {
 
 namespace enc = sensor_msgs::image_encodings;
 
-class PointCloudXyzNode {
+class PointCloudXyzNode : public rclcpp::Node {
  public:
-  explicit PointCloudXyzNode(rclcpp::Node* const node, std::shared_ptr<Parameters> parameters);
+  explicit PointCloudXyzNode(const rclcpp::NodeOptions& options);
 
   template <typename T>
   static void convertDepth(const sensor_msgs::msg::Image::ConstSharedPtr& depth_msg,
@@ -58,14 +56,10 @@ class PointCloudXyzNode {
   using PointCloud2 = sensor_msgs::msg::PointCloud2;
   using Image = sensor_msgs::msg::Image;
   using CameraInfo = sensor_msgs::msg::CameraInfo;
-  rclcpp::Node* const node_;
-  std::shared_ptr<Parameters> parameters_;
-  rclcpp::Logger logger_ = rclcpp::get_logger("PointCloudXyzNode");
+
   // Subscriptions
   image_transport::CameraSubscriber sub_depth_;
-  int queue_size_ = 5;
-  rmw_qos_profile_t point_cloud_qos_profile_ = rmw_qos_profile_sensor_data;
-  rmw_qos_profile_t depth_qos_profile_ = rmw_qos_profile_sensor_data;
+  int queue_size_;
 
   // Publications
   std::mutex connect_mutex_;
@@ -76,6 +70,8 @@ class PointCloudXyzNode {
   void connectCb();
 
   void depthCb(const Image::ConstSharedPtr& depth_msg, const CameraInfo::ConstSharedPtr& info_msg);
+
+  rclcpp::Logger logger_ = rclcpp::get_logger("PointCloudXyzNode");
 };
 
 }  // namespace astra_camera

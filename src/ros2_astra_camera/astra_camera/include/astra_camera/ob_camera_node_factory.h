@@ -1,6 +1,6 @@
 /**************************************************************************/
 /*                                                                        */
-/* Copyright (c) 2013-2023 Orbbec 3D Technology, Inc                      */
+/* Copyright (c) 2013-2022 Orbbec 3D Technology, Inc                      */
 /*                                                                        */
 /* PROPRIETARY RIGHTS of Orbbec 3D Technology are involved in the         */
 /* subject matter of this material. All manufacturing, reproduction, use, */
@@ -14,6 +14,7 @@
 #include <atomic>
 #include <thread>
 
+#include <magic_enum.hpp>
 
 #include <rclcpp/rclcpp.hpp>
 
@@ -21,26 +22,22 @@
 #include "dynamic_params.h"
 #include "ob_camera_node.h"
 #include "uvc_camera_driver.h"
-#include "ob_context.h"
-#include "magic_enum/magic_enum.hpp"
-
+#include "device_listener.h"
 
 namespace astra_camera {
 class OBCameraNodeFactory : public rclcpp::Node {
  public:
   explicit OBCameraNodeFactory(const rclcpp::NodeOptions& node_options = rclcpp::NodeOptions());
 
-  ~OBCameraNodeFactory() override;
+  OBCameraNodeFactory(const std::string& node_name, const std::string& ns,
+                      const rclcpp::NodeOptions& node_options = rclcpp::NodeOptions());
 
-  static void cleanUpSharedMemory();
+  ~OBCameraNodeFactory() override;
 
  private:
   void init();
 
-  void queryDeviceThread();
-
-  void startDevice(const std::shared_ptr<openni::Device>& device,
-                   const openni::DeviceInfo* device_info);
+  void startDevice();
 
   void onDeviceConnected(const openni::DeviceInfo* device_info);
 
@@ -48,27 +45,26 @@ class OBCameraNodeFactory : public rclcpp::Node {
 
   void checkConnectionTimer();
 
+
  private:
   rclcpp::Logger logger_;
-  std::atomic_bool is_alive_{false};
   std::unique_ptr<OBCameraNode> ob_camera_node_ = nullptr;
   std::shared_ptr<openni::Device> device_ = nullptr;
   std::shared_ptr<Parameters> parameters_ = nullptr;
+  std::shared_ptr<UVCCameraDriver> uvc_camera_driver_ = nullptr;
   std::shared_ptr<openni::DeviceInfo> device_info_ = nullptr;
-  bool use_uvc_camera_ = false;
+  bool use_uvc_camera_;
   UVCCameraConfig uvc_config_;
-  std::unique_ptr<OBContext> ob_context_ = nullptr;
+  std::unique_ptr<DeviceListener> device_listener_ = nullptr;
   std::string serial_number_;
   std::string device_type_;
   std::string device_uri_;
   rclcpp::TimerBase::SharedPtr check_connection_timer_;
   std::atomic_bool device_connected_{false};
-  size_t device_num_ = 1;
-  long connection_delay_ = 0;
-  bool oni_log_to_console_ = false;
-  bool oni_log_to_file_ = false;
-  std::recursive_mutex device_lock_;
-  std::shared_ptr<std::thread> query_device_thread_ = nullptr;
+  size_t number_of_devices_;
+  std::unordered_map<std::string, openni::DeviceInfo> connected_devices_;
+  long reconnection_delay_ = 0;
+  bool is_first_connection_ = true;
 };
 
 }  // namespace astra_camera

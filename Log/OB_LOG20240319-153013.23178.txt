@@ -1,0 +1,22 @@
+Log file created at: 2024/03/19 15:30:13
+Running on machine: marc-orin
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+[I20240319 15:30:13.459765 23178 DeviceManager.cpp:56] DeviceManager init ...
+[I20240319 15:30:13.461855 23178 LinuxPal.cpp:22] createObPal: create LinuxPal!
+[I20240319 15:30:13.558506 23178 EnumeratorLibusb.cpp:325] queryDevicesInfo done!
+[E20240319 15:30:13.558808 23178 ObV4lDevice.cpp:354] Cannot identify /dev/video1
+[E20240319 15:30:13.558845 23178 ObV4lDevice.cpp:357] /dev/video1 is no device
+[E20240319 15:30:13.559119 23178 ObV4lDevice.cpp:384] Cannot find busnum/devnum for /dev/video1
+[E20240319 15:30:13.560732 23178 ObV4lDevice.cpp:48] getDeviceCapabilities : Cannot open '/dev/video1
+[I20240319 15:30:13.563050 23178 DeviceManager.cpp:382] Current usb device port list::
+[I20240319 15:30:13.563127 23178 DeviceManager.cpp:384]         - 1-2.1.2-8.0 | USB Camera
+[I20240319 15:30:13.563143 23178 DeviceManager.cpp:384]         - 1-2.1.1-6.0 | Orbbec(R) Astra(TM) 3D Camera(F) Depth
+[I20240319 15:30:13.563154 23178 DeviceManager.cpp:384]         - 1-2.1.1-6.1 | Orbbec(R) Astra(TM) Audio Devive
+[W20240319 15:30:13.563278 23178 OpenNIDeviceInfo.cpp:172] New openni device matched.
+[I20240319 15:30:13.563302 23178 DeviceManager.cpp:352] Devices matched:
+[I20240319 15:30:13.563313 23178 DeviceManager.cpp:368]   - openniDevice = 1
+[I20240319 15:30:13.563571 23178 LinuxPal.cpp:150] Create PollingDeviceWatcher!
+[I20240319 15:30:13.563603 23178 DeviceManager.cpp:101] DeviceManager init  done!
+[I20240319 15:30:13.563616 23178 DeviceManager.cpp:52] DeviceManager construct done
+[I20240319 15:30:13.563627 23178 Context.cpp:56] Context created!

@@ -27,6 +27,29 @@
 			"args": [
 				"build",
 				"--packages-select",
+				"orbbec_camera",
+				"--symlink-install",
+				"--event-handlers",
+				"console_cohesion+",
+				"--base-paths",
+				"/workspaces/isaac_ros-dev/software/library_ws",
+				"--cmake-args",
+				"-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+			],
+			"problemMatcher": [
+				"$catkin-gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "colcon: build - orbbec_camera"
+		},
+		{
+			"type": "colcon",
+			"args": [
+				"build",
+				"--packages-select",
 				"astra_camera",
 				"--symlink-install",
 				"--event-handlers",
@@ -34,7 +57,7 @@
 				"--base-paths",
 				"/workspaces/isaac_ros-dev/software/library_ws",
 				"--cmake-args",
-				"-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+				"-DCMAKE_BUILD_TYPE=RelWithDebInfo"
 			],
 			"problemMatcher": [
 				"$catkin-gcc"
@@ -57,7 +80,7 @@
 				"--base-paths",
 				"/workspaces/isaac_ros-dev/software/library_ws",
 				"--cmake-args",
-				"-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+				"-DCMAKE_BUILD_TYPE=RelWithDebInfo"
 			],
 			"problemMatcher": [
 				"$catkin-gcc"
@@ -80,7 +103,7 @@
 				"--base-paths",
 				"/workspaces/isaac_ros-dev/software/library_ws",
 				"--cmake-args",
-				"-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+				"-DCMAKE_BUILD_TYPE=RelWithDebInfo"
 			],
 			"problemMatcher": [
 				"$catkin-gcc"
@@ -90,98 +113,6 @@
 				"isDefault": true
 			},
 			"label": "colcon: build - sllidar_ros2"
-		},
-		{
-			"type": "colcon",
-			"args": [
-				"build",
-				"--packages-select",
-				"costmap_converter",
-				"--symlink-install",
-				"--event-handlers",
-				"console_cohesion+",
-				"--base-paths",
-				"/workspaces/isaac_ros-dev/software/library_ws",
-				"--cmake-args",
-				"-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-			],
-			"problemMatcher": [
-				"$catkin-gcc"
-			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"label": "colcon: build - costmap_converter"
-		},
-		{
-			"type": "colcon",
-			"args": [
-				"build",
-				"--packages-select",
-				"costmap_converter_msgs",
-				"--symlink-install",
-				"--event-handlers",
-				"console_cohesion+",
-				"--base-paths",
-				"/workspaces/isaac_ros-dev/software/library_ws",
-				"--cmake-args",
-				"-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-			],
-			"problemMatcher": [
-				"$catkin-gcc"
-			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"label": "colcon: build - costmap_converter_msgs"
-		},
-		{
-			"type": "colcon",
-			"args": [
-				"build",
-				"--packages-select",
-				"openslam_gmapping",
-				"--symlink-install",
-				"--event-handlers",
-				"console_cohesion+",
-				"--base-paths",
-				"/workspaces/isaac_ros-dev/software/library_ws",
-				"--cmake-args",
-				"-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-			],
-			"problemMatcher": [
-				"$catkin-gcc"
-			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"label": "colcon: build - openslam_gmapping"
-		},
-		{
-			"type": "colcon",
-			"args": [
-				"build",
-				"--packages-select",
-				"slam_gmapping",
-				"--symlink-install",
-				"--event-handlers",
-				"console_cohesion+",
-				"--base-paths",
-				"/workspaces/isaac_ros-dev/software/library_ws",
-				"--cmake-args",
-				"-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-			],
-			"problemMatcher": [
-				"$catkin-gcc"
-			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"label": "colcon: build - slam_gmapping"
 		},
 	]
 }
