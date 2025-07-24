@@ -234,7 +234,7 @@ class SLlidarNode : public rclcpp::Node
         if (!reverse_data) {
             for (size_t i = 0; i < node_count; i++) {
                 float angle = getAngle(nodes[i]);
-                if (angle >= 90.0f && angle <= 270.0f) {
+                if (angle >= 135.0f && angle <= 225.0f) {
                     scan_msg->ranges[i] = std::numeric_limits<float>::infinity();
                 } else {
                     float read_value = (float) nodes[i].dist_mm_q2/4.0f/1000;
@@ -248,7 +248,7 @@ class SLlidarNode : public rclcpp::Node
         } else {
             for (size_t i = 0; i < node_count; i++) {
                 float angle = getAngle(nodes[i]);
-                if (angle >= 90.0f && angle <= 270.0f) {
+                if (angle >= 135.0f && angle <= 225.0f) {
                     scan_msg->ranges[node_count-1-i] = std::numeric_limits<float>::infinity();
                 } else {
                     float read_value = (float)nodes[i].dist_mm_q2/4.0f/1000;
