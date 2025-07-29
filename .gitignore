@@ -48,8 +48,6 @@ wheels/
 MANIFEST
 
 # IDE and Editor files
-.vscode/
-.cursor/
 .idea/
 *.swp
 *.swo

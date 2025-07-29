@@ -1,0 +1,9 @@
+---
+alwaysApply: true
+---
+
+This workspace contains ROS2 packages for the Yahboom X3 robot.
+The lidar is in sllidar_ros2
+The camera is in ros2_astra_cameraThis workspace contains ROS2 packages for the Yahboom X3 robot.
+The lidar is in sllidar_ros2
+The camera is in ros2_astra_camera

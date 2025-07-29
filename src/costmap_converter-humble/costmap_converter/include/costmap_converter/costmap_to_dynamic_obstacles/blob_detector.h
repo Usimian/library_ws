@@ -92,15 +92,6 @@ public:
   //! Update internal parameters
   void updateParameters(const cv::SimpleBlobDetector::Params& parameters);
 
-  // Implement the missing pure virtual functions from cv::SimpleBlobDetector
-  virtual void setParams(const cv::SimpleBlobDetector::Params& params) override {
-    params_ = params;
-  }
-
-  virtual cv::SimpleBlobDetector::Params getParams() const override {
-    return params_;
-  }
-
 protected:
   struct Center
   {
